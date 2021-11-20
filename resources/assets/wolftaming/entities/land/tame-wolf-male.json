@@ -564,7 +564,7 @@
                     {
                         "code": "idle",
                         "priority": 1.15,
-                        "priorityForCancel": 1.15,
+                        "priorityForCancel": 1.35,
                         "minduration": 5000,
                         "maxduration": 5000,
                         "mincooldown": 20000,
@@ -610,7 +610,7 @@
                         "code": "useinventory",
                         "animation": "eat",
                         "animationSpeed": 0.75,
-                        "priority": 1.25,
+                        "priority": 1.6,
                         "priorityForCancel": 1.7,
                         "eatItemCategories": [
                             "Protein"

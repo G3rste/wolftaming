@@ -446,7 +446,7 @@
                         "code": "useinventory",
                         "animation": "eat",
                         "animationSpeed": 0.75,
-                        "priority": 1.0,
+                        "priority": 1.4,
                         "priorityForCancel": 1.7,
                         "eatItemCategories": [
                             "Protein"
