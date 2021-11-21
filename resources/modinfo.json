@@ -5,9 +5,9 @@
     "side": "universal",
     "author": "G3rste",
     "description": "Mod that focuses on making wolfes tameable and usable by the player.",
-    "version": "0.0.8",
+    "version": "1.0.0",
     "dependency": {
         "game": "1.15.6",
-        "petai": "0.0.8"
+        "petai": "1.0.0"
     }
 }
