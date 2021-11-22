@@ -391,7 +391,7 @@
                     "tame-wolf-female",
                     "tame-wolf-male"
                 ],
-                "requiresNearbyEntityCode": "wolf-male",
+                "requiresNearbyEntityCode": "tame-wolf-male",
                 "requiresNearbyEntityRange": 10
             },
             {
