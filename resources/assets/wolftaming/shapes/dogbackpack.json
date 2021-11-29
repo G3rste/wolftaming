@@ -16,9 +16,9 @@
 		{
 			"name": "backpackroot",
 			"stepParentName": "body",
-			"from": [ 4.0, 16.0, 4.0 ], 
-			"to": [ 7.0, 16.5, 12.0 ], 
-			"rotationOrigin": [ 4.0, 16.5, 4.0 ],
+			"from": [ 4.0, 9.0, 0.0 ], 
+			"to": [ 7.0, 9.5, 8.0 ], 
+			"rotationOrigin": [ 4.0, 9.5, 0.0 ],
 			"faces": {
 				"north": { "texture": "#leather", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
 				"east": { "texture": "#leather", "uv": [ 0.0, 0.0, 8.0, 0.5 ] },
