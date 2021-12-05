@@ -78,19 +78,24 @@
                         "minObedience": 0.1
                     },
                     {
-                        "commandName": "SELFDEFENSE",
+                        "commandName": "NEUTRAL",
                         "commandType": "AGGRESSIONLEVEL",
                         "minObedience": 0
                     },
                     {
-                        "commandName": "PROTECTMASTER",
+                        "commandName": "PROTECTIVE",
                         "commandType": "AGGRESSIONLEVEL",
                         "minObedience": 0.5
                     },
                     {
-                        "commandName": "ATTACKTARGET",
+                        "commandName": "AGGRESSIVE",
                         "commandType": "AGGRESSIONLEVEL",
                         "minObedience": 0.7
+                    },
+                    {
+                        "commandName": "PASSIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.8
                     }
                 ]
             },
@@ -222,6 +227,9 @@
                 "code": "nametag"
             },
             {
+                "code": "backpackinventory"
+            },
+            {
                 "code": "tameable",
                 "disobediencePerDay": 0.2,
                 "treat": [
@@ -297,19 +305,24 @@
                         "minObedience": 0.1
                     },
                     {
-                        "commandName": "SELFDEFENSE",
+                        "commandName": "NEUTRAL",
                         "commandType": "AGGRESSIONLEVEL",
                         "minObedience": 0
                     },
                     {
-                        "commandName": "PROTECTMASTER",
+                        "commandName": "PROTECTIVE",
                         "commandType": "AGGRESSIONLEVEL",
                         "minObedience": 0.5
                     },
                     {
-                        "commandName": "ATTACKTARGET",
+                        "commandName": "AGGRESSIVE",
                         "commandType": "AGGRESSIONLEVEL",
                         "minObedience": 0.7
+                    },
+                    {
+                        "commandName": "PASSIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.8
                     }
                 ]
             },
