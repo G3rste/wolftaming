@@ -1,0 +1,21 @@
+{
+    "ingredientPattern": "LLL,LML,MLM",
+    "ingredients": {
+        "L": {
+            "type": "item",
+            "code": "game:leather",
+            "quantity": 2
+        },
+        "M": {
+            "type": "item",
+            "code": "game:metalbit-tinbronze"
+        }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {
+        "type": "item",
+        "code": "dogbackpack",
+        "quantity": 1
+    }
+}
