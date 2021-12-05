@@ -1,0 +1,75 @@
+{
+	"code": "dogbackpack",
+	"class": "ItemPetAccessory",
+	"shape": {
+		"base": "dogbackpack"
+	},
+	"attributes": {
+		"wearableAttachment": true,
+		"cothingType": "BACK",
+		"validPets": [
+			"tame-wolf-male",
+			"tame-wolf-female"
+		],
+		"backpackslots": 5
+	},
+	"maxstacksize": 1,
+	"creativeinventory": {
+		"general": [
+			"*"
+		],
+		"items": [
+			"*"
+		],
+		"clothing": [
+			"*"
+		]
+	},
+	"guiTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": -20,
+			"z": 180
+		},
+		"origin": {
+			"x": 0,
+			"y": 0.3,
+			"z": 0.9
+		},
+		"scale": 1.5
+	},
+	"groundTransform": {
+		"scale": 2
+	},
+	"fpHandTransform": {
+		"rotation": {
+			"x": 180,
+			"y": 0,
+			"z": 180
+		},
+		"scale": 1.5
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 250
+		},
+		"origin": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale": 0.5
+	}
+}

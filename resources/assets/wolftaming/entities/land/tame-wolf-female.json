@@ -248,6 +248,9 @@
                 ]
             },
             {
+                "code": "backpackinventory"
+            },
+            {
                 "code": "mouthinventory",
                 "acceptStacks": [
                     {
@@ -620,18 +623,25 @@
                         "animation": "Walk",
                         "preferredLightLevel": 20
                     },
-					{
-						"code": "useinventory",
-						"animation": "eat",
+                    {
+                        "code": "useinventory",
+                        "animation": "eat",
                         "animationSpeed": 0.75,
-						"priority": 1.6,
-						"priorityForCancel": 1.7,
-						"eatItemCategories": ["Protein"],
-						"eatItemCodes": ["bone", "bushmeat-raw", "redmeat-raw", "poultry-raw"],
-						"useTime": 1.5,
-						"mincooldownHours": 1,
-						"maxcooldownHours": 1.5
-					},
+                        "priority": 1.6,
+                        "priorityForCancel": 1.7,
+                        "eatItemCategories": [
+                            "Protein"
+                        ],
+                        "eatItemCodes": [
+                            "bone",
+                            "bushmeat-raw",
+                            "redmeat-raw",
+                            "poultry-raw"
+                        ],
+                        "useTime": 1.5,
+                        "mincooldownHours": 1,
+                        "maxcooldownHours": 1.5
+                    },
                     {
                         "code": "idle",
                         "priority": 0.9,
