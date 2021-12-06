@@ -429,7 +429,7 @@
                 "code": "taskai",
                 "aitasks": [
                     {
-                        "code": "meleeattackbasic",
+                        "code": "petmeleeattack",
                         "isCommandable": true,
                         "priority": 2.2,
                         "damage": 5,
@@ -445,7 +445,7 @@
                         "sound": "game:creature/wolf/attack"
                     },
                     {
-                        "code": "seekentitybasic",
+                        "code": "petseekentity",
                         "isCommandable": true,
                         "priority": 2.1,
                         "movespeed": 0.045,
