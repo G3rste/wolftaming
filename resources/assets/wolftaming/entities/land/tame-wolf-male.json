@@ -227,9 +227,6 @@
                 "code": "nametag"
             },
             {
-                "code": "backpackinventory"
-            },
-            {
                 "code": "tameable",
                 "disobediencePerDay": 0.2,
                 "treat": [
