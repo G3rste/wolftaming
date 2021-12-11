@@ -288,7 +288,7 @@
                 ]
             },
             {
-                "hoursToGrow": 1008,
+                "hoursToGrow": 408,
                 "adultEntityCodes": [
                     "wolftaming:tame-wolf-male",
                     "wolftaming:tame-wolf-female"
