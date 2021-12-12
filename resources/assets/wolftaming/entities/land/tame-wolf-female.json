@@ -163,6 +163,9 @@
                 "code": "harvestable"
             },
             {
+                "code": "multiply"
+            },
+            {
                 "code": "despawn",
                 "minPlayerDistance": 8,
                 "belowLightLevel": 8,
@@ -392,17 +395,15 @@
             },
             {
                 "code": "multiply",
-                "quantityPerDay": 0,
-                "spawnEntityCode": "tame-wolf-pup",
-                "growthCapQuantity": 10,
-                "growthCapRange": 15,
-                "growthCapEntityCodes": [
-                    "tame-wolf-pup",
-                    "tame-wolf-female",
-                    "tame-wolf-male"
-                ],
-                "requiresNearbyEntityCode": "tame-wolf-male",
-                "requiresNearbyEntityRange": 10
+                "spawnEntityCode": "wolftaming:tame-wolf-pup",
+                "requiresNearbyEntityCode": "wolftaming:tame-wolf-male",
+                "requiresNearbyEntityRange": 10,
+                "spawnQuantityMin": 1,
+                "spawnQuantityMax": 1,
+                "pregnancyDays": 20,
+                "multiplyCooldownDaysMin": 4,
+                "multiplyCooldownDaysMax": 11,
+                "portionsEatenForMultiply": 10
             },
             {
                 "code": "emotionstates",
