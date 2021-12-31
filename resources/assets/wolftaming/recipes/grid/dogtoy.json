@@ -1,0 +1,20 @@
+{
+    "ingredientPattern": "HHH,HBH,HHH",
+    "ingredients": {
+        "H": {
+            "type": "item",
+            "code": "game:drygrass"
+        },
+        "B": {
+            "type": "item",
+            "code": "game:bone"
+        }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {
+        "type": "item",
+        "code": "dogtoy",
+        "quantity": 1
+    }
+}
