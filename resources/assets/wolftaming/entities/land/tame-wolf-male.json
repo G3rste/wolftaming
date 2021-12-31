@@ -142,6 +142,10 @@
                     {
                         "type": "item",
                         "code": "poultry-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "wolftaming:dogtoy"
                     }
                 ]
             },
@@ -270,6 +274,10 @@
                     {
                         "type": "item",
                         "code": "poultry-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "wolftaming:dogtoy"
                     }
                 ]
             },
@@ -505,6 +513,14 @@
                         "maxDistance": 10,
                         "searchRange": 40,
                         "animation": "Walk"
+                    },
+                    {
+                        "code": "playfetch",
+                        "priority": 2.2,
+                        "priorityForCancel": 2.1,
+                        "movespeed": 0.045,
+                        "animationSpeed": 2.2,
+                        "animation": "Run"
                     },
                     {
                         "code": "fleeentity",

@@ -93,6 +93,10 @@
                     {
                         "type": "item",
                         "code": "poultry-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "wolftaming:dogtoy"
                     }
                 ]
             },
@@ -238,6 +242,10 @@
                     {
                         "type": "item",
                         "code": "poultry-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "wolftaming:dogtoy"
                     }
                 ]
             },
@@ -325,6 +333,14 @@
                         "animation": "Howl",
                         "command": "speak",
                         "sound": "game:creature/wolf/pup-flop"
+                    },
+                    {
+                        "code": "playfetch",
+                        "priority": 2.2,
+                        "priorityForCancel": 2.1,
+                        "movespeed": 0.02,
+                        "animationSpeed": 4,
+                        "animation": "Run"
                     },
                     {
                         "code": "stayclosetoentity",
