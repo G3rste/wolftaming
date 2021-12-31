@@ -3,7 +3,7 @@
     "ingredients": {
         "L": {
             "type": "item",
-            "code": "game:leather"
+            "code": "game:leather-*"
         },
         "M": {
             "type": "item",

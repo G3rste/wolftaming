@@ -8,7 +8,18 @@
         "D": {
             "type": "item",
             "code": "game:dye-*",
-            "name": "color"
+            "name": "color",
+            "allowedVariants": [
+				"blue",
+				"red",
+				"orange",
+				"green",
+				"brown",
+				"black",
+				"purple",
+				"pink",
+				"yellow"
+            ]
         }
     },
     "width": 3,

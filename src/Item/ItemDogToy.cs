@@ -100,7 +100,7 @@ namespace Wolftaming
             if (dogs == null) { return; }
             foreach (var dog in dogs)
             {
-                var task = dog?.GetBehavior<EntityBehaviorTaskAI>()?.taskManager?.GetTask<AiTaskPlayFetch>();
+                var task = dog?.GetBehavior<EntityBehaviorTaskAI>()?.TaskManager?.GetTask<AiTaskPlayFetch>();
                 if (task != null) { task.dogToy = dogToy; }
             }
         }
