@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"normal-side": "block/hay/normal-side"
+		"normal-side": "game:block/hay/normal-side"
 	},
 	"elements": [
 		{
