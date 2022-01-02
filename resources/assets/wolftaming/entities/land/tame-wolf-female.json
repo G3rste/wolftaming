@@ -405,7 +405,7 @@
                 "code": "multiply",
                 "spawnEntityCode": "wolftaming:tame-wolf-pup",
                 "requiresNearbyEntityCode": "wolftaming:tame-wolf-male",
-                "requiresNearbyEntityRange": 10,
+                "requiresNearbyEntityRange": 4,
                 "spawnQuantityMin": 1,
                 "spawnQuantityMax": 1,
                 "pregnancyDays": 20,
