@@ -1,0 +1,8 @@
+[
+    {
+        "op": "replace",
+        "path": "/attributes/tradeProps/buying/list/22/code",
+        "value": "wolftaming:creature-tame-wolf-pup",
+        "file": "game:entities/humanoid/trader-foods.json"
+    }
+]
