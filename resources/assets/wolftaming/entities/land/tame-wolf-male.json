@@ -232,7 +232,7 @@
             },
             {
                 "code": "tameable",
-                "disobediencePerDay": 0.2,
+                "disobediencePerDay": 0.1,
                 "treat": [
                     {
                         "code": "bone",
