@@ -49,12 +49,10 @@ namespace Wolftaming
         {
             if (dogToy != null)
             {
-                entity.Api.Logger.Debug("get");
                 return getToy();
             }
             else
             {
-                entity.Api.Logger.Debug("bring");
                 return bringToy();
             }
         }
