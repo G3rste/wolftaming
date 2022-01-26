@@ -1,0 +1,114 @@
+{
+	"code": "dogarmor",
+	"class": "ItemPetAccessory",
+	"attributes": {
+		"damageReduction": 0.4,
+		"wearableAttachment": true,
+		"cothingType": "BACK",
+		"validPets": [
+			"tame-wolf-male",
+			"tame-wolf-female"
+		]
+	},
+	"maxstacksize": 1,
+	"variantgroups": [
+		{
+			"code": "type",
+			"states": [
+				"basic"
+			]
+		}
+	],
+	"shape": {
+		"base": "armor/torso/dogarmor-{type}"
+	},
+	"shapeInventory": {
+		"base": "armor/torso/dogarmor-{type}-inventory"
+	},
+	"texture": {
+		"base": "armor/{type}"
+	},
+	"creativeinventory": {
+		"general": [
+			"*"
+		],
+		"items": [
+			"*"
+		],
+		"clothing": [
+			"*"
+		]
+	},
+	"guiTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 45,
+			"z": -45
+		},
+		"origin": {
+			"x": 0,
+			"y": 0,
+			"z": 0.4
+		},
+		"scale": 2
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 90
+		},
+		"origin": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale": 3.5
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": -45
+		},
+		"origin": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale": 2.41
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": -0.5,
+			"z": 0
+		},
+		"rotation": {
+			"x": 1,
+			"y": 57,
+			"z": 18
+		},
+		"origin": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale": 0.65
+	}
+}
