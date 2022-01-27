@@ -2,6 +2,7 @@
 	"code": "dogarmor",
 	"class": "ItemPetAccessory",
 	"attributes": {
+		"inventoryShape": "wolftaming:shapes/armor/torso/dogarmor-basic-inventory.json",
 		"damageReduction": 0.4,
 		"wearableAttachment": true,
 		"cothingType": "BACK",
@@ -22,9 +23,6 @@
 	"shape": {
 		"base": "armor/torso/dogarmor-{type}"
 	},
-	"shapeInventory": {
-		"base": "armor/torso/dogarmor-{type}-inventory"
-	},
 	"texture": {
 		"base": "armor/{type}"
 	},
@@ -41,32 +39,32 @@
 	},
 	"guiTransform": {
 		"translation": {
-			"x": 0,
-			"y": 0,
+			"x": 0.1,
+			"y": -0.2,
 			"z": 0
 		},
 		"rotation": {
-			"x": 0,
-			"y": 45,
-			"z": -45
+			"x": 10,
+			"y": 10,
+			"z": 160
 		},
 		"origin": {
-			"x": 0,
-			"y": 0,
-			"z": 0.4
+			"x": 0.1,
+			"y": -0.2,
+			"z": 0
 		},
-		"scale": 2
+		"scale": 1.5
 	},
 	"groundTransform": {
 		"translation": {
 			"x": 0,
-			"y": 0,
+			"y": 0.45,
 			"z": 0
 		},
 		"rotation": {
 			"x": 0,
 			"y": 0,
-			"z": 90
+			"z": 0
 		},
 		"origin": {
 			"x": 0,
@@ -96,19 +94,19 @@
 	"tpHandTransform": {
 		"translation": {
 			"x": 0,
-			"y": -0.5,
+			"y": 0,
 			"z": 0
 		},
 		"rotation": {
-			"x": 1,
-			"y": 57,
-			"z": 18
+			"x": 0,
+			"y": 0,
+			"z": 0
 		},
 		"origin": {
 			"x": 0,
 			"y": 0,
 			"z": 0
 		},
-		"scale": 0.65
+		"scale": 0.4
 	}
 }
