@@ -5,7 +5,7 @@
 		"inventoryShape": "wolftaming:shapes/armor/torso/dogarmor-basic-inventory.json",
 		"damageReduction": 0.4,
 		"wearableAttachment": true,
-		"cothingType": "BACK",
+		"cothingType": "BODY",
 		"validPets": [
 			"tame-wolf-male",
 			"tame-wolf-female"
