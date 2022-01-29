@@ -228,9 +228,6 @@
     "server": {
         "behaviors": [
             {
-                "code": "selfdefence"
-            },
-            {
                 "code": "nametag"
             },
             {
@@ -423,7 +420,7 @@
                         "slot": 2,
                         "priority": 5,
                         "accumType": "max",
-                        "whenHealthRelBelow": 0.3
+                        "whenHealthRelBelow": 0.05
                     },
                     {
                         "code": "saturated",
@@ -450,8 +447,14 @@
                 "aitasks": [
                     {
                         "code": "petmeleeattack",
+                        "entityCodes": [
+                            "drifter-*",
+                            "wolf-male",
+                            "wolf-female",
+                            "hyena-*"
+                        ],
                         "isCommandable": true,
-                        "priority": 2.2,
+                        "priority": 3,
                         "damage": 5,
                         "damageTier": 2,
                         "damageType": "SlashingAttack",
@@ -466,8 +469,14 @@
                     },
                     {
                         "code": "petseekentity",
+                        "entityCodes": [
+                            "drifter-*",
+                            "wolf-male",
+                            "wolf-female",
+                            "hyena-*"
+                        ],
                         "isCommandable": true,
-                        "priority": 2.1,
+                        "priority": 2.9,
                         "movespeed": 0.045,
                         "seekingRange": 15,
                         "belowTempSeekingRange": 25,
@@ -483,7 +492,7 @@
                         "priority": 3,
                         "minduration": 2000,
                         "maxduration": 10000,
-                        "priorityForCancel": 3.1,
+                        "priorityForCancel": 2.8,
                         "animation": "Sit",
                         "command": "sit"
                     },
@@ -492,7 +501,7 @@
                         "priority": 3,
                         "minduration": 5000,
                         "maxduration": 15000,
-                        "priorityForCancel": 3.1,
+                        "priorityForCancel": 2.8,
                         "animation": "Lie",
                         "animationSpeed": 0.8,
                         "command": "lay"
@@ -612,7 +621,8 @@
                         "maxcooldown": 60000,
                         "animation": "Stretch",
                         "animationSpeed": 1,
-                        "soundRange": 110
+                        "soundRange": 110,
+						"whenInEmotionState": "aggressiveondamage"
                     },
                     {
                         "code": "idle",
