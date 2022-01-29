@@ -599,7 +599,7 @@
                             }
                         ],
                         "stopOnNearbyEntityCodes": [
-                            "player"
+                            "drifter-*"
                         ],
                         "stopRange": 10,
                         "stopOnHurt": true

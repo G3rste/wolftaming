@@ -311,7 +311,7 @@
                         "priority": 3,
                         "minduration": 2000,
                         "maxduration": 10000,
-                        "priorityForCancel": 3.1,
+                        "priorityForCancel": 2.9,
                         "animation": "Sit",
                         "command": "sit"
                     },
@@ -320,7 +320,7 @@
                         "priority": 3,
                         "minduration": 5000,
                         "maxduration": 15000,
-                        "priorityForCancel": 3.1,
+                        "priorityForCancel": 2.9,
                         "animation": "Lie",
                         "command": "lay"
                     },
@@ -410,7 +410,7 @@
                             }
                         ],
                         "stopOnNearbyEntityCodes": [
-                            "player"
+                            "drifter-*"
                         ],
                         "stopRange": 6,
                         "stopOnHurt": true
