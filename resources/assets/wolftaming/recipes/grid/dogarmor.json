@@ -1,0 +1,26 @@
+{
+    "ingredientPattern": "FPF,BBB",
+    "ingredients": {
+        "P": {
+            "type": "item",
+            "code": "game:hide-pelt-large"
+        },
+        "F": {
+            "type": "item",
+            "code": "game:flaxfibers",
+            "quantity": 3
+        },
+        "B": {
+            "type": "item",
+            "code": "game:bone",
+            "quantity": 2
+        }
+    },
+    "width": 3,
+    "height": 2,
+    "output": {
+        "type": "item",
+        "code": "dogarmor-basic",
+        "quantity": 1
+    }
+}

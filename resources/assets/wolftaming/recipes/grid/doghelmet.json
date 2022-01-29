@@ -1,0 +1,16 @@
+{
+    "ingredientPattern": "S",
+    "ingredients": {
+        "S": {
+            "type": "block",
+            "code": "game:bonyremains-cowskull-*"
+        }
+    },
+    "width": 1,
+    "height": 1,
+    "output": {
+        "type": "item",
+        "code": "doghelmet-basic",
+        "quantity": 1
+    }
+}
