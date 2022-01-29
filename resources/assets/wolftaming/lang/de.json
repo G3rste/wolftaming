@@ -35,6 +35,11 @@
 
     "item-dogbackpack": "Hunderucksack",
 
+    "item-dogarmor-basic": "Hunderüstung (Pelz)",
+    "itemdesc-dogarmor-basic": "Fängt einen kleinen Teil des erlittenen Schadens ab.",
+    "item-doghelmet-basic": "Hundehelm (Knochen)",
+    "itemdesc-doghelmet-basic": "Fängt einen kleinen Teil des erlittenen Schadens ab.",
+
     "item-dogtoy": "Hundespielzeug",
     "itemdesc-dogtoy": "Wirf es! Dein Hund wird es lieben.",
 

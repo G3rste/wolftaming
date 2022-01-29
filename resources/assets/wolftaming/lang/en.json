@@ -35,6 +35,11 @@
 
     "item-dogbackpack": "Dog backpack",
 
+    "item-dogarmor-basic": "Dog armor (pelt)",
+    "itemdesc-dogarmor-basic": "Mitigates a small amount of damage.",
+    "item-doghelmet-basic": "Dog helmet (skull)",
+    "itemdesc-doghelmet-basic": "Mitigates a small amount of damage.",
+
     "item-dogtoy": "Dog toy",
     "itemdesc-dogtoy": "Throw it! Your dog will love it.",
 
