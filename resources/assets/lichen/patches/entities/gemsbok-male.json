@@ -1,0 +1,47 @@
+[
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
+        "value": [
+            "tame-wolf-male",
+            "tame-wolf-female"
+        ],
+        "file": "lichen:entities/land/gemsbok-male.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
+        "value": [
+            "tame-wolf-male",
+            "tame-wolf-female"
+        ],
+        "file": "lichen:entities/land/gemsbok-male.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/9/aitasks/3/entityCodes/-",
+        "value": [
+            "tame-wolf-male",
+            "tame-wolf-female"
+        ],
+        "file": "lichen:entities/land/gemsbok-male.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/9/aitasks/4/entityCodes/-",
+        "value": [
+            "tame-wolf-male",
+            "tame-wolf-female"
+        ],
+        "file": "lichen:entities/land/gemsbok-male.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/9/aitasks/5/entityCodes/-",
+        "value": [
+            "tame-wolf-male",
+            "tame-wolf-female"
+        ],
+        "file": "lichen:entities/land/gemsbok-male.json"
+    }
+]
