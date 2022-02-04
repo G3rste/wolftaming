@@ -10,6 +10,7 @@
 			"base": "game:block/hay/normal-side"
 		}
 	},
+    "materialDensity": 900,
 	"creativeinventory": {
 		"general": [
 			"*"
