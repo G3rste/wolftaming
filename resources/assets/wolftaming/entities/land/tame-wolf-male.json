@@ -511,7 +511,8 @@
                         "animationSpeed": 2.2,
                         "maxDistance": 8,
                         "searchRange": 40,
-                        "animation": "Run"
+                        "animation": "Run",
+                        "allowTeleport": true
                     },
                     {
                         "code": "stay",
