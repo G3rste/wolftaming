@@ -3,8 +3,8 @@
     "modid": "wolftaming",
     "name": "Wolf taming",
     "side": "universal",
-    "author": "G3rste",
-    "description": "Mod that focuses on making wolfes tameable and usable by the player.",
+    "authors": ["G3rste"],
+    "description": "Mod that focuses on making wolves tameable and usable by the player.",
     "version": "1.3.0",
     "dependency": {
         "game": "1.16.1",
