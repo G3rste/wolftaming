@@ -10,7 +10,12 @@
 		"validPets": [
 			"tame-wolf-male",
 			"tame-wolf-female"
-		]
+		],
+		"handbook": {
+			"groupBy": [
+				"dogcollar-{type}-*"
+			]
+		}
 	},
 	"maxstacksize": 1,
 	"variantgroups": [
