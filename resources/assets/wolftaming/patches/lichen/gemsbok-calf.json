@@ -6,6 +6,11 @@
             "tame-wolf-male",
             "tame-wolf-female"
         ],
-        "file": "lichen:entities/land/deer-fawn.json"
+        "file": "lichen:entities/land/gemsbok-calf.json",
+        "dependsOn": [
+            {
+                "modid": "lichen"
+            }
+        ]
     }
 ]

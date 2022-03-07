@@ -6,7 +6,12 @@
             "tame-wolf-male",
             "tame-wolf-female"
         ],
-        "file": "lichen:entities/land/deer-female.json"
+        "file": "lichen:entities/land/deer-female.json",
+        "dependsOn": [
+            {
+                "modid": "lichen"
+            }
+        ]
     },
     {
         "op": "addeach",
@@ -15,7 +20,12 @@
             "tame-wolf-male",
             "tame-wolf-female"
         ],
-        "file": "lichen:entities/land/deer-female.json"
+        "file": "lichen:entities/land/deer-female.json",
+        "dependsOn": [
+            {
+                "modid": "lichen"
+            }
+        ]
     },
     {
         "op": "addeach",
@@ -24,6 +34,11 @@
             "tame-wolf-male",
             "tame-wolf-female"
         ],
-        "file": "lichen:entities/land/deer-female.json"
+        "file": "lichen:entities/land/deer-female.json",
+        "dependsOn": [
+            {
+                "modid": "lichen"
+            }
+        ]
     }
 ]

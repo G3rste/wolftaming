@@ -24,7 +24,12 @@
             "tame-wolf-male",
             "tame-wolf-female"
         ],
-        "file": "lichen:entities/land/gemsbok-male.json"
+        "file": "lichen:entities/land/gemsbok-male.json",
+        "dependsOn": [
+            {
+                "modid": "lichen"
+            }
+        ]
     },
     {
         "op": "addeach",
@@ -33,7 +38,12 @@
             "tame-wolf-male",
             "tame-wolf-female"
         ],
-        "file": "lichen:entities/land/gemsbok-male.json"
+        "file": "lichen:entities/land/gemsbok-male.json",
+        "dependsOn": [
+            {
+                "modid": "lichen"
+            }
+        ]
     },
     {
         "op": "addeach",
@@ -42,6 +52,11 @@
             "tame-wolf-male",
             "tame-wolf-female"
         ],
-        "file": "lichen:entities/land/gemsbok-male.json"
+        "file": "lichen:entities/land/gemsbok-male.json",
+        "dependsOn": [
+            {
+                "modid": "lichen"
+            }
+        ]
     }
 ]
