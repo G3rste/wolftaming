@@ -1,32 +1,16 @@
 {
-    "ingredientPattern": "DTD,T_T,DTD",
+    "ingredientPattern": "_T_,T_T,_T_",
     "ingredients": {
         "T": {
             "type": "item",
             "code": "game:flaxtwine"
-        },
-        "D": {
-            "type": "item",
-            "code": "game:dye-*",
-            "name": "color",
-            "allowedVariants": [
-				"blue",
-				"red",
-				"orange",
-				"green",
-				"brown",
-				"black",
-				"purple",
-				"pink",
-				"yellow"
-            ]
         }
     },
     "width": 3,
     "height": 3,
     "output": {
         "type": "item",
-        "code": "dogscarf-{color}",
+        "code": "dogscarf-plain",
         "quantity": 1
     }
 }

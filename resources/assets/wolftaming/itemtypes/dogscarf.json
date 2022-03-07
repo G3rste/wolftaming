@@ -30,13 +30,15 @@
 				"black",
 				"purple",
 				"pink",
-				"yellow"
+				"yellow",
+				"white",
+				"plain"
 			]
 		}
 	],
 	"textures": {
-		"orange": {
-			"base": "game:block/liquid/dye/{color}"
+		"color": {
+			"base": "game:block/cloth/linen/{color}"
 		}
 	},
 	"creativeinventory": {
