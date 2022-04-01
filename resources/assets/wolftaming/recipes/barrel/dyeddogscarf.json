@@ -1,9 +1,0 @@
-{
-	"code": "dyeddogscarf",
-	"sealHours": 8,
-	"ingredients": [
-		{ "type": "item", "code": "game:dye-*", "name": "color", "litres": 4, "consumelitres": 4 },
-		{ "type": "item", "code": "dogscarf-plain", "quantity": 1 }
-	],
-	"output": { "type": "item", "code": "dogscarf-{color}", "stackSize": 1 }
-}

@@ -1,16 +1,23 @@
 {
-    "ingredientPattern": "_T_,T_T,_T_",
+    "ingredientPattern": "C,K",
     "ingredients": {
-        "T": {
+        "K": {
             "type": "item",
-            "code": "game:flaxtwine"
+            "code": "game:knife-*",
+            "isTool": true,
+            "toolDurabilityCost": 10
+        },
+        "C": {
+            "type": "item",
+            "code": "game:cloth-*",
+            "name": "color"
         }
     },
-    "width": 3,
-    "height": 3,
+    "width": 1,
+    "height": 2,
     "output": {
         "type": "item",
-        "code": "dogscarf-plain",
+        "code": "dogscarf-{color}",
         "quantity": 1
     }
 }
