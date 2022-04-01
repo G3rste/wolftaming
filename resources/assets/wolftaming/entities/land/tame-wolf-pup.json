@@ -200,6 +200,7 @@
             },
             {
                 "code": "tameable",
+                "size": "small",
                 "disobediencePerDay": 0.1,
                 "treat": [
                     {
@@ -372,9 +373,6 @@
                     {
                         "code": "seeknest",
                         "priority": 1.4,
-                        "validNests": [
-                            "bed-*"
-                        ],
                         "duringDayTimeFrames": [
                             {
                                 "fromHour": 10,
