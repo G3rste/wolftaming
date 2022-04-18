@@ -32,12 +32,20 @@
     "item-dogscarf-purple": "Foulard à chien (pourpre)",
     "item-dogscarf-pink": "Foulard à chien (rose)",
     "item-dogscarf-yellow": "Foulard à chien (jaune)",
+	"item-dogscarf-white": "Foulard à chien (blanc)",
+	"item-dogscarf-gray": "Foulard à chien (gris)",
+    "item-dogscarf-plain": "Foulard à chien",
 
     "item-dogbackpack": "Sac à dos pour chien",
+	
+	"item-dogarmor-basic": "Armure pour chien (fourrure)",
+    "itemdesc-dogarmor-basic": "Réduit un peu les dégats.",
+    "item-doghelmet-basic": "Casque pour chien (crâne)",
+    "itemdesc-doghelmet-basic": "Réduit un peu les dégats.",
 
     "item-dogtoy": "Jouet pour chien",
     "itemdesc-dogtoy": "Lancez-le! Votre chien adore ça.",
 
     "wolftamingguide-title": "Guide d'apprivoisement: Loups",
-    "wolftamingguide-text": "<strong>Guide d'apprivoisement: Loups</strong>\n\nCe guide est une tentative d'expliquer les mécaniques d'apprivoisement introduites par le mod \"Wolf Taming\".\n\nPour apprivoiser un loup, vous devez d'abord kidnapper un louveteau. Une fois en votre possession, commencez à apprivoiser le louveteau en le nourrissant soit avec des os, soit avec de la viande crue. Quand le louveteau recoit de la nourriture, vous devriez recevoir un message dans le chat vous donnant le progrès de l'apprivoisement. Quand l'apprivoisement atteint 100%, le louveteau se transforme en chien.\nVous pourrez voir combien il est obéissant si vous le regardez. La plupart des ordres seront executés seulement une fois un certain seuil d'obéissance atteint.\n\nPour donner des ordres à votre nouvel animal de compagnie, accroupissez vous et cliquez droit dessus. Une boîte de dialogue vous proposera une liste des ordres disponibles.\n\nLa plupart des commandes sont faciles à comprendre. Toutefois, l'ordre \"Reste ici\" ne le fera pas rester exactement sur la case où il est, mais lui donnera une petite zone d'une dizaine de blocs autour de lui pour se dégourdir les pattes.\n\nUne fois fatigués, vos chien préféreront dormir à certains endroits. Les chiens adultes préféreront des blocs couverts de lin ou bien des tapis de jonc, tandis que les louveteaux préféreront les lits.\n\nIl y a une petite variété de colliers pour donner à vos chiens un peu plus de classe."
+    "wolftamingguide-text": "<strong>Guide d'apprivoisement: Loups</strong>\n\nCe guide est une tentative d'expliquer les mécaniques d'apprivoisement introduites par le mod \"Wolf Taming\".\n\nPour apprivoiser un loup, vous devez d'abord kidnapper un louveteau. Une fois en votre possession, commencez à apprivoiser le louveteau en le nourrissant soit avec des os, soit avec de la viande crue. Quand le louveteau recoit de la nourriture, vous devriez recevoir un message dans le chat vous donnant le progrès de l'apprivoisement. Quand l'apprivoisement atteint 100%, le louveteau se transforme en chien.\nVous pourrez voir combien il est obéissant si vous le regardez. La plupart des ordres seront executés seulement une fois un certain seuil d'obéissance atteint.\n\nPour donner des ordres à votre nouvel animal de compagnie, accroupissez vous et cliquez droit dessus. Une boîte de dialogue vous proposera une liste des ordres disponibles.\n\nLa plupart des commandes sont faciles à comprendre. Toutefois, l'ordre \"Reste ici\" ne le fera pas rester exactement sur la case où il est, mais lui donnera une petite zone d'une dizaine de blocs autour de lui pour se dégourdir les pattes.\n\nUne fois fatigués, vos chien préféreront dormir à certains endroits. Les chiens adultes préféreront des blocs couverts de lin ou bien des tapis de jonc, tandis que les louveteaux préféreront les lits.\n\nIl y a une petite variété de colliers pour donner à vos chiens un peu plus de classe. De plus, les chiens peuvent porter un petit sac à dos ainsi qu'une armure et un casque."
 }
