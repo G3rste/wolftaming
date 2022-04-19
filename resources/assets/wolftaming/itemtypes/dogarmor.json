@@ -2,7 +2,9 @@
 	"code": "dogarmor",
 	"class": "ItemPetAccessory",
 	"attributes": {
-		"inventoryShape": "wolftaming:shapes/armor/torso/dogarmor-basic-inventory.json",
+		"attachShape": {
+			"base": "armor/torso/dogarmor-{type}"
+		},
 		"damageReduction": 0.4,
 		"wearableAttachment": true,
 		"cothingType": "BODY",
@@ -21,7 +23,7 @@
 		}
 	],
 	"shape": {
-		"base": "armor/torso/dogarmor-{type}"
+		"base": "armor/torso/dogarmor-{type}-inventory"
 	},
 	"texture": {
 		"base": "armor/{type}"
