@@ -167,12 +167,6 @@
                 "code": "harvestable"
             },
             {
-                "code": "despawn",
-                "minPlayerDistance": 8,
-                "belowLightLevel": 8,
-                "minSeconds": 300
-            },
-            {
                 "code": "ropetieable",
                 "minGeneration": 2
             }
@@ -335,12 +329,6 @@
             {
                 "code": "controlledphysics",
                 "stepHeight": 1.1251
-            },
-            {
-                "code": "despawn",
-                "minPlayerDistance": 8,
-                "belowLightLevel": 8,
-                "minSeconds": 300
             },
             {
                 "code": "health",
