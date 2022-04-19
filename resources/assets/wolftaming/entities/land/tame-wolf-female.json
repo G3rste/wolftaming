@@ -101,6 +101,7 @@
             },
             {
                 "code": "tameable",
+                "size": "medium",
                 "treat": [
                     {
                         "code": "bone",
