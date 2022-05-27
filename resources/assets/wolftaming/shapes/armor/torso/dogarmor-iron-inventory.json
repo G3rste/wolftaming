@@ -16,8 +16,9 @@
 		{
 			"name": "Back",
 			"stepParentName": "Body",
-			"from": [ 0.0, 0.0, 0.0 ], 
-			"to": [ 9.5, 1.25, 8.5 ], 
+			"from": [ -5.0, 0.0, -4.0 ], 
+			"to": [ 4.5, 1.25, 4.5 ], 
+			"rotationOrigin": [ -5.0, 0.0, -4.0 ],
 			"faces": {
 				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 9.5, 1.0 ] },
 				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.5, 1.0 ] },
