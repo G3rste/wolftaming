@@ -5,7 +5,11 @@
 		"attachShape": {
 			"base": "armor/torso/dogarmor-{type}"
 		},
-		"damageReduction": 0.4,
+		"damageReductionByType": {
+			"*-basic": 0.4,
+			"*-tinbronze": 0.5,
+			"*-iron": 0.75
+		},
 		"wearableAttachment": true,
 		"cothingType": "BODY",
 		"validPets": [
@@ -18,15 +22,14 @@
 		{
 			"code": "type",
 			"states": [
-				"basic"
+				"basic",
+				"tinbronze",
+				"iron"
 			]
 		}
 	],
 	"shape": {
 		"base": "armor/torso/dogarmor-{type}-inventory"
-	},
-	"texture": {
-		"base": "armor/{type}"
 	},
 	"creativeinventory": {
 		"general": [

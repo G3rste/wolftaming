@@ -1,11 +1,23 @@
 {
 	"code": "doghelmet",
 	"class": "ItemPetAccessory",
-	"shape": {
-		"base": "armor/helmet/doghelmet-{type}"
+	"shapeByType": {
+		"*-iron": {
+			"base": "armor/helmet/doghelmet-{type}-inventory"
+		},
+		"*": {
+			"base": "armor/helmet/doghelmet-{type}"
+		}
 	},
 	"attributes": {
-		"damageReduction": 0.3,
+		"attachShape": {
+			"base": "armor/helmet/doghelmet-{type}"
+		},
+		"damageReductionByType": {
+			"*-basic": 0.3,
+			"*-tinbronze": 0.4,
+			"*-iron": 0.5
+		},
 		"wearableAttachment": true,
 		"cothingType": "HEAD",
 		"validPets": [
@@ -18,13 +30,12 @@
 		{
 			"code": "type",
 			"states": [
-				"basic"
+				"basic",
+				"tinbronze",
+				"iron"
 			]
 		}
 	],
-	"texture": {
-		"base": "armor/{type}"
-	},
 	"creativeinventory": {
 		"general": [
 			"*"
