@@ -4,4 +4,4 @@ petai=$(grep 'petai' resources/modinfo.json | sed -r 's/\s*"petai":\s*"(([0-9]\.
 releasefile='bin/wolftaming_v'$version'_petai_v'$petai'.zip'
 dotnet build -c release
 mv bin/wolftaming.zip $releasefile
-gh release create 'v'$version $releasefile
+gh release create --generate-notes 'v'$version $releasefile 
