@@ -426,7 +426,8 @@
                             "drifter-*",
                             "wolf-male",
                             "wolf-female",
-                            "hyena-*"
+                            "hyena-*",
+                            "squirrel-*"
                         ],
                         "isCommandable": true,
                         "priority": 3,
@@ -448,7 +449,8 @@
                             "drifter-*",
                             "wolf-male",
                             "wolf-female",
-                            "hyena-*"
+                            "hyena-*",
+                            "squirrel-*"
                         ],
                         "isCommandable": true,
                         "priority": 2.9,
