@@ -9,7 +9,7 @@
 	},
 	"textures": {
 		"metal": "game:block/metal/ingot/tinbronze",
-		"leather": "game:block/leather"
+		"leather": "game:block/leather/plain"
 	},
 	"elements": [
 		{

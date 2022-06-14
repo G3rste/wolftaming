@@ -10,7 +10,7 @@
 	},
 	"textures": {
 		"copper": "game:block/metal/plate/copper",
-		"leather": "game:block/leather"
+		"leather": "game:block/leather/plain"
 	},
 	"elements": [
 		{
