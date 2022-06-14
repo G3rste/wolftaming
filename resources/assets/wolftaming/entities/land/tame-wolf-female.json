@@ -611,7 +611,7 @@
                         "animation": "Stretch",
                         "animationSpeed": 1,
                         "soundRange": 110,
-						"whenInEmotionState": "aggressiveondamage"
+                        "whenInEmotionState": "aggressiveondamage"
                     },
                     {
                         "code": "idle",
@@ -680,6 +680,10 @@
                     {
                         "code": "lookaround",
                         "priority": 0.5
+                    },
+                    {
+                        "code": "pettableextended",
+                        "minGeneration": 0
                     }
                 ]
             },
