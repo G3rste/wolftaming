@@ -10,7 +10,7 @@
 	},
 	"textures": {
 		"metal": "game:block/metal/plate/tinbronze",
-		"leather": "game:block/leather"
+		"leather": "game:block/leather/plain"
 	},
 	"elements": [
 		{

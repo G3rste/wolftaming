@@ -10,7 +10,7 @@
 	},
 	"textures": {
 		"tinbronze": "block/metal/ingot/tinbronze",
-		"leather": "block/leather"
+		"leather": "block/leather/plain"
 	},
 	"elements": [
 		{

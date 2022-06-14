@@ -670,6 +670,10 @@
             {
                 "code": "ropetieable",
                 "minGeneration": 2
+            },
+            {
+                "code": "pettableextended",
+                "minGeneration": 0
             }
         ]
     },
