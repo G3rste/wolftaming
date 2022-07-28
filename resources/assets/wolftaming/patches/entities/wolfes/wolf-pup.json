@@ -139,11 +139,5 @@
       "maxcooldownHours": 1.5
     },
     "file": "game:entities/land/wolf-pup.json"
-  },
-  {
-    "op": "replace",
-    "path": "/server/behaviors/9/hoursToGrow",
-    "value": "408",
-    "file": "game:entities/land/wolf-pup.json"
   }
 ]
