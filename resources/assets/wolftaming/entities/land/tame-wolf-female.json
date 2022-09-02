@@ -703,16 +703,16 @@
                     {
                         "code": "lookaround",
                         "priority": 0.5
-                    },
-                    {
-                        "code": "pettableextended",
-                        "minGeneration": 0
                     }
                 ]
             },
             {
                 "code": "ropetieable",
                 "minGeneration": 2
+            },
+            {
+                "code": "pettableextended",
+                "minGeneration": 0
             }
         ]
     },
