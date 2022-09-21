@@ -96,7 +96,7 @@ namespace Wolftaming
 
         private void notifyDogs(EntityItem dogToy)
         {
-            var dogs = dogToy?.World?.GetEntitiesAround(dogToy.ServerPos.XYZ, 20f, 5f, entity => entity.Code.Path.Contains("tame-wolf"));
+            var dogs = dogToy?.World?.GetEntitiesAround(dogToy.ServerPos.XYZ, 20f, 5f);
             if (dogs == null) { return; }
             foreach (var dog in dogs)
             {
