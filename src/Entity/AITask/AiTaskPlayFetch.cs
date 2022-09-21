@@ -40,7 +40,7 @@ namespace Wolftaming
             base.StartExecute();
 
             float size = dogToy.CollisionBox.XSize;
-            pathTraverser.NavigateTo(dogToy.ServerPos.XYZ, moveSpeed, size + 0.2f, OnGoalReached, OnStuck, false, 1000);
+            pathTraverser.WalkTowards(dogToy.ServerPos.XYZ, moveSpeed, size + 0.2f, OnGoalReached, OnStuck);
 
             stuck = false;
         }
