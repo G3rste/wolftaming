@@ -18,6 +18,7 @@
 		]
 	},
 	"maxstacksize": 1,
+	"heldTpIdleAnimation": "holdbothhandslarge",
 	"variantgroups": [
 		{
 			"code": "type",
@@ -44,14 +45,14 @@
 	},
 	"guiTransform": {
 		"translation": {
-			"x": 0.1,
+			"x": 4,
 			"y": -0.2,
 			"z": 0
 		},
 		"rotation": {
 			"x": 10,
 			"y": 10,
-			"z": 160
+			"z": 130
 		},
 		"origin": {
 			"x": 0.1,
@@ -80,38 +81,38 @@
 	},
 	"fpHandTransform": {
 		"translation": {
-			"x": 0,
-			"y": 0,
+			"x": 1,
+			"y": 0.5,
 			"z": 0
 		},
 		"rotation": {
-			"x": 0,
-			"y": 0,
-			"z": -45
+			"x": -26,
+			"y": -84,
+			"z": -49
 		},
 		"origin": {
 			"x": 0,
 			"y": 0,
 			"z": 0
 		},
-		"scale": 2.41
+		"scale": 2.11
 	},
 	"tpHandTransform": {
 		"translation": {
 			"x": 0,
-			"y": 0,
-			"z": 0
+			"y": -0.1,
+			"z": 0.3
 		},
 		"rotation": {
-			"x": 0,
-			"y": 0,
-			"z": 0
+			"x": 15,
+			"y": -162,
+			"z": -8
 		},
 		"origin": {
 			"x": 0,
 			"y": 0,
 			"z": 0
 		},
-		"scale": 0.4
+		"scale": 0.61
 	}
 }
