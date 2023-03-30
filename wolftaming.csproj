@@ -8,10 +8,6 @@
 			<HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
 			<Private>false</Private>
 		</Reference>
-		<Reference Include="Newtonsoft">
-			<HintPath>lib/Newtonsoft.Json.dll</HintPath>
-			<Private>false</Private>
-		</Reference>
 		<Reference Include="VSEssentials">
 			<HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
 			<Private>false</Private>
