@@ -150,6 +150,74 @@
         ]
     },
     "file": "game:shapes/entity/land/wolf-male.json"
+},{
+    "op": "add",
+    "path": "/animations/-",
+    "value": {
+      "name": "Tippytaps",
+      "code": "tippytaps",
+      "quantityframes": 20,
+      "onActivityStopped": "Rewind",
+      "onAnimationEnd": "Repeat",
+      "keyframes": [
+          {
+              "frame": 0,
+              "elements": {
+                  "Body": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.3, "rotationX": -3.0, "rotationY": 3.0, "rotationZ": 0.0 },
+                  "neck": { "rotationX": 3.0, "rotationY": -6.0, "rotationZ": 0.0 },
+                  "head": { "rotationX": -6.0, "rotationY": 0.0, "rotationZ": -36.0 },
+                  "abdomen": { "rotationX": 5.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "left back leg": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "left leg back end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "right back leg": { "rotationX": -3.0, "rotationY": 0.0, "rotationZ": 14.0 },
+                  "right leg back end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -11.0 },
+                  "tail end": { "rotationX": 0.0, "rotationY": 19.0, "rotationZ": 0.0 },
+                  "left leg": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
+                  "left leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -39.0 },
+                  "right leg": { "rotationX": 3.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "right leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
+              }
+          },
+          {
+              "frame": 5,
+              "elements": {
+                  "Body": { "offsetX": 0.0, "offsetY": 0.2, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -3.0 },
+                  "jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 8.0 },
+                  "abdomen": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 3.0 },
+                  "tail": { "rotationX": 0.0, "rotationY": -45.0, "rotationZ": 50.0 },
+                  "tail end": { "rotationX": 0.0, "rotationY": 19.0, "rotationZ": 0.0 }
+              }
+          },
+          {
+              "frame": 10,
+              "elements": {
+                  "Body": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 3.0, "rotationY": -3.0, "rotationZ": 0.0 },
+                  "neck": { "rotationX": -3.0, "rotationY": 6.0, "rotationZ": 0.0 },
+                  "abdomen": { "rotationX": -5.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "left back leg": { "rotationX": 3.0, "rotationY": 0.0, "rotationZ": 14.0 },
+                  "left leg back end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -14.0 },
+                  "right back leg": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "right leg back end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "tail end": { "rotationX": 0.0, "rotationY": -19.0, "rotationZ": 0.0 },
+                  "left leg": { "rotationX": -3.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "left leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+                  "right leg": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
+                  "right leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -36.0 }
+              }
+          },
+          {
+              "frame": 15,
+              "elements": {
+                  "Body": { "offsetX": 0.0, "offsetY": 0.2, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -3.0 },
+                  "jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 11.0 },
+                  "abdomen": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 3.0 },
+                  "tail": { "rotationX": 0.0, "rotationY": 39.0, "rotationZ": 50.0 },
+                  "tail end": { "rotationX": 0.0, "rotationY": -14.0, "rotationZ": 0.0 }
+              }
+          }
+      ]
+  },
+  "file": "game:shapes/entity/land/wolf-male.json"
 },
 {
     "op": "add",
