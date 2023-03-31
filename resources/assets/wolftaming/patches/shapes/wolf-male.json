@@ -150,7 +150,8 @@
         ]
     },
     "file": "game:shapes/entity/land/wolf-male.json"
-},{
+},
+{
     "op": "add",
     "path": "/animations/-",
     "value": {

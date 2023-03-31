@@ -497,6 +497,18 @@
                         "animation": "Sit"
                     },
                     {
+                        "code": "happydance",
+                        "priority": 1.4,
+                        "priorityForCancel": 1.4,
+                        "minduration": 4000,
+                        "maxduration": 10000,
+                        "initialMinCoolDown": 0,
+                        "initialMaxCoolDown": 0,
+                        "mincooldown": 10000,
+                        "maxcooldown": 20000,
+                        "animation": "Tippytaps"
+                    },
+                    {
                         "code": "lookaround",
                         "priority": 0.5
                     }
