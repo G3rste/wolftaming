@@ -6,12 +6,23 @@
 			"base": "armor/helmet/doghelmet-{type}-inventory"
 		},
 		"*": {
-			"base": "armor/helmet/doghelmet-{type}"
+			"base": "armor/helmet/tame-wolf/doghelmet-{type}"
 		}
 	},
 	"attributes": {
-		"attachShape": {
-			"base": "armor/helmet/doghelmet-{type}"
+		"shapes": {
+			"tame-wolf-male": {
+				"base": "wolftaming:armor/helmet/tame-wolf/doghelmet-{type}"
+			},
+			"tame-wolf-female": {
+				"base": "wolftaming:armor/helmet/tame-wolf/doghelmet-{type}"
+			},
+			"dog-hunting-male": {
+				"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
+			},
+			"dog-hunting-female": {
+				"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
+			}
 		},
 		"damageReductionByType": {
 			"*-basic": 0.3,
@@ -22,7 +33,9 @@
 		"cothingType": "HEAD",
 		"validPets": [
 			"tame-wolf-male",
-			"tame-wolf-female"
+			"tame-wolf-female",
+			"dog-hunting-male",
+			"dog-hunting-female"
 		]
 	},
 	"maxstacksize": 1,

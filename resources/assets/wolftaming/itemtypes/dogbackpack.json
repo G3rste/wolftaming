@@ -2,16 +2,32 @@
 	"code": "dogbackpack",
 	"class": "ItemPetAccessory",
 	"shape": {
-		"base": "dogbackpack"
+		"base": "backpack/tame-wolf"
 	},
 	"attributes": {
 		"wearableAttachment": true,
 		"cothingType": "BACK",
 		"validPets": [
 			"tame-wolf-male",
-			"tame-wolf-female"
+			"tame-wolf-female",
+			"dog-hunting-male",
+			"dog-hunting-female"
 		],
-		"backpackslots": 5
+		"backpackslots": 5,
+		"shapes": {
+			"tame-wolf-male": {
+				"base": "wolftaming:backpack/tame-wolf"
+			},
+			"tame-wolf-female": {
+				"base": "wolftaming:backpack/tame-wolf"
+			},
+			"dog-hunting-male": {
+				"base": "wolftaming:backpack/dog-hunting"
+			},
+			"dog-hunting-female": {
+				"base": "wolftaming:backpack/dog-hunting"
+			}
+		}
 	},
 	"maxstacksize": 1,
 	"heldTpIdleAnimation": "holdbothhandslarge",

@@ -1,0 +1,179 @@
+{
+	"editor": {
+		"backDropShape": "E:/Workspace/vintage_story_mods/wolftaming/resources/assets/wolftaming/shapes/entity/dog-hunting",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "Back",
+			"stepParentName": "Body",
+			"from": [ -0.225, 7.2, -0.225 ],
+			"to": [ 8.325, 8.325, 7.425 ],
+			"rotationOrigin": [ 0.0, 7.2, 0.0 ],
+			"faces": {
+				"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] },
+				"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 0.9 ] },
+				"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] },
+				"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 0.9 ] },
+				"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 7.65 ] },
+				"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 7.65 ] }
+			},
+			"children": [
+				{
+					"name": "BackR",
+					"from": [ 0.009, -1.8, 0.0 ],
+					"to": [ 8.559, 0.0, 0.9 ],
+					"rotationOrigin": [ 0.0, 0.0, 0.0 ],
+					"rotationX": -5.0,
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] }
+					}
+				},
+				{
+					"name": "BackL",
+					"from": [ 0.009, -1.8, 6.75 ],
+					"to": [ 8.559, 0.0, 7.65 ],
+					"rotationOrigin": [ 0.0, 0.0, 7.65 ],
+					"rotationX": 5.0,
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] }
+					}
+				},
+				{
+					"name": "BackBelt",
+					"from": [ 4.5, -7.425, 0.045 ],
+					"to": [ 5.4, 0.675, 7.605 ],
+					"rotationOrigin": [ 4.5, -7.2, 0.0 ],
+					"faces": {
+						"north": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 8.1 ] },
+						"east": { "texture": "#leather", "uv": [ 0.0, 0.0, 7.2, 8.1 ] },
+						"south": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 8.1 ] },
+						"west": { "texture": "#leather", "uv": [ 0.0, 0.0, 7.2, 8.1 ] },
+						"up": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 7.2 ] },
+						"down": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 7.2 ] }
+					}
+				},
+				{
+					"name": "BackBelt9",
+					"from": [ 4.5, -4.5, 0.054 ],
+					"to": [ 5.4, 1.35, 7.596 ],
+					"rotationOrigin": [ 4.5, -4.5, 0.0 ],
+					"rotationZ": 45.0,
+					"faces": {
+						"north": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 5.85 ] },
+						"east": { "texture": "#leather", "uv": [ 0.0, 0.0, 7.2, 5.85 ] },
+						"south": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 5.85 ] },
+						"west": { "texture": "#leather", "uv": [ 0.0, 0.0, 7.2, 5.85 ] },
+						"up": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 7.2 ] },
+						"down": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 7.2 ] }
+					}
+				},
+				{
+					"name": "SpineBack",
+					"from": [ 0.45, 0.9, 2.025 ],
+					"to": [ 8.1, 1.35, 5.625 ],
+					"rotationOrigin": [ 0.9, 0.9, 1.8 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 0.45 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.6, 0.45 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 0.45 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.6, 0.45 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 3.6 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 3.6 ] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Abdomen",
+			"stepParentName": "abdomen",
+			"from": [ -0.225, 5.4, -0.225 ],
+			"to": [ 11.925, 6.525, 5.625 ],
+			"rotationOrigin": [ 11.925, 5.4, -0.225 ],
+			"faces": {
+				"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.15, 0.9 ] },
+				"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 5.85, 0.9 ] },
+				"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.15, 0.9 ] },
+				"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 5.85, 0.9 ] },
+				"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.15, 5.85 ] },
+				"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.15, 5.85 ] }
+			},
+			"children": [
+				{
+					"name": "AbdomenR",
+					"from": [ 3.6, -0.9, 4.95 ],
+					"to": [ 12.15, 0.9, 5.85 ],
+					"rotationOrigin": [ 12.15, -0.9, 5.85 ],
+					"rotationY": 5.0,
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] }
+					}
+				},
+				{
+					"name": "AbdomenL",
+					"from": [ 3.6, -0.9, 0.0 ],
+					"to": [ 12.15, 0.9, 0.9 ],
+					"rotationOrigin": [ 12.15, -0.9, 0.0 ],
+					"rotationY": -5.0,
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 1.8 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 0.9, 1.8 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.55, 0.9 ] }
+					}
+				},
+				{
+					"name": "AbdomenBelt",
+					"from": [ 5.625, -5.625, 0.0 ],
+					"to": [ 6.525, -0.225, 5.85 ],
+					"rotationOrigin": [ 5.625, -5.4, 0.225 ],
+					"faces": {
+						"north": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 5.4 ] },
+						"east": { "texture": "#leather", "uv": [ 0.0, 0.0, 5.85, 5.4 ] },
+						"south": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 5.4 ] },
+						"west": { "texture": "#leather", "uv": [ 0.0, 0.0, 5.85, 5.4 ] },
+						"up": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 5.85 ] },
+						"down": { "texture": "#leather", "uv": [ 0.0, 0.0, 0.9, 5.85 ] }
+					}
+				},
+				{
+					"name": "SpineAbdomen",
+					"from": [ 0.45, 0.9, 1.575 ],
+					"to": [ 11.7, 1.35, 4.275 ],
+					"rotationOrigin": [ 0.0, 0.9, 0.9 ],
+					"faces": {
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 11.25, 0.45 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.7, 0.45 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 11.25, 0.45 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 2.7, 0.45 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 11.25, 2.7 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 11.25, 2.7 ] }
+					}
+				}
+			]
+		}
+	]}

@@ -2,19 +2,35 @@
 	"code": "dogcollar",
 	"class": "ItemPetAccessory",
 	"shape": {
-		"base": "collar/{type}"
+		"base": "collar/tame-wolf/{type}"
 	},
 	"attributes": {
 		"wearableAttachment": true,
 		"cothingType": "NECK",
 		"validPets": [
 			"tame-wolf-male",
-			"tame-wolf-female"
+			"tame-wolf-female",
+			"dog-hunting-male",
+			"dog-hunting-female"
 		],
 		"handbook": {
 			"groupBy": [
 				"dogcollar-{type}-*"
 			]
+		},
+		"shapes": {
+			"tame-wolf-male": {
+				"base": "wolftaming:collar/tame-wolf/{type}"
+			},
+			"tame-wolf-female": {
+				"base": "wolftaming:collar/tame-wolf/{type}"
+			},
+			"dog-hunting-male": {
+				"base": "wolftaming:collar/dog-hunting/{type}"
+			},
+			"dog-hunting-female": {
+				"base": "wolftaming:collar/dog-hunting/{type}"
+			}
 		}
 	},
 	"maxstacksize": 1,
