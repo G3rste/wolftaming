@@ -9,6 +9,8 @@
 	"textureSizes": {
 	},
 	"textures": {
+		"metal": "game:block/metal/ingot/tinbronze",
+		"leather": "game:block/leather/plain"
 	},
 	"elements": [
 		{
@@ -88,15 +90,15 @@
 				{
 					"name": "SpineBack",
 					"from": [ 0.45, 0.9, 2.025 ],
-					"to": [ 8.1, 1.35, 5.625 ],
+					"to": [ 8.1, 1.36, 5.625 ],
 					"rotationOrigin": [ 0.9, 0.9, 1.8 ],
 					"faces": {
-						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 0.45 ] },
-						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.6, 0.45 ] },
-						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 0.45 ] },
-						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.6, 0.45 ] },
-						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 3.6 ] },
-						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.65, 3.6 ] }
+						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.5, 0.5 ] },
+						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.5, 0.5 ] },
+						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.5, 0.5 ] },
+						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.5, 0.5 ] },
+						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.5, 3.5 ] },
+						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 7.5, 3.5 ] }
 					}
 				}
 			]

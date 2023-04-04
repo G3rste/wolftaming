@@ -8,6 +8,9 @@
 	"textureSizes": {
 	},
 	"textures": {
+		"tinbronze": "game:block/metal/ingot/tinbronze",
+		"iron": "game:block/metal/ingot/iron",
+		"leather": "game:block/leather/plain"
 	},
 	"elements": [
 		{
@@ -28,15 +31,15 @@
 				{
 					"name": "Back2",
 					"from": [ 0.45, 1.125, 0.9 ],
-					"to": [ 8.1, 1.35, 6.3 ],
+					"to": [ 8.1, 1.365, 6.3 ],
 					"rotationOrigin": [ 0.0, 0.9, 0.9 ],
 					"faces": {
-						"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.65, 0.45 ] },
-						"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 5.4, 0.45 ] },
-						"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.65, 0.45 ] },
-						"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 5.4, 0.45 ] },
-						"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.65, 5.4 ] },
-						"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.65, 5.4 ] }
+						"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.5, 0.5 ] },
+						"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+						"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.5, 0.5 ] },
+						"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 5.0, 0.5 ] },
+						"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.5, 5.0 ] },
+						"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 7.5, 5.0 ] }
 					}
 				},
 				{

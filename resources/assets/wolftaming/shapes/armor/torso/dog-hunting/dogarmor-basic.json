@@ -9,6 +9,7 @@
 	"textureSizes": {
 	},
 	"textures": {
+		"armor": "armor/basic"
 	},
 	"elements": [
 		{
