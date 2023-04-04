@@ -1,0 +1,700 @@
+{
+    "code": "dog-hunting-male",
+    "class": "EntityPet",
+    "hitboxSize": {
+        "x": 1.2,
+        "y": 1
+    },
+    "deadHitboxSize": {
+        "x": 1,
+        "y": 0.75
+    },
+    "eyeHeight": 0.9,
+    "drops": [],
+    "client": {
+        "renderer": "Shape",
+        "shape": {
+            "base": "entity/dog-hunting"
+        },
+        "texture": {
+            "base": "entity/dog-hunting-black",
+            "alternates": [
+                {
+                    "base": "entity/dog-hunting-brown"
+                }
+            ]
+        },
+        "behaviors": [
+            {
+                "code": "nametag",
+                "showtagonlywhentargeted": true
+            },
+            {
+                "code": "receivecommand",
+                "availableCommands": [
+                    {
+                        "commandName": "sit",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.2
+                    },
+                    {
+                        "commandName": "lay",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.2
+                    },
+                    {
+                        "commandName": "speak",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.2
+                    },
+                    {
+                        "commandName": "followmaster",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.6
+                    },
+                    {
+                        "commandName": "stay",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.1
+                    },
+                    {
+                        "commandName": "NEUTRAL",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0
+                    },
+                    {
+                        "commandName": "PROTECTIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.5
+                    },
+                    {
+                        "commandName": "AGGRESSIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.7
+                    },
+                    {
+                        "commandName": "PASSIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.8
+                    }
+                ]
+            },
+            {
+                "code": "tameable",
+                "size": "medium",
+                "treat": [
+                    {
+                        "code": "bone",
+                        "progress": 0.1,
+                        "cooldown": 1
+                    },
+                    {
+                        "code": "bushmeat-raw",
+                        "progress": 0.15,
+                        "cooldown": 2
+                    },
+                    {
+                        "code": "redmeat-raw",
+                        "progress": 0.3,
+                        "cooldown": 3
+                    },
+                    {
+                        "code": "poultry-raw",
+                        "progress": 0.3,
+                        "cooldown": 3
+                    },
+                    {
+                        "code": "petcookie-meat-perfect",
+                        "domain": "petai",
+                        "progress": 0.8,
+                        "cooldown": 3
+                    }
+                ]
+            },
+            {
+                "code": "mouthinventory",
+                "acceptStacks": [
+                    {
+                        "type": "item",
+                        "code": "bone"
+                    },
+                    {
+                        "type": "item",
+                        "code": "bushmeat-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "redmeat-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "poultry-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "wolftaming:dogtoy"
+                    },
+                    {
+                        "type": "item",
+                        "code": "petai:petcookie-meat-perfect"
+                    }
+                ]
+            },
+            {
+                "code": "repulseagents"
+            },
+            {
+                "code": "controlledphysics",
+                "stepHeight": 1.1251
+            },
+            {
+                "code": "floatupwhenstuck",
+                "onlyWhenDead": true
+            },
+            {
+                "code": "interpolateposition"
+            },
+            {
+                "code": "harvestable"
+            },
+            {
+                "code": "ropetieable",
+                "minGeneration": 2
+            }
+        ],
+        "animations": [
+            {
+                "code": "hurt",
+                "animation": "hurt",
+                "animationSpeed": 2.2,
+                "weight": 10,
+                "blendMode": "addAverage"
+            },
+            {
+                "code": "die",
+                "animation": "death",
+                "animationSpeed": 1.25,
+                "weight": 10,
+                "blendMode": "average",
+                "triggeredBy": {
+                    "onControls": [
+                        "dead"
+                    ]
+                }
+            },
+            {
+                "code": "idle",
+                "animation": "idle",
+                "blendMode": "addAverage",
+                "easeOutSpeed": 4,
+                "triggeredBy": {
+                    "defaultAnim": true
+                }
+            },
+            {
+                "code": "sleep",
+                "animation": "sleep",
+                "easeInSpeed": 4,
+                "easeOutSpeed": 4,
+                "blendMode": "average"
+            },
+            {
+                "code": "sit",
+                "animation": "sit",
+                "easeInSpeed": 4,
+                "easeOutSpeed": 4,
+                "blendMode": "average"
+            }
+        ]
+    },
+    "server": {
+        "behaviors": [
+            {
+                "code": "nametag",
+                "showtagonlywhentargeted": true
+            },
+            {
+                "code": "tameable",
+                "size": "medium",
+                "disobediencePerDay": 0.1,
+                "treat": [
+                    {
+                        "code": "bone",
+                        "progress": 0.1,
+                        "cooldown": 1
+                    },
+                    {
+                        "code": "bushmeat-raw",
+                        "progress": 0.15,
+                        "cooldown": 2
+                    },
+                    {
+                        "code": "redmeat-raw",
+                        "progress": 0.3,
+                        "cooldown": 3
+                    },
+                    {
+                        "code": "poultry-raw",
+                        "progress": 0.3,
+                        "cooldown": 3
+                    },
+                    {
+                        "code": "petcookie-meat-perfect",
+                        "domain": "petai",
+                        "progress": 0.8,
+                        "cooldown": 3
+                    }
+                ]
+            },
+            {
+                "code": "mouthinventory",
+                "acceptStacks": [
+                    {
+                        "type": "item",
+                        "code": "bone"
+                    },
+                    {
+                        "type": "item",
+                        "code": "bushmeat-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "redmeat-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "poultry-raw"
+                    },
+                    {
+                        "type": "item",
+                        "code": "wolftaming:dogtoy"
+                    },
+                    {
+                        "type": "item",
+                        "code": "petai:petcookie-meat-perfect"
+                    }
+                ]
+            },
+            {
+                "code": "receivecommand",
+                "availableCommands": [
+                    {
+                        "commandName": "sit",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.2
+                    },
+                    {
+                        "commandName": "lay",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.2
+                    },
+                    {
+                        "commandName": "speak",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.2
+                    },
+                    {
+                        "commandName": "followmaster",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.6
+                    },
+                    {
+                        "commandName": "stay",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.1
+                    },
+                    {
+                        "commandName": "NEUTRAL",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0
+                    },
+                    {
+                        "commandName": "PROTECTIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.5
+                    },
+                    {
+                        "commandName": "AGGRESSIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.7
+                    },
+                    {
+                        "commandName": "PASSIVE",
+                        "commandType": "AGGRESSIONLEVEL",
+                        "minObedience": 0.8
+                    }
+                ]
+            },
+            {
+                "code": "repulseagents"
+            },
+            {
+                "code": "controlledphysics",
+                "stepHeight": 1.1251
+            },
+            {
+                "code": "health",
+                "currenthealth": 25,
+                "maxhealth": 25
+            },
+            {
+                "code": "deaddecay",
+                "hoursToDecay": 96,
+                "decayedBlock": "carcass-medium"
+            },
+            {
+                "code": "floatupwhenstuck",
+                "onlyWhenDead": true
+            },
+            {
+                "code": "harvestable",
+                "drops": [
+                    {
+                        "type": "item",
+                        "code": "bushmeat-raw",
+                        "quantity": {
+                            "avg": 7,
+                            "var": 1
+                        }
+                    },
+                    {
+                        "type": "item",
+                        "code": "hide-raw-medium",
+                        "quantity": {
+                            "avg": 1.5,
+                            "var": 0
+                        }
+                    },
+                    {
+                        "type": "item",
+                        "code": "fat",
+                        "quantity": {
+                            "avg": 1.25,
+                            "var": 0
+                        }
+                    },
+                    {
+                        "type": "item",
+                        "code": "bone",
+                        "quantity": {
+                            "avg": 4,
+                            "var": 0.5
+                        }
+                    }
+                ]
+            },
+            {
+                "code": "breathe"
+            },
+            {
+                "code": "emotionstates",
+                "states": [
+                    {
+                        "code": "fleeondamage",
+                        "duration": 60,
+                        "chance": 0.75,
+                        "slot": 2,
+                        "priority": 5,
+                        "accumType": "max",
+                        "whenHealthRelBelow": 0.05
+                    },
+                    {
+                        "code": "saturated",
+                        "duration": 1200,
+                        "chance": 1,
+                        "slot": 0,
+                        "priority": 1,
+                        "accumType": "sum",
+                        "belowTempDuration": 600,
+                        "belowTempThreshold": -5
+                    },
+                    {
+                        "code": "aggressiveondamage",
+                        "duration": 30,
+                        "chance": 1,
+                        "slot": 2,
+                        "priority": 2,
+                        "accumType": "noaccum"
+                    }
+                ]
+            },
+            {
+                "code": "taskai",
+                "aitasks": [
+                    {
+                        "code": "petmeleeattack",
+                        "entityCodes": [
+                            "drifter-*",
+                            "wolf-male",
+                            "wolf-female",
+                            "hyena-*",
+                            "squirrel-*"
+                        ],
+                        "isCommandable": true,
+                        "priority": 3,
+                        "damage": 5,
+                        "damageTier": 2,
+                        "damageType": "SlashingAttack",
+                        "slot": 1,
+                        "mincooldown": 1500,
+                        "maxcooldown": 1500,
+                        "attackDurationMs": 800,
+                        "damagePlayerAtMs": 500,
+                        "animation": "Attack",
+                        "animationSpeed": 2.5,
+                        "sound": "game:creature/wolf/attack"
+                    },
+                    {
+                        "code": "petseekentity",
+                        "entityCodes": [
+                            "drifter-*",
+                            "wolf-male",
+                            "wolf-female",
+                            "hyena-*",
+                            "squirrel-*"
+                        ],
+                        "isCommandable": true,
+                        "priority": 2.9,
+                        "movespeed": 0.045,
+                        "seekingRange": 15,
+                        "belowTempSeekingRange": 25,
+                        "belowTempThreshold": -5,
+                        "animation": "Run",
+                        "leapAtTarget": true,
+                        "leapAnimation": null,
+                        "animationSpeed": 2.2,
+                        "leapChance": 0.01
+                    },
+                    {
+                        "code": "simplecommand",
+                        "priority": 3,
+                        "minduration": 2000,
+                        "maxduration": 10000,
+                        "priorityForCancel": 2.8,
+                        "animation": "Sit",
+                        "command": "sit"
+                    },
+                    {
+                        "code": "simplecommand",
+                        "priority": 3,
+                        "minduration": 5000,
+                        "maxduration": 15000,
+                        "priorityForCancel": 2.8,
+                        "animation": "Lie",
+                        "animationSpeed": 0.8,
+                        "command": "lay"
+                    },
+                    {
+                        "code": "simplecommand",
+                        "priority": 3,
+                        "minduration": 4667,
+                        "maxduration": 4667,
+                        "priorityForCancel": 3.1,
+                        "animation": "Howl",
+                        "animationSpeed": 0.5,
+                        "command": "speak",
+                        "sound": "game:creature/wolf/howl"
+                    },
+                    {
+                        "code": "followmaster",
+                        "priority": 2,
+                        "priorityForCancel": 1.9,
+                        "command": "followmaster",
+                        "movespeed": 0.045,
+                        "animationSpeed": 2.2,
+                        "maxDistance": 8,
+                        "searchRange": 40,
+                        "animation": "Run",
+                        "allowTeleport": true
+                    },
+                    {
+                        "code": "stay",
+                        "priority": 2,
+                        "priorityForCancel": 1.9,
+                        "command": "stay",
+                        "movespeed": 0.006,
+                        "maxDistance": 10,
+                        "searchRange": 40,
+                        "animation": "Walk"
+                    },
+                    {
+                        "code": "playfetch",
+                        "priority": 2.2,
+                        "priorityForCancel": 2.1,
+                        "movespeed": 0.045,
+                        "animationSpeed": 2.2,
+                        "animation": "Run"
+                    },
+                    {
+                        "code": "fleeentity",
+                        "entityCodes": [
+                            "drifter-*"
+                        ],
+                        "priority": 1.6,
+                        "movespeed": 0.03,
+                        "fleeingDistance": 8,
+                        "seekingRange": 5,
+                        "animation": "Run",
+                        "animationSpeed": 1.5
+                    },
+                    {
+                        "code": "seeknest",
+                        "priority": 1.56,
+                        "duringDayTimeFrames": [
+                            {
+                                "fromHour": 10,
+                                "toHour": 18
+                            },
+                            {
+                                "fromHour": 1,
+                                "toHour": 3
+                            }
+                        ],
+                        "movespeed": 0.006,
+                        "animation": "Walk"
+                    },
+                    {
+                        "code": "idle",
+                        "priority": 1.45,
+                        "priorityForCancel": 1.55,
+                        "minduration": 200000,
+                        "maxduration": 800000,
+                        "mincooldown": 10000,
+                        "maxcooldown": 30000,
+                        "animation": "Sleep",
+                        "whenNotInEmotionState": "aggressiveondamage",
+                        "duringDayTimeFrames": [
+                            {
+                                "fromHour": 10,
+                                "toHour": 18
+                            },
+                            {
+                                "fromHour": 1,
+                                "toHour": 3
+                            }
+                        ],
+                        "stopOnNearbyEntityCodes": [
+                            "drifter-*"
+                        ],
+                        "stopRange": 10,
+                        "stopOnHurt": true
+                    },
+                    {
+                        "code": "getoutofwater",
+                        "priority": 1.4,
+                        "movespeed": 0.015,
+                        "animation": "Walk",
+                        "animationSpeed": 2.2
+                    },
+                    {
+                        "code": "idle",
+                        "priority": 1.15,
+                        "priorityForCancel": 1.35,
+                        "minduration": 5000,
+                        "maxduration": 5000,
+                        "mincooldown": 20000,
+                        "maxcooldown": 60000,
+                        "animation": "Stretch",
+                        "animationSpeed": 1,
+                        "soundRange": 110
+                    },
+                    {
+                        "code": "idle",
+                        "priority": 1.3,
+                        "priorityForCancel": 1.35,
+                        "minduration": 4667,
+                        "maxduration": 4667,
+                        "mincooldown": 80000,
+                        "maxcooldown": 500000,
+                        "animation": "Howl",
+                        "animationSpeed": 0.5,
+                        "sound": "game:creature/wolf/howl",
+                        "soundRange": 110
+                    },
+                    {
+                        "code": "idle",
+                        "priority": 1.2,
+                        "priorityForCancel": 1.35,
+                        "minduration": 2500,
+                        "maxduration": 2500,
+                        "mincooldown": 6000,
+                        "maxcooldown": 20000,
+                        "animation": "Sniff",
+                        "animationSpeed": 1.25,
+                        "whenNotInEmotionState": "aggressiveondamage"
+                    },
+                    {
+                        "code": "wander",
+                        "priority": 1.0,
+                        "priorityForCancel": 1.35,
+                        "movespeed": 0.006,
+                        "animation": "Walk",
+                        "preferredLightLevel": 20
+                    },
+                    {
+                        "code": "useinventory",
+                        "animation": "eat",
+                        "animationSpeed": 0.75,
+                        "priority": 1.6,
+                        "priorityForCancel": 1.7,
+                        "eatItemCategories": [
+                            "Protein"
+                        ],
+                        "eatItemCodes": [
+                            "bone",
+                            "bushmeat-raw",
+                            "redmeat-raw",
+                            "poultry-raw",
+                            "petai:petcookie-meat-perfect"
+                        ],
+                        "useTime": 1.5,
+                        "mincooldownHours": 1,
+                        "maxcooldownHours": 1.5
+                    },
+                    {
+                        "code": "idle",
+                        "priority": 0.9,
+                        "minduration": 2000,
+                        "maxduration": 10000,
+                        "mincooldown": 2000,
+                        "maxcooldown": 120000,
+                        "priorityForCancel": 1.33,
+                        "animation": "Sit",
+                        "whenNotInEmotionState": "aggressiveondamage",
+                        "stopRange": 5
+                    },
+                    {
+                        "code": "happydance",
+                        "priority": 1.4,
+                        "priorityForCancel": 1.4,
+                        "minduration": 4000,
+                        "maxduration": 10000,
+                        "initialMinCoolDown": 0,
+                        "initialMaxCoolDown": 0,
+                        "mincooldown": 10000,
+                        "maxcooldown": 30000,
+                        "animation": "Tippytaps"
+                    },
+                    {
+                        "code": "lookaround",
+                        "priority": 0.5
+                    }
+                ]
+            },
+            {
+                "code": "ropetieable",
+                "minGeneration": 2
+            },
+            {
+                "code": "pettableextended",
+                "minGeneration": 0
+            }
+        ]
+    },
+    "sounds": {
+        "hurt": "game:creature/wolf/hurt",
+        "death": "game:creature/wolf/hurt",
+        "idle": "game:creature/wolf/howl"
+    },
+    "idleSoundChance": 0
+}

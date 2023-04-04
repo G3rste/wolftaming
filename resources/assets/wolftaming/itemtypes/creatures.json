@@ -8,6 +8,8 @@
             "states": [
                 "tame-wolf-male",
                 "tame-wolf-female",
+                "dog-hunting-male",
+                "dog-hunting-female",
                 "tame-wolf-pup"
             ]
         }
@@ -18,6 +20,12 @@
         },
         "*-tame-wolf-female": {
             "base": "game:entity/land/wolf-male"
+        },
+        "*-dog-hunting-male": {
+            "base": "entity/dog-hunting"
+        },
+        "*-dog-hunting-female": {
+            "base": "entity/dog-hunting"
         },
         "*-tame-wolf-pup": {
             "base": "game:entity/land/wolf-pup"
@@ -38,6 +46,16 @@
             "skin": {
                 "base": "game:entity/wolf/wolf-pup1"
             }
+        },
+        "*-dog-hunting-male": {
+            "skin": {
+                "base": "entity/dog-hunting-black"
+            }
+        },
+        "*-dog-hunting-female": {
+            "skin": {
+                "base": "entity/dog-hunting-brown"
+            }
         }
     },
     "creativeinventory": {
@@ -53,44 +71,6 @@
     },
     "materialDensity": 600,
     "guiTransformByType": {
-        "creature-tame-wolf-female": {
-            "rotate": true,
-            "translation": {
-                "x": 2,
-                "y": 1,
-                "z": 0
-            },
-            "rotation": {
-                "x": 4,
-                "y": -59,
-                "z": -180
-            },
-            "origin": {
-                "x": 0.5,
-                "y": 0.5,
-                "z": 0.5
-            },
-            "scale": 1.16
-        },
-        "creature-tame-wolf-male": {
-            "rotate": true,
-            "translation": {
-                "x": 2,
-                "y": 1,
-                "z": 0
-            },
-            "rotation": {
-                "x": 4,
-                "y": -59,
-                "z": -180
-            },
-            "origin": {
-                "x": 0.5,
-                "y": 0.5,
-                "z": 0.5
-            },
-            "scale": 1.16
-        },
         "creature-tame-wolf-pup": {
             "rotate": true,
             "translation": {
@@ -109,35 +89,28 @@
                 "z": 0.5
             },
             "scale": 2.18
+        },
+        "*": {
+            "rotate": true,
+            "translation": {
+                "x": 2,
+                "y": 1,
+                "z": 0
+            },
+            "rotation": {
+                "x": 4,
+                "y": -59,
+                "z": -180
+            },
+            "origin": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5
+            },
+            "scale": 1.16
         }
     },
     "tpHandTransformByType": {
-        "creature-tame-wolf-female": {
-            "translation": {
-                "x": -1,
-                "y": -0.6,
-                "z": -0.7
-            },
-            "rotation": {
-                "x": -180,
-                "y": 0,
-                "z": -156
-            },
-            "scale": 0.5
-        },
-        "creature-tame-wolf-male": {
-            "translation": {
-                "x": -1,
-                "y": -0.6,
-                "z": -0.7
-            },
-            "rotation": {
-                "x": -180,
-                "y": 0,
-                "z": -156
-            },
-            "scale": 0.5
-        },
         "creature-tame-wolf-pup": {
             "translation": {
                 "x": -0.4,
@@ -155,35 +128,22 @@
                 "z": 0.5
             },
             "scale": 0.92
+        },
+        "*": {
+            "translation": {
+                "x": -1,
+                "y": -0.6,
+                "z": -0.7
+            },
+            "rotation": {
+                "x": -180,
+                "y": 0,
+                "z": -156
+            },
+            "scale": 0.5
         }
     },
     "fpHandTransformByType": {
-        "creature-tame-wolf-female": {
-            "translation": {
-                "x": 0.4,
-                "y": 0,
-                "z": 0
-            },
-            "rotation": {
-                "x": -180,
-                "y": -96,
-                "z": -180
-            },
-            "scale": 1.16
-        },
-        "creature-tame-wolf-male": {
-            "translation": {
-                "x": 0.4,
-                "y": 0,
-                "z": 0
-            },
-            "rotation": {
-                "x": -180,
-                "y": -96,
-                "z": -180
-            },
-            "scale": 1.16
-        },
         "creature-tame-wolf-pup": {
             "translation": {
                 "x": 0.4,
@@ -196,6 +156,19 @@
                 "z": -180
             },
             "scale": 1.21
+        },
+        "*": {
+            "translation": {
+                "x": 0.4,
+                "y": 0,
+                "z": 0
+            },
+            "rotation": {
+                "x": -180,
+                "y": -96,
+                "z": -180
+            },
+            "scale": 1.16
         }
     }
 }
