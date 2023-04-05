@@ -10,6 +10,7 @@
 		"validPets": [
 			"tame-wolf-male",
 			"tame-wolf-female",
+			"tame-wolf-pup",
 			"dog-hunting-male",
 			"dog-hunting-female"
 		],
@@ -24,6 +25,9 @@
 			},
 			"tame-wolf-female": {
 				"base": "wolftaming:collar/tame-wolf/scarf"
+			},
+			"tame-wolf-pup": {
+				"base": "wolftaming:collar/pup/scarf"
 			},
 			"dog-hunting-male": {
 				"base": "wolftaming:collar/dog-hunting/scarf"
