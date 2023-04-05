@@ -2,7 +2,7 @@
 	"code": "dogcollar",
 	"class": "ItemPetAccessory",
 	"shape": {
-		"base": "collar/tame-wolf/{type}"
+		"base": "collar/tame-wolf/collar"
 	},
 	"attributes": {
 		"wearableAttachment": true,
@@ -20,16 +20,16 @@
 		},
 		"shapes": {
 			"tame-wolf-male": {
-				"base": "wolftaming:collar/tame-wolf/{type}"
+				"base": "wolftaming:collar/tame-wolf/collar"
 			},
 			"tame-wolf-female": {
-				"base": "wolftaming:collar/tame-wolf/{type}"
+				"base": "wolftaming:collar/tame-wolf/collar"
 			},
 			"dog-hunting-male": {
-				"base": "wolftaming:collar/dog-hunting/{type}"
+				"base": "wolftaming:collar/dog-hunting/collar"
 			},
 			"dog-hunting-female": {
-				"base": "wolftaming:collar/dog-hunting/{type}"
+				"base": "wolftaming:collar/dog-hunting/collar"
 			}
 		}
 	},
@@ -56,7 +56,21 @@
 		}
 	],
 	"textures": {
-		"copper": {
+		"spikes": {
+			"baseByType": {
+				"dogcollar-chipped-*": "game:block/transparent",
+				"dogcollar-spiked-*": "game:block/metal/plate/{metal}",
+				"dogcollar-basic-*": "game:block/transparent"
+			}
+		},
+		"dogtag": {
+			"baseByType": {
+				"dogcollar-chipped-*": "game:block/metal/plate/{metal}",
+				"dogcollar-spiked-*": "game:block/transparent",
+				"dogcollar-basic-*": "game:block/transparent"
+			}
+		},
+		"metal": {
 			"base": "game:block/metal/plate/{metal}"
 		}
 	},
