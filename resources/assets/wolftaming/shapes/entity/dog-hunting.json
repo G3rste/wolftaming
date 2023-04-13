@@ -115,6 +115,13 @@
 												"down": { "texture": "#skin", "uv": [ 38.0, 57.0, 44.0, 57.5 ] }
 											}
 										}
+									],
+									"attachmentpoints": [
+										{
+											"code": "LeftHand",
+											"posX": "2.0","posY": "0.0","posZ": "4.5",
+											"rotationX": "0.0","rotationY": "90.0","rotationZ": "0.0"
+										}
 									]
 								},
 								{
@@ -1465,12 +1472,6 @@
 						"left leg": { "offsetX": -0.8909999721050258, "offsetY": 0.4454999860525129, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -19.0 },
 						"left leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 11.0 },
 						"jaw": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 }
-					}
-				},
-				{
-					"frame": 8,
-					"elements": {
-
 					}
 				},
 				{
