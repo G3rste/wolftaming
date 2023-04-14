@@ -1,14 +1,13 @@
 [
     {
-        "op": "add",
+        "op": "addeach",
         "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
-        "value": "tame-wolf-male",
-        "file": "game:entities/land/pig-wild-piglet.json"
-    },
-    {
-        "op": "add",
-        "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
-        "value": "tame-wolf-female",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
+        ],
         "file": "game:entities/land/pig-wild-piglet.json"
     }
 ]

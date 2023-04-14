@@ -2,7 +2,7 @@
     {
         "op": "replace",
         "path": "/attributes/tradeProps/buying/list/21/code",
-        "value": "wolftaming:creature-tame-wolf-pup",
+        "value": "wolftaming:creature-dog-wolf-pup",
         "file": "game:entities/humanoid/trader-foods.json"
     }
 ]

@@ -12,7 +12,8 @@
         {
             "code": "gender",
             "states": [
-                "female"
+                "female",
+                "male"
             ]
         }
     ],
@@ -209,7 +210,11 @@
                 "code": "harvestable"
             },
             {
-                "code": "multiply"
+                "code": "multiply",
+                "enabledByType": {
+                    "*-female": true,
+                    "*-male": false
+                }
             },
             {
                 "code": "ropetieable",
@@ -442,6 +447,10 @@
             },
             {
                 "code": "multiply",
+                "enabledByType": {
+                    "*-female": true,
+                    "*-male": false
+                },
                 "spawnEntityCode": "wolftaming:dog-{type}-pup",
                 "requiresNearbyEntityCode": "wolftaming:dog-{type}-male",
                 "requiresNearbyEntityRange": 4,
