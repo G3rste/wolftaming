@@ -10,51 +10,54 @@
                 "tame-wolf-female",
                 "dog-hunting-male",
                 "dog-hunting-female",
-                "tame-wolf-pup"
+                "tame-wolf-pup",
+                "dog-wolf-male",
+                "dog-wolf-female",
+                "dog-wolf-pup"
             ]
         }
     ],
     "shapeByType": {
-        "*-tame-wolf-male": {
+        "*-wolf-male": {
             "base": "game:entity/land/wolf-male"
         },
-        "*-tame-wolf-female": {
+        "*-wolf-female": {
             "base": "game:entity/land/wolf-male"
         },
-        "*-dog-hunting-male": {
+        "*-hunting-male": {
             "base": "entity/dog-hunting"
         },
-        "*-dog-hunting-female": {
+        "*-hunting-female": {
             "base": "entity/dog-hunting"
         },
-        "*-tame-wolf-pup": {
+        "*-pup": {
             "base": "game:entity/land/wolf-pup"
         }
     },
     "texturesByType": {
-        "*-tame-wolf-male": {
+        "*-wolf-male": {
             "skin": {
                 "base": "game:entity/wolf/wolf1"
             }
         },
-        "*-tame-wolf-female": {
+        "*-wolf-female": {
             "skin": {
                 "base": "game:entity/wolf/wolf1"
             }
         },
-        "*-tame-wolf-pup": {
-            "skin": {
-                "base": "game:entity/wolf/wolf-pup1"
-            }
-        },
-        "*-dog-hunting-male": {
+        "*-hunting-male": {
             "skin": {
                 "base": "entity/dog-hunting-black"
             }
         },
-        "*-dog-hunting-female": {
+        "*-hunting-female": {
             "skin": {
                 "base": "entity/dog-hunting-brown"
+            }
+        },
+        "*-pup": {
+            "skin": {
+                "base": "game:entity/wolf/wolf-pup1"
             }
         }
     },
@@ -71,7 +74,7 @@
     },
     "materialDensity": 600,
     "guiTransformByType": {
-        "creature-tame-wolf-pup": {
+        "*-pup": {
             "rotate": true,
             "translation": {
                 "x": 3,
@@ -111,7 +114,7 @@
         }
     },
     "tpHandTransformByType": {
-        "creature-tame-wolf-pup": {
+        "*-pup": {
             "translation": {
                 "x": -0.4,
                 "y": 0,
@@ -144,7 +147,7 @@
         }
     },
     "fpHandTransformByType": {
-        "creature-tame-wolf-pup": {
+        "*-pup": {
             "translation": {
                 "x": 0.4,
                 "y": 0.1,

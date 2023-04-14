@@ -1,6 +1,21 @@
 {
-    "code": "dog-hunting-female",
+    "code": "dog",
     "class": "EntityPet",
+    "variantGroups": [
+        {
+            "code": "type",
+            "states": [
+                "wolf",
+                "hunting"
+            ]
+        },
+        {
+            "code": "gender",
+            "states": [
+                "female"
+            ]
+        }
+    ],
     "hitboxSize": {
         "x": 1.2,
         "y": 1
@@ -13,16 +28,52 @@
     "drops": [],
     "client": {
         "renderer": "Shape",
-        "shape": {
-            "base": "entity/dog-hunting"
+        "shapeByType": {
+            "dog-hunting-*": {
+                "base": "entity/dog-hunting"
+            },
+            "dog-wolf-*": {
+                "base": "game:entity/land/wolf-male"
+            }
         },
-        "texture": {
-            "base": "entity/dog-hunting-black",
-            "alternates": [
-                {
-                    "base": "entity/dog-hunting-brown"
-                }
-            ]
+        "textureByType": {
+            "dog-hunting-*": {
+                "base": "entity/dog-hunting-black",
+                "alternates": [
+                    {
+                        "base": "entity/dog-hunting-brown"
+                    }
+                ]
+            },
+            "dog-wolf-*": {
+                "base": "game:entity/wolf/wolf1",
+                "alternates": [
+                    {
+                        "base": "game:entity/wolf/wolf2"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf3"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf4"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf5"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf6"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf7"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf8"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf9"
+                    }
+                ]
+            }
         },
         "behaviors": [
             {
@@ -391,8 +442,8 @@
             },
             {
                 "code": "multiply",
-                "spawnEntityCode": "wolftaming:tame-wolf-pup",
-                "requiresNearbyEntityCode": "wolftaming:tame-wolf-male",
+                "spawnEntityCode": "wolftaming:dog-{type}-pup",
+                "requiresNearbyEntityCode": "wolftaming:dog-{type}-male",
                 "requiresNearbyEntityRange": 4,
                 "spawnQuantityMin": 1,
                 "spawnQuantityMax": 1,

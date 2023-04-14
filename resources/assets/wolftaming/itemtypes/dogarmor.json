@@ -3,11 +3,11 @@
 	"class": "ItemPetAccessory",
 	"attributes": {
 		"shapes": {
-			"tame-wolf-male": {
-				"base": "wolftaming:armor/torso/tame-wolf/dogarmor-{type}"
+			"dog-wolf-male": {
+				"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
 			},
-			"tame-wolf-female": {
-				"base": "wolftaming:armor/torso/tame-wolf/dogarmor-{type}"
+			"dog-wolf-female": {
+				"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
 			},
 			"dog-hunting-male": {
 				"base": "wolftaming:armor/torso/dog-hunting/dogarmor-{type}"
@@ -24,8 +24,8 @@
 		"wearableAttachment": true,
 		"cothingType": "BODY",
 		"validPets": [
-			"tame-wolf-male",
-			"tame-wolf-female",
+			"dog-wolf-male",
+			"dog-wolf-female",
 			"dog-hunting-male",
 			"dog-hunting-female"
 		]

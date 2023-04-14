@@ -1,6 +1,21 @@
 {
-    "code": "tame-wolf-female",
+    "code": "dog",
     "class": "EntityPet",
+    "variantGroups": [
+        {
+            "code": "type",
+            "states": [
+                "wolf",
+                "hunting"
+            ]
+        },
+        {
+            "code": "gender",
+            "states": [
+                "male"
+            ]
+        }
+    ],
     "hitboxSize": {
         "x": 1.2,
         "y": 1
@@ -13,37 +28,52 @@
     "drops": [],
     "client": {
         "renderer": "Shape",
-        "shape": {
-            "base": "game:entity/land/wolf-male"
+        "shapeByType": {
+            "dog-hunting-*": {
+                "base": "entity/dog-hunting"
+            },
+            "dog-wolf-*": {
+                "base": "game:entity/land/wolf-male"
+            }
         },
-        "texture": {
-            "base": "game:entity/wolf/wolf1",
-            "alternates": [
-                {
-                    "base": "game:entity/wolf/wolf2"
-                },
-                {
-                    "base": "game:entity/wolf/wolf3"
-                },
-                {
-                    "base": "game:entity/wolf/wolf4"
-                },
-                {
-                    "base": "game:entity/wolf/wolf5"
-                },
-                {
-                    "base": "game:entity/wolf/wolf6"
-                },
-                {
-                    "base": "game:entity/wolf/wolf7"
-                },
-                {
-                    "base": "game:entity/wolf/wolf8"
-                },
-                {
-                    "base": "game:entity/wolf/wolf9"
-                }
-            ]
+        "textureByType": {
+            "dog-hunting-*": {
+                "base": "entity/dog-hunting-black",
+                "alternates": [
+                    {
+                        "base": "entity/dog-hunting-brown"
+                    }
+                ]
+            },
+            "dog-wolf-*": {
+                "base": "game:entity/wolf/wolf1",
+                "alternates": [
+                    {
+                        "base": "game:entity/wolf/wolf2"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf3"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf4"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf5"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf6"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf7"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf8"
+                    },
+                    {
+                        "base": "game:entity/wolf/wolf9"
+                    }
+                ]
+            }
         },
         "behaviors": [
             {
@@ -177,9 +207,6 @@
             },
             {
                 "code": "harvestable"
-            },
-            {
-                "code": "multiply"
             },
             {
                 "code": "ropetieable",
@@ -411,18 +438,6 @@
                 "code": "breathe"
             },
             {
-                "code": "multiply",
-                "spawnEntityCode": "wolftaming:dog-{type}-pup",
-                "requiresNearbyEntityCode": "wolftaming:dog-{type}-male",
-                "requiresNearbyEntityRange": 4,
-                "spawnQuantityMin": 1,
-                "spawnQuantityMax": 1,
-                "pregnancyDays": 20,
-                "multiplyCooldownDaysMin": 4,
-                "multiplyCooldownDaysMax": 11,
-                "portionsEatenForMultiply": 10
-            },
-            {
                 "code": "emotionstates",
                 "states": [
                     {
@@ -632,8 +647,7 @@
                         "maxcooldown": 60000,
                         "animation": "Stretch",
                         "animationSpeed": 1,
-                        "soundRange": 110,
-                        "whenInEmotionState": "aggressiveondamage"
+                        "soundRange": 110
                     },
                     {
                         "code": "idle",
@@ -715,14 +729,6 @@
                     {
                         "code": "lookaround",
                         "priority": 0.5
-                    },
-                    {
-                        "hoursToGrow": 1,
-                        "adultEntityCodes": [
-                            "wolftaming:dog-wolf-female"
-                        ],
-                        "code": "raisable",
-                        "keepTexture": true
                     }
                 ]
             },

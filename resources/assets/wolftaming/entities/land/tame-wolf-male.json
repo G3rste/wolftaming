@@ -709,6 +709,14 @@
             {
                 "code": "pettableextended",
                 "minGeneration": 0
+            },
+            {
+                "hoursToGrow": 1,
+                "adultEntityCodes": [
+                    "wolftaming:dog-wolf-male"
+                ],
+                "code": "raisable",
+                "keepTexture": true
             }
         ]
     },

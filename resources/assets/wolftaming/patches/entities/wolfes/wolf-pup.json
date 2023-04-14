@@ -5,7 +5,7 @@
       "value": 
       {
           "code": "tameable",
-          "tameEntityCode": "wolftaming:tame-wolf-pup", 
+          "tameEntityCode": "wolftaming:dog-wolf-pup", 
           "treat": [
               {
                   "code": "bone",

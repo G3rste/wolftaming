@@ -1,29 +1,46 @@
 {
-    "code": "dog-hunting-male",
+    "code": "dog",
     "class": "EntityPet",
+    "variantGroups": [
+        {
+            "code": "type",
+            "states": [
+                "wolf",
+                "hunting"
+            ]
+        },
+        {
+            "code": "gender",
+            "states": [
+                "pup"
+            ]
+        }
+    ],
     "hitboxSize": {
-        "x": 1.2,
-        "y": 1
+        "x": 0.85,
+        "y": 0.5
     },
     "deadHitboxSize": {
-        "x": 1,
-        "y": 0.75
+        "x": 0.75,
+        "y": 0.4
     },
-    "eyeHeight": 0.9,
+    "eyeHeight": 0.4,
     "drops": [],
     "client": {
         "renderer": "Shape",
         "shape": {
-            "base": "entity/dog-hunting"
+            "base": "game:entity/land/wolf-pup"
         },
         "texture": {
-            "base": "entity/dog-hunting-black",
+            "base": "game:entity/wolf/wolf-pup1",
             "alternates": [
                 {
-                    "base": "entity/dog-hunting-brown"
+                    "base": "game:entity/wolf/wolf-pup2"
                 }
             ]
         },
+        "size": 0.9,
+        "sizeGrowthFactor": 0.2,
         "behaviors": [
             {
                 "code": "nametag",
@@ -40,48 +57,17 @@
                     {
                         "commandName": "lay",
                         "commandType": "SIMPLE",
-                        "minObedience": 0.2
+                        "minObedience": 0.4
                     },
                     {
                         "commandName": "speak",
                         "commandType": "SIMPLE",
-                        "minObedience": 0.2
-                    },
-                    {
-                        "commandName": "followmaster",
-                        "commandType": "COMPLEX",
                         "minObedience": 0.6
-                    },
-                    {
-                        "commandName": "stay",
-                        "commandType": "COMPLEX",
-                        "minObedience": 0.1
-                    },
-                    {
-                        "commandName": "NEUTRAL",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0
-                    },
-                    {
-                        "commandName": "PROTECTIVE",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0.5
-                    },
-                    {
-                        "commandName": "AGGRESSIVE",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0.7
-                    },
-                    {
-                        "commandName": "PASSIVE",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0.8
                     }
                 ]
             },
             {
                 "code": "tameable",
-                "size": "medium",
                 "treat": [
                     {
                         "code": "bone",
@@ -172,8 +158,8 @@
             },
             {
                 "code": "die",
-                "animation": "death",
-                "animationSpeed": 1.25,
+                "animation": "die",
+                "animationSpeed": 1.5,
                 "weight": 10,
                 "blendMode": "average",
                 "triggeredBy": {
@@ -214,8 +200,28 @@
                 "showtagonlywhentargeted": true
             },
             {
+                "code": "receivecommand",
+                "availableCommands": [
+                    {
+                        "commandName": "sit",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.2
+                    },
+                    {
+                        "commandName": "lay",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.4
+                    },
+                    {
+                        "commandName": "speak",
+                        "commandType": "SIMPLE",
+                        "minObedience": 0.6
+                    }
+                ]
+            },
+            {
                 "code": "tameable",
-                "size": "medium",
+                "size": "small",
                 "disobediencePerDay": 0.1,
                 "treat": [
                     {
@@ -276,56 +282,6 @@
                 ]
             },
             {
-                "code": "receivecommand",
-                "availableCommands": [
-                    {
-                        "commandName": "sit",
-                        "commandType": "SIMPLE",
-                        "minObedience": 0.2
-                    },
-                    {
-                        "commandName": "lay",
-                        "commandType": "SIMPLE",
-                        "minObedience": 0.2
-                    },
-                    {
-                        "commandName": "speak",
-                        "commandType": "SIMPLE",
-                        "minObedience": 0.2
-                    },
-                    {
-                        "commandName": "followmaster",
-                        "commandType": "COMPLEX",
-                        "minObedience": 0.6
-                    },
-                    {
-                        "commandName": "stay",
-                        "commandType": "COMPLEX",
-                        "minObedience": 0.1
-                    },
-                    {
-                        "commandName": "NEUTRAL",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0
-                    },
-                    {
-                        "commandName": "PROTECTIVE",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0.5
-                    },
-                    {
-                        "commandName": "AGGRESSIVE",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0.7
-                    },
-                    {
-                        "commandName": "PASSIVE",
-                        "commandType": "AGGRESSIONLEVEL",
-                        "minObedience": 0.8
-                    }
-                ]
-            },
-            {
                 "code": "repulseagents"
             },
             {
@@ -334,13 +290,13 @@
             },
             {
                 "code": "health",
-                "currenthealth": 25,
-                "maxhealth": 25
+                "currenthealth": 5,
+                "maxhealth": 5
             },
             {
                 "code": "deaddecay",
                 "hoursToDecay": 96,
-                "decayedBlock": "carcass-medium"
+                "decayedBlock": "carcass-small"
             },
             {
                 "code": "floatupwhenstuck",
@@ -348,40 +304,7 @@
             },
             {
                 "code": "harvestable",
-                "drops": [
-                    {
-                        "type": "item",
-                        "code": "bushmeat-raw",
-                        "quantity": {
-                            "avg": 7,
-                            "var": 1
-                        }
-                    },
-                    {
-                        "type": "item",
-                        "code": "hide-raw-medium",
-                        "quantity": {
-                            "avg": 1.5,
-                            "var": 0
-                        }
-                    },
-                    {
-                        "type": "item",
-                        "code": "fat",
-                        "quantity": {
-                            "avg": 1.25,
-                            "var": 0
-                        }
-                    },
-                    {
-                        "type": "item",
-                        "code": "bone",
-                        "quantity": {
-                            "avg": 4,
-                            "var": 0.5
-                        }
-                    }
-                ]
+                "drops": []
             },
             {
                 "code": "breathe"
@@ -390,87 +313,31 @@
                 "code": "emotionstates",
                 "states": [
                     {
-                        "code": "fleeondamage",
-                        "duration": 60,
-                        "chance": 0.75,
-                        "slot": 2,
-                        "priority": 5,
-                        "accumType": "max",
-                        "whenHealthRelBelow": 0.05
-                    },
-                    {
-                        "code": "saturated",
-                        "duration": 1200,
+                        "code": "alarmherdondamage",
                         "chance": 1,
-                        "slot": 0,
+                        "slot": 1,
                         "priority": 1,
-                        "accumType": "sum",
-                        "belowTempDuration": 600,
-                        "belowTempThreshold": -5
-                    },
-                    {
-                        "code": "aggressiveondamage",
-                        "duration": 30,
-                        "chance": 1,
-                        "slot": 2,
-                        "priority": 2,
-                        "accumType": "noaccum"
+                        "accumType": "max"
                     }
                 ]
+            },
+            {
+                "hoursToGrow": 336,
+                "adultEntityCodes": [
+                    "wolftaming:dog-{type}-male",
+                    "wolftaming:dog-{type}-female"
+                ],
+                "code": "raisable"
             },
             {
                 "code": "taskai",
                 "aitasks": [
                     {
-                        "code": "petmeleeattack",
-                        "entityCodes": [
-                            "drifter-*",
-                            "wolf-male",
-                            "wolf-female",
-                            "hyena-*",
-                            "squirrel-*"
-                        ],
-                        "isCommandable": true,
-                        "priority": 3,
-                        "damage": 5,
-                        "damageTier": 2,
-                        "damageType": "SlashingAttack",
-                        "slot": 1,
-                        "mincooldown": 1500,
-                        "maxcooldown": 1500,
-                        "attackDurationMs": 800,
-                        "damagePlayerAtMs": 500,
-                        "animation": "Attack",
-                        "animationSpeed": 2.5,
-                        "sound": "game:creature/wolf/attack"
-                    },
-                    {
-                        "code": "petseekentity",
-                        "entityCodes": [
-                            "drifter-*",
-                            "wolf-male",
-                            "wolf-female",
-                            "hyena-*",
-                            "squirrel-*"
-                        ],
-                        "isCommandable": true,
-                        "priority": 2.9,
-                        "movespeed": 0.045,
-                        "seekingRange": 15,
-                        "belowTempSeekingRange": 25,
-                        "belowTempThreshold": -5,
-                        "animation": "Run",
-                        "leapAtTarget": true,
-                        "leapAnimation": null,
-                        "animationSpeed": 2.2,
-                        "leapChance": 0.01
-                    },
-                    {
                         "code": "simplecommand",
                         "priority": 3,
                         "minduration": 2000,
                         "maxduration": 10000,
-                        "priorityForCancel": 2.8,
+                        "priorityForCancel": 2.9,
                         "animation": "Sit",
                         "command": "sit"
                     },
@@ -479,67 +346,58 @@
                         "priority": 3,
                         "minduration": 5000,
                         "maxduration": 15000,
-                        "priorityForCancel": 2.8,
+                        "priorityForCancel": 2.9,
                         "animation": "Lie",
-                        "animationSpeed": 0.8,
                         "command": "lay"
                     },
                     {
                         "code": "simplecommand",
                         "priority": 3,
-                        "minduration": 4667,
-                        "maxduration": 4667,
+                        "minduration": 2000,
+                        "maxduration": 3000,
                         "priorityForCancel": 3.1,
                         "animation": "Howl",
-                        "animationSpeed": 0.5,
                         "command": "speak",
-                        "sound": "game:creature/wolf/howl"
-                    },
-                    {
-                        "code": "followmaster",
-                        "priority": 2,
-                        "priorityForCancel": 1.9,
-                        "command": "followmaster",
-                        "movespeed": 0.045,
-                        "animationSpeed": 2.2,
-                        "maxDistance": 8,
-                        "searchRange": 40,
-                        "animation": "Run",
-                        "allowTeleport": true
-                    },
-                    {
-                        "code": "stay",
-                        "priority": 2,
-                        "priorityForCancel": 1.9,
-                        "command": "stay",
-                        "movespeed": 0.006,
-                        "maxDistance": 10,
-                        "searchRange": 40,
-                        "animation": "Walk"
+                        "sound": "game:creature/wolf/pup-flop"
                     },
                     {
                         "code": "playfetch",
                         "priority": 2.2,
                         "priorityForCancel": 2.1,
-                        "movespeed": 0.045,
-                        "animationSpeed": 2.2,
+                        "movespeed": 0.02,
+                        "animationSpeed": 4,
                         "animation": "Run"
                     },
                     {
-                        "code": "fleeentity",
-                        "entityCodes": [
-                            "drifter-*"
-                        ],
-                        "priority": 1.6,
-                        "movespeed": 0.03,
-                        "fleeingDistance": 8,
-                        "seekingRange": 5,
-                        "animation": "Run",
-                        "animationSpeed": 1.5
+                        "code": "stayclosetoentity",
+                        "priority": 1.4,
+                        "entityCode": "player",
+                        "movespeed": 0.02,
+                        "animationSpeed": 4,
+                        "maxDistance": 15,
+                        "searchRange": 25,
+                        "animation": "Run"
+                    },
+                    {
+                        "code": "stayclosetoentity",
+                        "priority": 1.5,
+                        "entityCode": "dog-{type}-female",
+                        "movespeed": 0.02,
+                        "animationSpeed": 4,
+                        "maxDistance": 15,
+                        "searchRange": 25,
+                        "animation": "Run"
+                    },
+                    {
+                        "code": "getoutofwater",
+                        "priority": 1.45,
+                        "movespeed": 0.015,
+                        "animation": "Walk",
+                        "animationSpeed": 2.2
                     },
                     {
                         "code": "seeknest",
-                        "priority": 1.56,
+                        "priority": 1.4,
                         "duringDayTimeFrames": [
                             {
                                 "fromHour": 10,
@@ -550,13 +408,14 @@
                                 "toHour": 3
                             }
                         ],
-                        "movespeed": 0.006,
+                        "movespeed": 0.004,
+                        "animationSpeed": 2,
                         "animation": "Walk"
                     },
                     {
                         "code": "idle",
-                        "priority": 1.45,
-                        "priorityForCancel": 1.55,
+                        "priority": 1.35,
+                        "priorityForCancel": 1.35,
                         "minduration": 200000,
                         "maxduration": 800000,
                         "mincooldown": 10000,
@@ -576,66 +435,57 @@
                         "stopOnNearbyEntityCodes": [
                             "drifter-*"
                         ],
-                        "stopRange": 10,
+                        "stopRange": 6,
                         "stopOnHurt": true
-                    },
-                    {
-                        "code": "getoutofwater",
-                        "priority": 1.4,
-                        "movespeed": 0.015,
-                        "animation": "Walk",
-                        "animationSpeed": 2.2
-                    },
-                    {
-                        "code": "idle",
-                        "priority": 1.15,
-                        "priorityForCancel": 1.35,
-                        "minduration": 5000,
-                        "maxduration": 5000,
-                        "mincooldown": 20000,
-                        "maxcooldown": 60000,
-                        "animation": "Stretch",
-                        "animationSpeed": 1,
-                        "soundRange": 110
                     },
                     {
                         "code": "idle",
                         "priority": 1.3,
                         "priorityForCancel": 1.35,
-                        "minduration": 4667,
-                        "maxduration": 4667,
-                        "mincooldown": 80000,
-                        "maxcooldown": 500000,
-                        "animation": "Howl",
-                        "animationSpeed": 0.5,
-                        "sound": "game:creature/wolf/howl",
-                        "soundRange": 110
+                        "minduration": 2500,
+                        "maxduration": 2500,
+                        "mincooldown": 10000,
+                        "maxcooldown": 50000,
+                        "animation": "Sniff",
+                        "animationSpeed": 0.8
                     },
                     {
                         "code": "idle",
-                        "priority": 1.2,
+                        "priority": 1.31,
                         "priorityForCancel": 1.35,
-                        "minduration": 2500,
-                        "maxduration": 2500,
-                        "mincooldown": 6000,
-                        "maxcooldown": 20000,
-                        "animation": "Sniff",
-                        "animationSpeed": 1.25,
-                        "whenNotInEmotionState": "aggressiveondamage"
+                        "minduration": 1500,
+                        "maxduration": 1500,
+                        "mincooldown": 50000,
+                        "maxcooldown": 300000,
+                        "animation": "Howl",
+                        "animationSpeed": 0.8,
+                        "sound": "game:creature/wolf/pup-howl"
+                    },
+                    {
+                        "code": "idle",
+                        "priority": 1.32,
+                        "priorityForCancel": 1.35,
+                        "minduration": 2830,
+                        "maxduration": 2830,
+                        "mincooldown": 80000,
+                        "maxcooldown": 200000,
+                        "animation": "Flop",
+                        "sound": "game:creature/wolf/pup-flop"
                     },
                     {
                         "code": "wander",
                         "priority": 1.0,
                         "priorityForCancel": 1.35,
-                        "movespeed": 0.006,
+                        "movespeed": 0.004,
+                        "animationSpeed": 2,
                         "animation": "Walk",
-                        "preferredLightLevel": 20
+                        "preferredLightLevel": 18
                     },
                     {
                         "code": "useinventory",
                         "animation": "eat",
                         "animationSpeed": 0.75,
-                        "priority": 1.6,
+                        "priority": 1.4,
                         "priorityForCancel": 1.7,
                         "eatItemCategories": [
                             "Protein"
@@ -654,14 +504,12 @@
                     {
                         "code": "idle",
                         "priority": 0.9,
-                        "minduration": 2000,
-                        "maxduration": 10000,
+                        "minduration": 5000,
+                        "maxduration": 30000,
                         "mincooldown": 2000,
                         "maxcooldown": 120000,
-                        "priorityForCancel": 1.33,
-                        "animation": "Sit",
-                        "whenNotInEmotionState": "aggressiveondamage",
-                        "stopRange": 5
+                        "priorityForCancel": 1.35,
+                        "animation": "Sit"
                     },
                     {
                         "code": "happydance",
@@ -672,7 +520,7 @@
                         "initialMinCoolDown": 0,
                         "initialMaxCoolDown": 0,
                         "mincooldown": 10000,
-                        "maxcooldown": 30000,
+                        "maxcooldown": 20000,
                         "animation": "Tippytaps"
                     },
                     {
@@ -692,9 +540,9 @@
         ]
     },
     "sounds": {
-        "hurt": "game:creature/wolf/hurt",
-        "death": "game:creature/wolf/hurt",
-        "idle": "game:creature/wolf/howl"
+        "hurt": "game:creature/wolf/pup-hurt",
+        "death": "game:creature/wolf/pup-hurt",
+        "idle": "game:creature/wolf/pup-bark"
     },
-    "idleSoundChance": 0
+    "idleSoundChance": 0.01
 }

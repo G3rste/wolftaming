@@ -307,12 +307,12 @@
                 ]
             },
             {
-                "hoursToGrow": 336,
+                "hoursToGrow": 1,
                 "adultEntityCodes": [
-                    "wolftaming:tame-wolf-male",
-                    "wolftaming:tame-wolf-female"
+                    "wolftaming:dog-wolf-pup"
                 ],
-                "code": "raisable"
+                "code": "raisable",
+                "keepTexture": true
             },
             {
                 "code": "taskai",

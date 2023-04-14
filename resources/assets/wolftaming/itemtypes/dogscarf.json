@@ -2,15 +2,15 @@
 	"code": "dogscarf",
 	"class": "ItemPetAccessory",
 	"shape": {
-		"base": "collar/tame-wolf/scarf"
+		"base": "collar/dog-wolf/scarf"
 	},
 	"attributes": {
 		"wearableAttachment": true,
 		"cothingType": "NECK",
 		"validPets": [
-			"tame-wolf-male",
-			"tame-wolf-female",
-			"tame-wolf-pup",
+			"dog-wolf-male",
+			"dog-wolf-female",
+			"dog-wolf-pup",
 			"dog-hunting-male",
 			"dog-hunting-female"
 		],
@@ -20,13 +20,13 @@
 			]
 		},
 		"shapes": {
-			"tame-wolf-male": {
-				"base": "wolftaming:collar/tame-wolf/scarf"
+			"dog-wolf-male": {
+				"base": "wolftaming:collar/dog-wolf/scarf"
 			},
-			"tame-wolf-female": {
-				"base": "wolftaming:collar/tame-wolf/scarf"
+			"dog-wolf-female": {
+				"base": "wolftaming:collar/dog-wolf/scarf"
 			},
-			"tame-wolf-pup": {
+			"dog-wolf-pup": {
 				"base": "wolftaming:collar/pup/scarf"
 			},
 			"dog-hunting-male": {
