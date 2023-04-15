@@ -3,8 +3,10 @@
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
         "value": [
-            "tame-wolf-male",
-            "tame-wolf-female"
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
         ],
         "file": "lichen:entities/land/deer-male.json",
         "dependsOn": [
@@ -17,8 +19,10 @@
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/2/entityCodes/-",
         "value": [
-            "tame-wolf-male",
-            "tame-wolf-female"
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
         ],
         "file": "lichen:entities/land/deer-male.json",
         "dependsOn": [
@@ -31,8 +35,10 @@
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/5/entityCodes/-",
         "value": [
-            "tame-wolf-male",
-            "tame-wolf-female"
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
         ],
         "file": "lichen:entities/land/deer-male.json",
         "dependsOn": [

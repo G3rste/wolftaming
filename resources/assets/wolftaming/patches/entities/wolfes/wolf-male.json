@@ -3,27 +3,33 @@
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
         "value": [
-                "tame-wolf-male",
-                "tame-wolf-female"
-            ],
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
+        ],
         "file": "game:entities/land/wolf-male.json"
     },
     {
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/1/entityCodes/-",
         "value": [
-                "tame-wolf-male",
-                "tame-wolf-female"
-            ],
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
+        ],
         "file": "game:entities/land/wolf-male.json"
     },
     {
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/4/entityCodes/-",
         "value": [
-                "tame-wolf-male",
-                "tame-wolf-female"
-            ],
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
+        ],
         "file": "game:entities/land/wolf-male.json"
     }
 ]
