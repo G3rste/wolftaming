@@ -1,0 +1,13 @@
+[
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
+        ],
+        "file": "game:entities/land/gazelle.json"
+    }
+]
