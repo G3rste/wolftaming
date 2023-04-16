@@ -75,6 +75,11 @@
                 "base": "entity/dog-shepherd-2"
             }
         },
+        "*-shepherd-pup": {
+            "skin": {
+                "base": "entity/dog-shepherd-pup"
+            }
+        },
         "*-pup": {
             "skin": {
                 "base": "game:entity/wolf/wolf-pup1"

@@ -32,13 +32,18 @@
         "shape": {
             "base": "game:entity/land/wolf-pup"
         },
-        "texture": {
-            "base": "game:entity/wolf/wolf-pup1",
-            "alternates": [
-                {
-                    "base": "game:entity/wolf/wolf-pup2"
-                }
-            ]
+        "textureByType": {
+            "dog-shepherd-pup": {
+                "base": "entity/dog-shepherd-pup"
+            },
+            "*": {
+                "base": "game:entity/wolf/wolf-pup1",
+                "alternates": [
+                    {
+                        "base": "game:entity/wolf/wolf-pup2"
+                    }
+                ]
+            }
         },
         "size": 0.9,
         "sizeGrowthFactor": 0.2,
