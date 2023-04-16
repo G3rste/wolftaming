@@ -9,6 +9,12 @@
 			"dog-wolf-female": {
 				"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
 			},
+			"dog-shepherd-male": {
+				"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
+			},
+			"dog-shepherd-female": {
+				"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
+			},
 			"dog-hunting-male": {
 				"base": "wolftaming:armor/torso/dog-hunting/dogarmor-{type}"
 			},
@@ -27,7 +33,9 @@
 			"dog-wolf-male",
 			"dog-wolf-female",
 			"dog-hunting-male",
-			"dog-hunting-female"
+			"dog-hunting-female",
+			"dog-shepherd-male",
+			"dog-shepherd-female"
 		]
 	},
 	"maxstacksize": 1,

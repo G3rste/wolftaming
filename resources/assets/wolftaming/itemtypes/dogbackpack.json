@@ -11,7 +11,9 @@
 			"dog-wolf-male",
 			"dog-wolf-female",
 			"dog-hunting-male",
-			"dog-hunting-female"
+			"dog-hunting-female",
+			"dog-shepherd-male",
+			"dog-shepherd-female"
 		],
 		"backpackslots": 5,
 		"shapes": {
@@ -19,6 +21,12 @@
 				"base": "wolftaming:backpack/dog-wolf"
 			},
 			"dog-wolf-female": {
+				"base": "wolftaming:backpack/dog-wolf"
+			},
+			"dog-shepherd-male": {
+				"base": "wolftaming:backpack/dog-wolf"
+			},
+			"dog-shepherd-female": {
 				"base": "wolftaming:backpack/dog-wolf"
 			},
 			"dog-hunting-male": {

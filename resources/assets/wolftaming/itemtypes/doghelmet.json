@@ -17,6 +17,12 @@
 			"dog-wolf-female": {
 				"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
 			},
+			"dog-shepherd-male": {
+				"base": "wolftaming:armor/helmet/dog-shepherd/doghelmet-{type}"
+			},
+			"dog-shepherd-female": {
+				"base": "wolftaming:armor/helmet/dog-shepherd/doghelmet-{type}"
+			},
 			"dog-hunting-male": {
 				"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
 			},
@@ -35,7 +41,9 @@
 			"dog-wolf-male",
 			"dog-wolf-female",
 			"dog-hunting-male",
-			"dog-hunting-female"
+			"dog-hunting-female",
+			"dog-shepherd-male",
+			"dog-shepherd-female"
 		]
 	},
 	"maxstacksize": 1,

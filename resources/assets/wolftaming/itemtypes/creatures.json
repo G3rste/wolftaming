@@ -8,12 +8,16 @@
             "states": [
                 "tame-wolf-male",
                 "tame-wolf-female",
+                "tame-wolf-pup",
                 "dog-hunting-male",
                 "dog-hunting-female",
-                "tame-wolf-pup",
+                "dog-hunting-pup",
                 "dog-wolf-male",
                 "dog-wolf-female",
-                "dog-wolf-pup"
+                "dog-wolf-pup",
+                "dog-shepherd-male",
+                "dog-shepherd-female",
+                "dog-shepherd-pup"
             ]
         }
     ],
@@ -29,6 +33,12 @@
         },
         "*-hunting-female": {
             "base": "entity/dog-hunting"
+        },
+        "*-shepherd-male": {
+            "base": "entity/dog-shepherd"
+        },
+        "*-shepherd-female": {
+            "base": "entity/dog-shepherd"
         },
         "*-pup": {
             "base": "game:entity/land/wolf-pup"
@@ -53,6 +63,16 @@
         "*-hunting-female": {
             "skin": {
                 "base": "entity/dog-hunting-brown"
+            }
+        },
+        "*-shepherd-male": {
+            "skin": {
+                "base": "entity/dog-shepherd-1"
+            }
+        },
+        "*-shepherd-female": {
+            "skin": {
+                "base": "entity/dog-shepherd-2"
             }
         },
         "*-pup": {

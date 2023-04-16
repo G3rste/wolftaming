@@ -12,7 +12,9 @@
 			"dog-wolf-female",
 			"dog-wolf-pup",
 			"dog-hunting-male",
-			"dog-hunting-female"
+			"dog-hunting-female",
+			"dog-shepherd-male",
+			"dog-shepherd-female"
 		],
 		"handbook": {
 			"groupBy": [
@@ -24,6 +26,12 @@
 				"base": "wolftaming:collar/dog-wolf/collar"
 			},
 			"dog-wolf-female": {
+				"base": "wolftaming:collar/dog-wolf/collar"
+			},
+			"dog-shepherd-male": {
+				"base": "wolftaming:collar/dog-wolf/collar"
+			},
+			"dog-shepherd-female": {
 				"base": "wolftaming:collar/dog-wolf/collar"
 			},
 			"dog-wolf-pup": {

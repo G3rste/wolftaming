@@ -6,7 +6,8 @@
             "code": "type",
             "states": [
                 "wolf",
-                "hunting"
+                "hunting",
+                "shepherd"
             ]
         },
         {
@@ -33,6 +34,9 @@
             "dog-hunting-*": {
                 "base": "entity/dog-hunting"
             },
+            "dog-shepherd-*": {
+                "base": "entity/dog-shepherd"
+            },
             "dog-wolf-*": {
                 "base": "game:entity/land/wolf-male"
             }
@@ -43,6 +47,14 @@
                 "alternates": [
                     {
                         "base": "entity/dog-hunting-brown"
+                    }
+                ]
+            },
+            "dog-shepherd-*": {
+                "base": "entity/dog-shepherd-1",
+                "alternates": [
+                    {
+                        "base": "entity/dog-shepherd-2"
                     }
                 ]
             },

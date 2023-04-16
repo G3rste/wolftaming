@@ -6,7 +6,8 @@
             "code": "type",
             "states": [
                 "wolf",
-                "hunting"
+                "hunting",
+                "shepherd"
             ]
         },
         {
