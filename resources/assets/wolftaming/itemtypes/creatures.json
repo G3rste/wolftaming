@@ -21,68 +21,29 @@
             ]
         }
     ],
-    "shapeByType": {
-        "*-wolf-male": {
-            "base": "game:entity/land/wolf-male"
-        },
-        "*-wolf-female": {
-            "base": "game:entity/land/wolf-male"
-        },
-        "*-hunting-male": {
-            "base": "entity/dog-hunting"
-        },
-        "*-hunting-female": {
-            "base": "entity/dog-hunting"
-        },
-        "*-shepherd-male": {
-            "base": "entity/dog-shepherd"
-        },
-        "*-shepherd-female": {
-            "base": "entity/dog-shepherd"
-        },
-        "*-pup": {
-            "base": "game:entity/land/wolf-pup"
+    "shape": {
+        "baseByType": {
+            "*-wolf-male": "game:entity/land/wolf-male",
+            "*-wolf-female": "game:entity/land/wolf-male",
+            "*-hunting-male": "entity/dog-hunting",
+            "*-hunting-female": "entity/dog-hunting",
+            "*-shepherd-male": "entity/dog-shepherd",
+            "*-shepherd-female": "entity/dog-shepherd",
+            "*-shepherd-pup": "entity/dog-shepherd-pup",
+            "*-pup": "game:entity/land/wolf-pup"
         }
     },
-    "texturesByType": {
-        "*-wolf-male": {
-            "skin": {
-                "base": "game:entity/wolf/wolf1"
-            }
-        },
-        "*-wolf-female": {
-            "skin": {
-                "base": "game:entity/wolf/wolf1"
-            }
-        },
-        "*-hunting-male": {
-            "skin": {
-                "base": "entity/dog-hunting-black"
-            }
-        },
-        "*-hunting-female": {
-            "skin": {
-                "base": "entity/dog-hunting-brown"
-            }
-        },
-        "*-shepherd-male": {
-            "skin": {
-                "base": "entity/dog-shepherd-1"
-            }
-        },
-        "*-shepherd-female": {
-            "skin": {
-                "base": "entity/dog-shepherd-2"
-            }
-        },
-        "*-shepherd-pup": {
-            "skin": {
-                "base": "entity/dog-shepherd-pup"
-            }
-        },
-        "*-pup": {
-            "skin": {
-                "base": "game:entity/wolf/wolf-pup1"
+    "textures": {
+        "skin": {
+            "baseByType": {
+                "*-wolf-male": "game:entity/wolf/wolf1",
+                "*-wolf-female": "game:entity/wolf/wolf1",
+                "*-hunting-male": "entity/dog-hunting-black",
+                "*-hunting-female": "entity/dog-hunting-brown",
+                "*-shepherd-male": "entity/dog-shepherd-1",
+                "*-shepherd-female": "entity/dog-shepherd-2",
+                "*-shepherd-pup": "entity/dog-shepherd-pup",
+                "*-pup": "game:entity/wolf/wolf-pup1"
             }
         }
     },
