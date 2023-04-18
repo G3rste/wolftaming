@@ -10,11 +10,13 @@
 		"validPets": [
 			"dog-wolf-male",
 			"dog-wolf-female",
-			"dog-wolf-pup",
 			"dog-hunting-male",
 			"dog-hunting-female",
 			"dog-shepherd-male",
-			"dog-shepherd-female"
+			"dog-shepherd-female",
+			"dog-wolf-pup",
+			"dog-shepherd-pup",
+			"dog-hunting-pup"
 		],
 		"handbook": {
 			"groupBy": [
@@ -34,14 +36,20 @@
 			"dog-shepherd-female": {
 				"base": "wolftaming:collar/dog-wolf/scarf"
 			},
-			"dog-wolf-pup": {
-				"base": "wolftaming:collar/pup/scarf"
-			},
 			"dog-hunting-male": {
 				"base": "wolftaming:collar/dog-hunting/scarf"
 			},
 			"dog-hunting-female": {
 				"base": "wolftaming:collar/dog-hunting/scarf"
+			},
+			"dog-wolf-pup": {
+				"base": "wolftaming:collar/pup/scarf"
+			},
+			"dog-shepherd-pup": {
+				"base": "wolftaming:collar/pup/scarf"
+			},
+			"dog-hunting-pup": {
+				"base": "wolftaming:collar/pup/scarf"
 			}
 		}
 	},
