@@ -32,12 +32,16 @@
         "shape": {
             "baseByType": {
                 "dog-shepherd-pup": "entity/dog-shepherd-pup",
+                "dog-hunting-pup": "entity/dog-hunting-pup",
                 "*": "game:entity/land/wolf-pup"
             }
         },
         "textureByType": {
             "dog-shepherd-pup": {
                 "base": "entity/dog-shepherd-pup"
+            },
+            "dog-hunting-pup": {
+                "base": "entity/dog-hunting-pup"
             },
             "*": {
                 "base": "game:entity/wolf/wolf-pup1",

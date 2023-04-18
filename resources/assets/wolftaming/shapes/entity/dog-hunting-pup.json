@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"skin": "entity/dog-shepherd-pup"
+		"skin": "entity/dog-hunting-pup"
 	},
 	"elements": [
 		{
@@ -117,40 +117,38 @@
 								},
 								{
 									"name": "R ear",
-									"from": [ 1.2, 2.4, -0.1 ],
-									"to": [ 1.7, 4.9, 1.4 ],
+									"from": [ 0.7, 3.2, -0.8 ],
+									"to": [ 1.2, 5.2, 0.7 ],
 									"unwrapMode": 4,
 									"uv": [ 9.5, 8.5 ],
-									"rotationOrigin": [ 1.7, 2.4, 0.7 ],
-									"rotationX": -20.0,
-									"rotationY": 10.0,
-									"rotationZ": 13.0,
+									"rotationOrigin": [ 1.2, 3.2, 0.0 ],
+									"rotationY": -90.0,
+									"rotationZ": 140.0,
 									"faces": {
-										"north": { "texture": "#skin", "uv": [ 9.5, 9.0, 10.0, 11.5 ] },
-										"east": { "texture": "#skin", "uv": [ 12.0, 9.0, 13.5, 11.5 ] },
-										"south": { "texture": "#skin", "uv": [ 11.5, 9.0, 12.0, 11.5 ] },
-										"west": { "texture": "#skin", "uv": [ 10.0, 9.0, 11.5, 11.5 ] },
+										"north": { "texture": "#skin", "uv": [ 9.5, 9.0, 10.0, 11.0 ] },
+										"east": { "texture": "#skin", "uv": [ 12.0, 9.0, 13.5, 11.0 ] },
+										"south": { "texture": "#skin", "uv": [ 11.5, 9.0, 12.0, 11.0 ] },
+										"west": { "texture": "#skin", "uv": [ 10.0, 9.0, 11.5, 11.0 ] },
 										"up": { "texture": "#skin", "uv": [ 10.0, 8.5, 11.5, 9.0 ], "rotation": 90 },
-										"down": { "texture": "#skin", "uv": [ 10.0, 11.5, 11.5, 12.0 ], "rotation": 90 }
+										"down": { "texture": "#skin", "uv": [ 10.0, 11.0, 11.5, 11.5 ], "rotation": 90 }
 									}
 								},
 								{
 									"name": "L ear",
-									"from": [ 1.2, 2.4, 1.8 ],
-									"to": [ 1.7, 4.9, 3.3 ],
+									"from": [ 0.7, 3.2, 2.5 ],
+									"to": [ 1.2, 5.2, 4.0 ],
 									"unwrapMode": 4,
 									"uv": [ 8.0, 5.5 ],
-									"rotationOrigin": [ 1.7, 2.4, 2.5 ],
-									"rotationX": 20.0,
-									"rotationY": -10.0,
-									"rotationZ": 13.0,
+									"rotationOrigin": [ 1.2, 3.2, 3.2 ],
+									"rotationY": 90.0,
+									"rotationZ": 140.0,
 									"faces": {
-										"north": { "texture": "#skin", "uv": [ 8.0, 6.0, 8.5, 8.5 ] },
-										"east": { "texture": "#skin", "uv": [ 10.5, 6.0, 12.0, 8.5 ] },
-										"south": { "texture": "#skin", "uv": [ 10.0, 6.0, 10.5, 8.5 ] },
-										"west": { "texture": "#skin", "uv": [ 8.5, 6.0, 10.0, 8.5 ] },
+										"north": { "texture": "#skin", "uv": [ 8.0, 6.0, 8.5, 8.0 ] },
+										"east": { "texture": "#skin", "uv": [ 10.5, 6.0, 12.0, 8.0 ] },
+										"south": { "texture": "#skin", "uv": [ 10.0, 6.0, 10.5, 8.0 ] },
+										"west": { "texture": "#skin", "uv": [ 8.5, 6.0, 10.0, 8.0 ] },
 										"up": { "texture": "#skin", "uv": [ 8.5, 5.5, 10.0, 6.0 ], "rotation": 90 },
-										"down": { "texture": "#skin", "uv": [ 8.5, 8.5, 10.0, 9.0 ], "rotation": 90 }
+										"down": { "texture": "#skin", "uv": [ 8.5, 8.0, 10.0, 8.5 ], "rotation": 90 }
 									}
 								}
 							]
@@ -1653,6 +1651,7 @@
 				}
 			]
 		},
+
 		{
 			"name": "Tippytaps",
 			"code": "tippytaps",

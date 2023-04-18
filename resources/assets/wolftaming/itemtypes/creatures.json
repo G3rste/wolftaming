@@ -30,6 +30,7 @@
             "*-shepherd-male": "entity/dog-shepherd",
             "*-shepherd-female": "entity/dog-shepherd",
             "*-shepherd-pup": "entity/dog-shepherd-pup",
+            "*-hunting-pup": "entity/dog-hunting-pup",
             "*-pup": "game:entity/land/wolf-pup"
         }
     },
@@ -43,6 +44,7 @@
                 "*-shepherd-male": "entity/dog-shepherd-1",
                 "*-shepherd-female": "entity/dog-shepherd-2",
                 "*-shepherd-pup": "entity/dog-shepherd-pup",
+                "*-hunting-pup": "entity/dog-hunting-pup",
                 "*-pup": "game:entity/wolf/wolf-pup1"
             }
         }
