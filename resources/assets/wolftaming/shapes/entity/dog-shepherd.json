@@ -87,6 +87,13 @@
 												"down": { "texture": "#skin", "uv": [ 56.0, 61.0, 62.0, 63.0 ] }
 											}
 										}
+									],
+									"attachmentpoints": [
+										{
+											"code": "LeftHand",
+											"posX": "2.0","posY": "0.0","posZ": "4.5",
+											"rotationX": "-0.0","rotationY": "90.0","rotationZ": "0.0"
+										}
 									]
 								},
 								{
