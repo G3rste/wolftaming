@@ -4,5 +4,38 @@
         "path": "/attributes/tradeProps/selling/list/24/code",
         "value": "wolftaming:creature-dog-wolf-pup",
         "file": "game:entities/humanoid/trader-survivalgoods.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/attributes/tradeProps/selling/list/-",
+        "value": [
+            {
+                "code": "wolftaming:creature-dog-hunting-pup",
+                "type": "item",
+                "stacksize": 1,
+                "stock": {
+                    "avg": 2,
+                    "var": 1
+                },
+                "price": {
+                    "avg": 6,
+                    "var": 2
+                }
+            },
+            {
+                "code": "wolftaming:creature-dog-shepherd-pup",
+                "type": "item",
+                "stacksize": 1,
+                "stock": {
+                    "avg": 2,
+                    "var": 1
+                },
+                "price": {
+                    "avg": 6,
+                    "var": 2
+                }
+            }
+        ],
+        "file": "game:entities/humanoid/trader-survivalgoods.json"
     }
 ]
