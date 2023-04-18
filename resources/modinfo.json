@@ -7,9 +7,9 @@
         "G3rste"
     ],
     "description": "Mod that focuses on making wolves tameable and usable by the player.",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "dependencies": {
-        "game": "1.18.0-pre",
-        "petai": "1.6.0"
+        "game": "1.18.0-rc.8",
+        "petai": "1.7.0"
     }
 }
