@@ -22,7 +22,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "lichen:entities/land/white-hart.json",
         "dependsOn": [
@@ -38,7 +40,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "lichen:entities/land/white-hart.json",
         "dependsOn": [

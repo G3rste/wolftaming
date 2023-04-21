@@ -6,7 +6,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "lichen:entities/land/gemsbok-male.json",
         "dependsOn": [
@@ -22,7 +24,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "lichen:entities/land/gemsbok-male.json",
         "dependsOn": [
@@ -38,7 +42,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "lichen:entities/land/gemsbok-male.json",
         "dependsOn": [
@@ -54,7 +60,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "lichen:entities/land/gemsbok-male.json",
         "dependsOn": [
@@ -70,7 +78,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "lichen:entities/land/gemsbok-male.json",
         "dependsOn": [

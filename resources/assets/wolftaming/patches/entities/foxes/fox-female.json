@@ -6,7 +6,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "game:entities/land/fox-female.json"
     },
@@ -17,7 +19,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "game:entities/land/fox-female.json"
     },
@@ -28,7 +32,9 @@
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
-            "dog-hunting-female"
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female"
         ],
         "file": "game:entities/land/fox-female.json"
     }
