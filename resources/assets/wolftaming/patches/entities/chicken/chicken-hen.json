@@ -9,5 +9,19 @@
             "dog-hunting-female"
         ],
         "file": "game:entities/land/chicken-hen.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/11/aitasks/-",
+        "value": {
+            "code": "stayclosetoshepherd",
+            "priority": 1.4,
+            "entityCode": "dog-shepherd-*",
+            "movespeed": 0.015,
+            "maxDistance": 15,
+            "searchRange": 20,
+            "animation": "Run"
+        },
+        "file": "game:entities/land/chicken-hen.json"
     }
 ]

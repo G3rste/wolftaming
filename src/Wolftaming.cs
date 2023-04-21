@@ -12,6 +12,7 @@ namespace Wolftaming
             api.RegisterItemClass("dogtoy", typeof(ItemDogToy));
 
             AiTaskRegistry.Register<AiTaskPlayFetch>("playfetch");
+            AiTaskRegistry.Register<AiTaskStayCloseToShepherd>("stayclosetoshepherd");
         }
     }
 }

@@ -31,5 +31,20 @@
             "dog-hunting-female"
         ],
         "file": "game:entities/land/pig-wild-male.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/9/aitasks/-",
+        "value": {
+            "code": "stayclosetoshepherd",
+            "priority": 1.4,
+            "entityCode": "dog-shepherd-*",
+            "movespeed": 0.03,
+            "maxDistance": 15,
+            "searchRange": 20,
+            "animation": "Run",
+            "animationSpeed": 5
+        },
+        "file": "game:entities/land/pig-wild-male.json"
     }
 ]
