@@ -405,8 +405,16 @@
             },
             {
                 "code": "health",
-                "currenthealth": 25,
-                "maxhealth": 25
+                "currenthealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-shepherd-*": 20,
+                    "dog-hunting-*": 20
+                },
+                "maxhealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-shepherd-*": 20,
+                    "dog-hunting-*": 20
+                }
             },
             {
                 "code": "deaddecay",
@@ -519,8 +527,16 @@
                         ],
                         "isCommandable": true,
                         "priority": 3,
-                        "damage": 5,
-                        "damageTier": 2,
+                        "damageByType": {
+                            "dog-wolf-*": 5,
+                            "dog-shepherd-*": 8,
+                            "dog-hunting-*": 5
+                        },
+                        "damageTierByType": {
+                            "dog-wolf-*": 2,
+                            "dog-shepherd-*": 3,
+                            "dog-hunting-*": 2
+                        },
                         "damageType": "SlashingAttack",
                         "slot": 1,
                         "mincooldown": 1500,
@@ -542,14 +558,22 @@
                         ],
                         "isCommandable": true,
                         "priority": 2.9,
-                        "movespeed": 0.045,
+                        "movespeedByType": {
+                            "dog-wolf-*": 0.045,
+                            "dog-shepherd-*": 0.045,
+                            "dog-hunting-*": 0.07
+                        },
                         "seekingRange": 15,
                         "belowTempSeekingRange": 25,
                         "belowTempThreshold": -5,
                         "animation": "Run",
                         "leapAtTarget": true,
                         "leapAnimation": null,
-                        "animationSpeed": 2.2,
+                        "animationSpeedByType": {
+                            "dog-wolf-*": 2.2,
+                            "dog-shepherd-*": 2.2,
+                            "dog-hunting-*": 3.4
+                        },
                         "leapChance": 0.01
                     },
                     {
