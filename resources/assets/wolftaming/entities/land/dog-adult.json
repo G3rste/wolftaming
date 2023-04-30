@@ -563,9 +563,7 @@
                             "dog-shepherd-*": 0.045,
                             "dog-hunting-*": 0.07
                         },
-                        "seekingRange": 15,
-                        "belowTempSeekingRange": 25,
-                        "belowTempThreshold": -5,
+                        "seekingRange": 30,
                         "animation": "Run",
                         "leapAtTarget": true,
                         "leapAnimation": null,
