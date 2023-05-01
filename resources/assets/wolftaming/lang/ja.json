@@ -1,6 +1,6 @@
 {
     "comment_description": "Japanese localization file for 'Wolftaming'.",
-    "comment_version": "Mod Version: v1.7.1",
+    "comment_version": "Mod Version: v1.7.2",
     "comment_author": "Translated By: Macoto Hino",
     "comment_technical_details": "Machine translation using PCOT and DeepL.",
 
@@ -19,6 +19,9 @@
     "item-creature-dog-shepherd-male": "ジャーマン・シェパード(オス)",
     "item-creature-dog-shepherd-female": "ジャーマン・シェパード(メス)",
     "item-creature-dog-shepherd-pup": "ジャーマン・シェパード(子イヌ)",	
+    "item-dead-creature-dog-shepherd-male": "死んだジャーマン・シェパード(オス)",
+    "item-dead-creature-dog-shepherd-female": "死んだジャーマン・シェパード(メス)",
+    "item-dead-creature-dog-shepherd-pup": "死んだジャーマン・シェパード(子イヌ)",
     "item-dogcollar-basic-copper": "シンプルなイヌの首輪(銅)",
     "item-dogcollar-basic-tinbronze": "シンプルなイヌの首輪(スズ青銅)",
     "item-dogcollar-basic-blackbronze": "シンプルなイヌの首輪(黒青銅)",
