@@ -14,7 +14,7 @@ namespace Wolftaming
 
         public override bool ShouldExecute()
         {
-            if (lastCheck + 20000 < entity.Api.World.ElapsedMilliseconds)
+            if (lastCheck + 20000 < entity.Api.World.ElapsedMilliseconds && entity.WatchedAttributes.GetInt("generation", 0) > 0)
             {
                 lastCheck = entity.World.ElapsedMilliseconds;
                 var candidate = entity.World.GetNearestEntity(entity.ServerPos.XYZ, range, 2, (e) =>
