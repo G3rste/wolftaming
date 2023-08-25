@@ -41,6 +41,11 @@ namespace Wolftaming
 
                 double dist = entity.ServerPos.SquareDistanceTo(x, y, z);
 
+                if(dist > maxDistance * maxDistance * 4){
+                    targetEntity = null;
+                    return false;
+                }
+
                 return dist > maxDistance * maxDistance;
             }
             return false;
