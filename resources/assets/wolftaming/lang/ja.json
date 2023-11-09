@@ -1,9 +1,4 @@
 {
-    "comment_description": "Japanese localization file for 'Wolftaming'.",
-    "comment_version": "Mod Version: v1.7.2",
-    "comment_author": "Translated By: Macoto Hino",
-    "comment_technical_details": "Machine translation using PCOT and DeepL.",
-
     "item-creature-dog-wolf-male": "ウルフハウンド(オス)",
     "item-creature-dog-wolf-female": "ウルフハウンド(メス)",
     "item-creature-dog-wolf-pup": "ウルフハウンド(子イヌ)",
@@ -18,7 +13,7 @@
     "item-dead-creature-dog-hunting-pup": "死んだ狩猟犬(子イヌ)",
     "item-creature-dog-shepherd-male": "ジャーマン・シェパード(オス)",
     "item-creature-dog-shepherd-female": "ジャーマン・シェパード(メス)",
-    "item-creature-dog-shepherd-pup": "ジャーマン・シェパード(子イヌ)",	
+    "item-creature-dog-shepherd-pup": "ジャーマン・シェパード(子イヌ)",
     "item-dead-creature-dog-shepherd-male": "死んだジャーマン・シェパード(オス)",
     "item-dead-creature-dog-shepherd-female": "死んだジャーマン・シェパード(メス)",
     "item-dead-creature-dog-shepherd-pup": "死んだジャーマン・シェパード(子イヌ)",
@@ -53,9 +48,7 @@
     "item-dogscarf-gray": "イヌのスカーフ(灰色)",
     "item-dogscarf-mordant": "イヌのスカーフ(媒染剤)",
     "item-dogscarf-plain": "イヌのスカーフ",
-
     "item-dogbackpack": "イヌ用バックパック",
-
     "item-dogarmor-basic": "イヌ用防具（毛皮）",
     "itemdesc-dogarmor-basic": "ダメージを軽減(小)します。",
     "item-doghelmet-basic": "イヌ用ヘルメット（頭蓋骨）",
@@ -67,11 +60,9 @@
     "item-dogarmor-iron": "イヌ用防具(鉄)",
     "itemdesc-dogarmor-iron": "ダメージを軽減(大)します。",
     "item-doghelmet-iron": "イヌ用ヘルメット(鉄)",
-    "itemdesc-doghelmet-iron": "ダメージを軽減(大)します。",	
-
+    "itemdesc-doghelmet-iron": "ダメージを軽減(大)します。",
     "item-dogtoy": "犬の玩具",
     "itemdesc-dogtoy": "投げてみて。愛犬も大喜び。",
-
     "wolftamingguide-title": "飼い馴らしガイド：オオカミ",
     "wolftamingguide-text": "<strong>飼い馴らしガイド：オオカミ</strong>\n\nこのガイドでは、MOD「オオカミの飼い馴らし」によって導入された飼い馴らしの仕組みについて説明します。\n\nオオカミを飼い馴らすには、まずオオカミの子イヌを誘拐する必要があります。飼い始めたら、骨や生肉などを与えて手懐けて下さい。子イヌが食べ物を受け取る度に、現在の飼い馴らしの進行状況を示すチャットメッセージが表示されるはずです。懐き度が100％に達すると、オオカミはイヌに変身します。\n見ていると、ペットがどれだけ懐いているか、小さなインジケーターがあることに気付きます。 ほとんどのコマンドは、一定の懐き度が達成されて初めて実行されます。\n\n新しく手に入れたペットにコマンドを与えるには、ペットをしゃがんで右クリックすると、使用可能なコマンドの一覧が表示されます。\n\nオオカミのコマンドは、ほとんど直感的に理解出来ます。しかし、「待機」というコマンドは、その場所に留まらせるのではなく、10ブロック程度の小さな円を作って、その中を自由に歩き回れるようにするものです。\n\n疲れてくると、イヌは特定の場所を好んで寝るようになります。大人のイヌは亜麻布やラッシュマットを敷いたブロック、子犬はベッドを好みます。\n\nイヌの首輪の種類は少ないですが、愛犬を少しでもお洒落に見せる為の補助として、様々な種類があります。さらに、小型のバックパックや防具、ヘルメットも身につけることが出来ます。"
 }

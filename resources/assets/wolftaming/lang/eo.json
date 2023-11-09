@@ -1,16 +1,4 @@
 {
-    "item-creature-dog-wolf-male": "Perro (macho)",
-    "item-creature-dog-wolf-female": "Perro (hembra)",
-    "item-creature-dog-wolf-pup": "Perro (cachorro)",
-    "item-dead-creature-dog-wolf-male": "Perro muerto (macho)",
-    "item-dead-creature-dog-wolf-female": "Perro muerto (hembra)",
-    "item-dead-creature-dog-wolf-pup": "Perro muerto (cachorro)",
-    "item-creature-dog-hunting-male": "Perro (macho)",
-    "item-creature-dog-hunting-female": "Perro (hembra)",
-    "item-creature-dog-hunting-pup": "Perro (cachorro)",
-    "item-dead-creature-dog-hunting-male": "Perro muerto (macho)",
-    "item-dead-creature-dog-hunting-female": "Perro muerto (hembra)",
-    "item-dead-creature-dog-hunting-pup": "Perro muerto (cachorro)",
     "item-dogcollar-basic-copper": "Collares para perros sencillos (Cobre)",
     "item-dogcollar-basic-tinbronze": "Collares para perros sencillos (Bronce estañado)",
     "item-dogcollar-basic-blackbronze": "Collares para perros sencillos (Bronce negro)",
@@ -41,9 +29,7 @@
     "item-dogscarf-white": "Bufanda para perros (blanco)",
     "item-dogscarf-gray": "Bufanda para perros (gris)",
     "item-dogscarf-plain": "Bufanda para perros",
-
     "item-dogbackpack": "Mochila para perros",
-
     "item-dogarmor-basic": "Armadura para perros (piel)",
     "itemdesc-dogarmor-basic": "Mitiga una pequeña cantidad de daño.",
     "item-doghelmet-basic": "Casco para perros (calavera)",
@@ -56,10 +42,8 @@
     "itemdesc-dogarmor-iron": "Mitiga una gran cantidad de daño.",
     "item-doghelmet-iron": "Casco para perros (hierro)",
     "itemdesc-doghelmet-iron": "Mitiga una gran cantidad de daño.",
-
     "item-dogtoy": "Juguete para perros",
     "itemdesc-dogtoy": "¡Tírarlo! A tu perro le encantará.",
-
     "wolftamingguide-title": "Guía de doma: lobos",
     "wolftamingguide-text": "<strong>Guía de doma: lobos</strong>\n\nEsta guía es un intento de explicar la mecánica de domesticación introducida por el \"Wolf Taming\" mod.\n\nPara domar a un lobo, primero debes secuestrar un cachorro de lobo. Una vez que esté en su poder, comience a domar al cachorro alimentándolo con huesos o cualquier tipo de carne cruda. Cada vez que el cachorro recibe comida, debe recibir un mensaje de chat que enumera el progreso de domesticación actual. Cuando el progreso de domesticación alcanza el 100%, el lobo se transforma en un perro.\nNotarás un pequeño indicador de cuán obediente es tu mascota al mirarla. La mayoría de los comandos solo se ejecutarán una vez que se alcance una cierta cantidad de obediencia.\n\nPara dar órdenes a tu mascota recién adquirida, agáchate y haz clic derecho sobre ella y aparecerá un cuadro de diálogo con una lista de todos los comandos disponibles.\n\nLa mayoría de los comandos del lobo son bastante sencillos. Sin embargo, el comando \"Quedate aqui\" no hará que tu perro se quede en el mismo lugar, sino que le dará un pequeño círculo de unos 10 bloques para que deambule libremente.\n\nUna vez cansados, sus perros preferirán dormir en ciertos lugares. Los perros adultos preferirán bloques cubiertos con lino o esteras de junco, mientras que los cachorros preferirán camas.\n\nHay una pequeña variedad de diferentes collares para perros que te ayudarán a hacer que tu perro luzca un poco más elegante. Además, el perro puede llevar una mochila pequeña, así como una armadura y un casco."
 }

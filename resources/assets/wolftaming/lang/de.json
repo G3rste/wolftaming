@@ -1,22 +1,4 @@
 {
-    "item-creature-dog-wolf-male": "Wolfshund (männlich)",
-    "item-creature-dog-wolf-female": "Wolfshund (weiblich)",
-    "item-creature-dog-wolf-pup": "Wolfshund (Welpe)",
-    "item-dead-creature-dog-wolf-male": "Toter Wolfshund (männlich)",
-    "item-dead-creature-dog-wolf-female": "Tote Wolfshund (weiblich)",
-    "item-dead-creature-dog-wolf-pup": "Toter Wolfshund (Welpe)",
-    "item-creature-dog-hunting-male": "Jagdhund (männlich)",
-    "item-creature-dog-hunting-female": "Jagdhund (weiblich)",
-    "item-creature-dog-hunting-pup": "Jagdhund (Welpe)",
-    "item-dead-creature-dog-hunting-male": "Toter Jagdhund (männlich)",
-    "item-dead-creature-dog-hunting-female": "Tote Jagdhund (weiblich)",
-    "item-dead-creature-dog-hunting-pup": "Toter Jagdhund (Welpe)",
-    "item-creature-dog-shepherd-male": "Schäferhund (männlich)",
-    "item-creature-dog-shepherd-female": "Schäferhund (weiblich)",
-    "item-creature-dog-shepherd-pup": "Schäferhund (Welpe)",
-    "item-dead-creature-dog-shepherd-male": "Toter Schäferhund (männlich)",
-    "item-dead-creature-dog-shepherd-female": "Tote Schäferhund (weiblich)",
-    "item-dead-creature-dog-shepherd-pup": "Toter Schäferhund (Welpe)",
     "item-dogcollar-basic-copper": "Schlichtes Hundehalsband (Kupfer)",
     "item-dogcollar-basic-tinbronze": "Schlichtes Hundehalsband (Zinnbronze)",
     "item-dogcollar-basic-blackbronze": "Schlichtes Hundehalsband (Schwarzbronze)",
@@ -46,10 +28,9 @@
     "item-dogscarf-yellow": "Hundehalstuch (gelb)",
     "item-dogscarf-white": "Hundehalstuch (weiß)",
     "item-dogscarf-gray": "Hundehalstuch (grau)",
+    "item-dogscarf-mordant": "Hundehalstuch (Beizmittel)",
     "item-dogscarf-plain": "Hundehalstuch",
-
     "item-dogbackpack": "Hunderucksack",
-
     "item-dogarmor-basic": "Hunderüstung (Pelz)",
     "itemdesc-dogarmor-basic": "Fängt einen kleinen Teil des erlittenen Schadens ab.",
     "item-doghelmet-basic": "Hundehelm (Knochen)",
@@ -62,10 +43,8 @@
     "itemdesc-dogarmor-iron": "Fängt einen großen Teil des erlittenen Schadens ab.",
     "item-doghelmet-iron": "Hundehelm (Eisen)",
     "itemdesc-doghelmet-iron": "Fängt einen großen Teil des erlittenen Schadens ab.",
-
     "item-dogtoy": "Hundespielzeug",
     "itemdesc-dogtoy": "Wirf es! Dein Hund wird es lieben.",
-
     "wolftamingguide-title": "Zähmen: Wölfe",
-    "wolftamingguide-text": "<strong>Wölfe zähmen</strong>\n\nUm einen Wolf zu zähmen, muss zunächst ein Wolfsjunges entführt werden. Das Jungtier kann anschließend mit rohem Fleisch oder Knochen gefüttert werden, um den Zähmvorgang einzuleiten. Eine Chatnachricht nach dem füttern gibt den aktuellen Zähmfortschritt an. Sowie der Fortschritt 100% erreicht, wird aus dem wilden Wolfsjungen ein zahmer Hundewelpe.\n\nUm dem Hund Befehle zu erteilen, duck dich und rechtsklicke auf ihn. Ein kleiner Dialog mit allen verfügbaren Befehlen wird erscheinen.\nDie meisten Befehle können allerdings erst ausgeführt werden, wenn dein Hund ein gewisses Gehorsamkeitslevel erreicht hat.\n\nDie meisten Befehle sind ziemlich selbsterklärend, doch der \"Bleib\"-Befehl wird deinen Hund nicht an Ort und stelle festnageln. Er bekommt einen Kreis von etwa 20 Blöcken Durchmesser, in dem er sich frei bewegen kann.\n\nHunde bevorzugen zum schlafen Haustierkissen in der passenden Größe.\n\nEs gibt eine kleine Auswahl an Halsbändern, mit denen du deinen Hund personalisieren kannst. Außerdem kann dem Hund ein Rucksack sowie eine Rüstung angelegt werden."
+    "wolftamingguide-text": "<strong>Wölfe zähmen</strong>\n\nUm einen Wolf zu zähmen, muss zunächst ein Wolfsjunges entführt werden. Das Jungtier kann anschließend mit rohem Fleisch oder Knochen gefüttert werden, um den Zähmvorgang einzuleiten. Eine Chatnachricht nach dem füttern gibt den aktuellen Zähmfortschritt an. Sowie der Fortschritt 100% erreicht, wird aus dem wilden Wolfsjungen ein zahmer Hundewelpe.\n\nUm dem Hund Befehle zu erteilen, duck dich und rechtsklicke auf ihn. Ein kleiner Dialog mit allen verfügbaren Befehlen wird erscheinen.\nDie meisten Befehle können allerdings erst ausgeführt werden, wenn dein Hund ein gewisses Gehorsamkeitslevel erreicht hat.\n\nDie meisten Befehle sind ziemlich selbsterklärend, doch der \"Bleib\"-Befehl wird deinen Hund nicht an Ort und stelle festnageln. Er bekommt einen Kreis von etwa 20 Blöcken Durchmesser, in dem er sich frei bewegen kann.\n\nHunde bevorzugen zum schlafen verschiedene Plätze. Erwachsene Hunde werden lieber auf Blöcken mit Matten oder Leinen schlafen, während Welpen Betten bevorzugen.\n\nEs gibt eine kleine Auswahl an Halsbändern, mit denen du deinen Hund personalisieren kannst. Außerdem kann dem Hund ein Rucksack sowie eine Rüstung angelegt werden."
 }
