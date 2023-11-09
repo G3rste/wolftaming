@@ -577,18 +577,18 @@
                     {
                         "code": "simplecommand",
                         "priority": 3,
-                        "minduration": 2000,
-                        "maxduration": 10000,
-                        "priorityForCancel": 2.8,
+                        "minduration": 10000,
+                        "maxduration": 30000,
+                        "priorityForCancel": 1.9,
                         "animation": "Sit",
                         "command": "sit"
                     },
                     {
                         "code": "simplecommand",
                         "priority": 3,
-                        "minduration": 5000,
-                        "maxduration": 15000,
-                        "priorityForCancel": 2.8,
+                        "minduration": 30000,
+                        "maxduration": 120000,
+                        "priorityForCancel": 1.9,
                         "animation": "Lie",
                         "animationSpeed": 0.8,
                         "command": "lay"
@@ -622,7 +622,7 @@
                         "priorityForCancel": 1.9,
                         "command": "stay",
                         "movespeed": 0.006,
-                        "maxDistance": 10,
+                        "maxDistance": 4,
                         "searchRange": 40,
                         "animation": "Walk"
                     },

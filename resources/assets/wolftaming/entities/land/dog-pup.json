@@ -76,6 +76,16 @@
                         "commandName": "speak",
                         "commandType": "SIMPLE",
                         "minObedience": 0.6
+                    },
+                    {
+                        "commandName": "followmaster",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.8
+                    },
+                    {
+                        "commandName": "stay",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.8
                     }
                 ]
             },
@@ -229,6 +239,16 @@
                         "commandName": "speak",
                         "commandType": "SIMPLE",
                         "minObedience": 0.6
+                    },
+                    {
+                        "commandName": "followmaster",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.8
+                    },
+                    {
+                        "commandName": "stay",
+                        "commandType": "COMPLEX",
+                        "minObedience": 0.8
                     }
                 ]
             },
@@ -348,18 +368,18 @@
                     {
                         "code": "simplecommand",
                         "priority": 3,
-                        "minduration": 2000,
-                        "maxduration": 10000,
-                        "priorityForCancel": 2.9,
+                        "minduration": 5000,
+                        "maxduration": 15000,
+                        "priorityForCancel": 1.5,
                         "animation": "Sit",
                         "command": "sit"
                     },
                     {
                         "code": "simplecommand",
                         "priority": 3,
-                        "minduration": 5000,
-                        "maxduration": 15000,
-                        "priorityForCancel": 2.9,
+                        "minduration": 10000,
+                        "maxduration": 30000,
+                        "priorityForCancel": 1.5,
                         "animation": "Lie",
                         "command": "lay"
                     },
@@ -382,14 +402,25 @@
                         "animation": "Run"
                     },
                     {
-                        "code": "stayclosetoentity",
-                        "priority": 1.4,
-                        "entityCode": "player",
+                        "code": "followmaster",
+                        "priority": 1.6,
+                        "command": "followmaster",
                         "movespeed": 0.02,
                         "animationSpeed": 4,
                         "maxDistance": 15,
                         "searchRange": 25,
-                        "animation": "Run"
+                        "animation": "Run",
+                        "allowTeleport": true
+                    },
+                    {
+                        "code": "stay",
+                        "priority": 1.6,
+                        "command": "stay",
+                        "maxDistance": 3,
+                        "searchRange": 40,
+                        "movespeed": 0.004,
+                        "animationSpeed": 2,
+                        "animation": "Walk"
                     },
                     {
                         "code": "stayclosetoentity",
