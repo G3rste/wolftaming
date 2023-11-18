@@ -9,7 +9,7 @@
     "description": "Mod that focuses on making wolves tameable and usable by the player.",
     "version": "2.0.0",
     "dependencies": {
-        "game": "1.18.8",
+        "game": "1.19.0-pre",
         "petai": "2.0.0"
     }
 }
