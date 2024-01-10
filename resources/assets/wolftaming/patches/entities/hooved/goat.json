@@ -1,7 +1,7 @@
 [
     {
         "op": "addeach",
-        "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
+        "path": "/server/behaviors/12/aitasks/0/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -10,11 +10,11 @@
             "dog-shepherd-male",
             "dog-shepherd-female"
         ],
-        "file": "game:entities/land/hooved/deer.json"
+        "file": "game:entities/land/hooved/goat.json"
     },
     {
         "op": "addeach",
-        "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
+        "path": "/server/behaviors/12/aitasks/1/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -23,11 +23,11 @@
             "dog-shepherd-male",
             "dog-shepherd-female"
         ],
-        "file": "game:entities/land/hooved/deer.json"
+        "file": "game:entities/land/hooved/goat.json"
     },
     {
         "op": "addeach",
-        "path": "/server/behaviors/10/aitasks/2/entityCodes/-",
+        "path": "/server/behaviors/12/aitasks/2/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -36,6 +36,6 @@
             "dog-shepherd-male",
             "dog-shepherd-female"
         ],
-        "file": "game:entities/land/hooved/deer.json"
+        "file": "game:entities/land/hooved/goat.json"
     }
 ]
