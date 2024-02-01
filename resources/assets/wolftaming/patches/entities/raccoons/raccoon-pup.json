@@ -8,7 +8,9 @@
             "dog-hunting-male",
             "dog-hunting-female",
             "dog-shepherd-male",
-            "dog-shepherd-female"
+            "dog-shepherd-female",
+            "dog-corgi-male",
+            "dog-corgi-female"
         ],
         "file": "game:entities/land/raccoon-pup.json"
     }
