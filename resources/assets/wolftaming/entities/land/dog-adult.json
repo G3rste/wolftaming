@@ -7,7 +7,8 @@
             "states": [
                 "wolf",
                 "hunting",
-                "shepherd"
+                "shepherd",
+                "corgi"
             ]
         },
         {
@@ -18,9 +19,15 @@
             ]
         }
     ],
-    "hitboxSize": {
-        "x": 1.2,
-        "y": 1
+    "hitboxSizeByType": {
+        "*-corgi-*": {
+            "x": 1,
+            "y": 0.7
+        },
+        "*": {
+            "x": 1.2,
+            "y": 1
+        }
     },
     "deadHitboxSize": {
         "x": 1,
@@ -30,15 +37,16 @@
     "drops": [],
     "client": {
         "renderer": "Shape",
+        "sizeByType": {
+            "*-corgi-*": 1.2,
+            "*": 1
+        },
         "shapeByType": {
-            "dog-hunting-*": {
-                "base": "entity/dog-hunting"
-            },
-            "dog-shepherd-*": {
-                "base": "entity/dog-shepherd"
-            },
             "dog-wolf-*": {
                 "base": "game:entity/land/wolf-male"
+            },
+            "*": {
+                "base": "wolftaming:entity/dog-{type}"
             }
         },
         "textureByType": {
@@ -55,6 +63,20 @@
                 "alternates": [
                     {
                         "base": "entity/dog-shepherd-2"
+                    }
+                ]
+            },
+            "dog-corgi-*": {
+                "base": "entity/dog-corgi-1",
+                "alternates": [
+                    {
+                        "base": "entity/dog-corgi-2"
+                    },
+                    {
+                        "base": "entity/dog-corgi-3"
+                    },
+                    {
+                        "base": "entity/dog-corgi-4"
                     }
                 ]
             },
@@ -408,12 +430,14 @@
                 "currenthealthByType": {
                     "dog-wolf-*": 25,
                     "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20
+                    "dog-hunting-*": 20,
+                    "dog-corgi-*": 10
                 },
                 "maxhealthByType": {
                     "dog-wolf-*": 25,
                     "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20
+                    "dog-hunting-*": 20,
+                    "dog-corgi-*": 10
                 }
             },
             {
@@ -530,12 +554,14 @@
                         "damageByType": {
                             "dog-wolf-*": 5,
                             "dog-shepherd-*": 8,
-                            "dog-hunting-*": 5
+                            "dog-hunting-*": 5,
+                            "dog-corgi-*": 3
                         },
                         "damageTierByType": {
                             "dog-wolf-*": 2,
                             "dog-shepherd-*": 3,
-                            "dog-hunting-*": 2
+                            "dog-hunting-*": 2,
+                            "dog-corgi-*": 1
                         },
                         "damageType": "SlashingAttack",
                         "slot": 1,
@@ -561,7 +587,8 @@
                         "movespeedByType": {
                             "dog-wolf-*": 0.045,
                             "dog-shepherd-*": 0.045,
-                            "dog-hunting-*": 0.07
+                            "dog-hunting-*": 0.07,
+                            "dog-corgi-*": 0.035
                         },
                         "seekingRange": 30,
                         "animation": "Run",
@@ -570,7 +597,8 @@
                         "animationSpeedByType": {
                             "dog-wolf-*": 2.2,
                             "dog-shepherd-*": 2.2,
-                            "dog-hunting-*": 3.4
+                            "dog-hunting-*": 3.4,
+                            "dog-corgi-*": 2.2
                         },
                         "leapChance": 0.01
                     },
@@ -727,6 +755,10 @@
                         "priorityForCancel": 1.35,
                         "movespeed": 0.006,
                         "animation": "Walk",
+                        "animationSpeedByType":{
+                            "*-corgi-*": 2,
+                            "*": 1
+                        },
                         "preferredLightLevel": 20
                     },
                     {

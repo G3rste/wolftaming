@@ -7,7 +7,8 @@
             "states": [
                 "wolf",
                 "hunting",
-                "shepherd"
+                "shepherd",
+                "corgi"
             ]
         },
         {
@@ -17,9 +18,15 @@
             ]
         }
     ],
-    "hitboxSize": {
-        "x": 0.85,
-        "y": 0.5
+    "hitboxSizeByType": {
+        "*-corgi-pup": {
+            "x": 0.6,
+            "y": 0.35
+        },
+        "*": {
+            "x": 0.85,
+            "y": 0.5
+        }
     },
     "deadHitboxSize": {
         "x": 0.75,
@@ -29,27 +36,42 @@
     "drops": [],
     "client": {
         "renderer": "Shape",
+        "sizeByType": {
+            "*-corgi-*": 0.7,
+            "*": 1
+        },
         "shape": {
             "baseByType": {
-                "dog-shepherd-pup": "entity/dog-shepherd-pup",
-                "dog-hunting-pup": "entity/dog-hunting-pup",
-                "*": "game:entity/land/wolf-pup"
+                "dog-wolf-pup": "game:entity/land/wolf-pup",
+                "dog-corgi-pup": "entity/dog-corgi",
+                "*": "entity/dog-{type}-{age}"
             }
         },
         "textureByType": {
-            "dog-shepherd-pup": {
-                "base": "entity/dog-shepherd-pup"
-            },
-            "dog-hunting-pup": {
-                "base": "entity/dog-hunting-pup"
-            },
-            "*": {
+            "dog-wolf-pup": {
                 "base": "game:entity/wolf/wolf-pup1",
                 "alternates": [
                     {
                         "base": "game:entity/wolf/wolf-pup2"
                     }
                 ]
+            },
+            "dog-corgi-pup": {
+                "base": "entity/dog-corgi-1",
+                "alternates": [
+                    {
+                        "base": "entity/dog-corgi-2"
+                    },
+                    {
+                        "base": "entity/dog-corgi-3"
+                    },
+                    {
+                        "base": "entity/dog-corgi-4"
+                    }
+                ]
+            },
+            "*": {
+                "base": "entity/dog-{type}-pup"
             }
         },
         "size": 0.9,

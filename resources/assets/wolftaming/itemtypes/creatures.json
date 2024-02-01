@@ -17,7 +17,10 @@
                 "dog-wolf-pup",
                 "dog-shepherd-male",
                 "dog-shepherd-female",
-                "dog-shepherd-pup"
+                "dog-shepherd-pup",
+                "dog-corgi-male",
+                "dog-corgi-female",
+                "dog-corgi-pup"
             ]
         }
     ],
@@ -29,9 +32,12 @@
             "*-hunting-female": "entity/dog-hunting",
             "*-shepherd-male": "entity/dog-shepherd",
             "*-shepherd-female": "entity/dog-shepherd",
+            "*-corgi-male": "entity/dog-corgi",
+            "*-corgi-female": "entity/dog-corgi",
             "*-shepherd-pup": "entity/dog-shepherd-pup",
+            "*-corgi-pup": "entity/dog-corgi",
             "*-hunting-pup": "entity/dog-hunting-pup",
-            "*-pup": "game:entity/land/wolf-pup"
+            "*-wolf-pup": "game:entity/land/wolf-pup"
         }
     },
     "textures": {
@@ -43,7 +49,10 @@
                 "*-hunting-female": "entity/dog-hunting-brown",
                 "*-shepherd-male": "entity/dog-shepherd-1",
                 "*-shepherd-female": "entity/dog-shepherd-2",
+                "*-corgi-male": "entity/dog-corgi-1",
+                "*-corgi-female": "entity/dog-corgi-2",
                 "*-shepherd-pup": "entity/dog-shepherd-pup",
+                "*-corgi-pup": "entity/dog-corgi-3",
                 "*-hunting-pup": "entity/dog-hunting-pup",
                 "*-pup": "game:entity/wolf/wolf-pup1"
             }
@@ -62,7 +71,7 @@
     },
     "materialDensity": 600,
     "guiTransformByType": {
-        "*-pup": {
+        "@.*-pup|.*-corgi-.*": {
             "rotate": true,
             "translation": {
                 "x": 3,
@@ -102,7 +111,7 @@
         }
     },
     "tpHandTransformByType": {
-        "*-pup": {
+        "@.*-pup|.*-corgi-.*": {
             "translation": {
                 "x": -0.4,
                 "y": 0,
@@ -135,7 +144,7 @@
         }
     },
     "fpHandTransformByType": {
-        "*-pup": {
+        "@.*-pup|.*-corgi-.*": {
             "translation": {
                 "x": 0.4,
                 "y": 0.1,

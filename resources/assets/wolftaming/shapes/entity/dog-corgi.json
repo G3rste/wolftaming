@@ -1381,8 +1381,8 @@
 					"frame": 0,
 					"elements": {
 						"body": { "offsetX": 1.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -44.0 },
-						"neck": { "rotationX": -6.0, "rotationY": 3.0, "rotationZ": 3.0 },
-						"head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.0 },
+						"neck": { "offsetX": 0.0, "offsetY": -1.0, "offsetZ": 0.0, "rotationX": -6.0, "rotationY": 3.0, "rotationZ": 25.0 },
+						"head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
 						"jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -5.0 },
 						"abdomen": { "offsetX": -1.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 19.0 },
 						"tail": { "rotationX": 0.0, "rotationY": 3.0, "rotationZ": 19.0 },
@@ -1399,8 +1399,8 @@
 					"frame": 15,
 					"elements": {
 						"body": { "offsetX": 1.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -45.0 },
-						"neck": { "rotationX": -6.0, "rotationY": 3.0, "rotationZ": 4.0 },
-						"head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.0 },
+						"neck": { "rotationX": -6.0, "rotationY": 3.0, "rotationZ": 26.0 },
+						"head": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 14.0 },
 						"jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -5.0 },
 						"R front leg": { "offsetX": 0.0, "offsetY": -0.2, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 37.0 },
 						"L front leg": { "offsetX": 0.0, "offsetY": -0.3, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 40.0 },
