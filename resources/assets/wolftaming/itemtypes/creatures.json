@@ -6,9 +6,6 @@
         {
             "code": "type",
             "states": [
-                "tame-wolf-male",
-                "tame-wolf-female",
-                "tame-wolf-pup",
                 "dog-hunting-male",
                 "dog-hunting-female",
                 "dog-hunting-pup",
