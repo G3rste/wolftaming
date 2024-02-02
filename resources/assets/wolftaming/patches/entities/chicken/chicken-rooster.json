@@ -38,10 +38,9 @@
         "value": {
             "code": "stayclosetoshepherd",
             "priority": 1.4,
-            "entityCode": "dog-shepherd-*",
             "movespeed": 0.015,
-            "maxDistance": 15,
-            "searchRange": 20,
+            "maxDistance": 7,
+            "searchRange": 10,
             "animation": "Run"
         },
         "file": "game:entities/land/chicken-rooster.json"

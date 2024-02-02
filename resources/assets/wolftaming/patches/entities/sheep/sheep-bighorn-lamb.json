@@ -16,10 +16,9 @@
         "value": {
             "code": "stayclosetoshepherd",
             "priority": 1.4,
-            "entityCode": "dog-shepherd-*",
             "movespeed": 0.025,
-            "maxDistance": 15,
-            "searchRange": 20,
+            "maxDistance": 7,
+            "searchRange": 10,
             "animation": "Run",
             "animationSpeed": 4
         },
