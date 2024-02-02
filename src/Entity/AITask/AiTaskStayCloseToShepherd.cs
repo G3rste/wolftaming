@@ -17,17 +17,8 @@ namespace Wolftaming
             if (lastCheck + 20000 < entity.Api.World.ElapsedMilliseconds && entity.WatchedAttributes.GetInt("generation", 0) > 0)
             {
                 lastCheck = entity.World.ElapsedMilliseconds;
-                var candidate = entity.World.GetNearestEntity(entity.ServerPos.XYZ, range, 2, (e) =>
-                {
-                    if (entityCode.EndsWith("*"))
-                    {
-                        return e.Code.Path.StartsWith(entityCode.Substring(0, entityCode.Length - 1));
-                    }
-                    else
-                    {
-                        return e.Code.Path.Equals(entityCode);
-                    }
-                });
+                var candidate = entity.World.GetNearestEntity(entity.ServerPos.XYZ, range, 2, e => e?.Properties?.Attributes?["IsShepherd"].AsBool() == true);
+
                 if (candidate != null)
                 {
                     targetEntity = candidate;
@@ -41,7 +32,8 @@ namespace Wolftaming
 
                 double dist = entity.ServerPos.SquareDistanceTo(x, y, z);
 
-                if(dist > maxDistance * maxDistance * 4){
+                if (dist > maxDistance * maxDistance * 4)
+                {
                     targetEntity = null;
                     return false;
                 }

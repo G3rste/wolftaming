@@ -20,7 +20,7 @@
         }
     ],
     "hitboxSizeByType": {
-        "*-corgi-*": {
+        "dog-corgi-*": {
             "x": 1,
             "y": 0.7
         },
@@ -35,10 +35,16 @@
     },
     "eyeHeight": 0.9,
     "drops": [],
+    "attributes": {
+        "IsShepherdByType": {
+            "@dog-corgi-.*|dog-shepherd-.*": true,
+            "*": false
+        }
+    },
     "client": {
         "renderer": "Shape",
         "sizeByType": {
-            "*-corgi-*": 1.2,
+            "dog-corgi-*": 1.2,
             "*": 1
         },
         "shapeByType": {
@@ -755,7 +761,7 @@
                         "priorityForCancel": 1.35,
                         "movespeed": 0.006,
                         "animation": "Walk",
-                        "animationSpeedByType":{
+                        "animationSpeedByType": {
                             "*-corgi-*": 2,
                             "*": 1
                         },
