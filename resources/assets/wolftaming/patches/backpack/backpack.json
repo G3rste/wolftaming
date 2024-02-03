@@ -19,7 +19,11 @@
             "dogwolf8",
             "dogwolf9",
             "dogwolfpup1",
-            "dogwolfpup2"
+            "dogwolfpup2",
+            "dogcorgi1",
+            "dogcorgi2",
+            "dogcorgi3",
+            "dogcorgi4"
         ],
         "file": "petai:itemtypes/backpack.json"
     },
@@ -106,6 +110,33 @@
     },
     {
         "op": "add",
+        "path": "/attributes/canPickUp/dog-corgi-male",
+        "value": {
+            "type": "dogcorgi",
+            "appendTextureIndex": true
+        },
+        "file": "petai:itemtypes/backpack.json"
+    },
+    {
+        "op": "add",
+        "path": "/attributes/canPickUp/dog-corgi-female",
+        "value": {
+            "type": "dogcorgi",
+            "appendTextureIndex": true
+        },
+        "file": "petai:itemtypes/backpack.json"
+    },
+    {
+        "op": "add",
+        "path": "/attributes/canPickUp/dog-corgi-pup",
+        "value": {
+            "type": "dogcorgi",
+            "appendTextureIndex": true
+        },
+        "file": "petai:itemtypes/backpack.json"
+    },
+    {
+        "op": "add",
         "path": "/attributes/attachShape/baseByType/@backpack-dogshepherd(1|2)",
         "value": "wolftaming:backpack/backpack-shepherd",
         "file": "petai:itemtypes/backpack.json"
@@ -142,6 +173,12 @@
     },
     {
         "op": "add",
+        "path": "/attributes/attachShape/baseByType/@backpack-dogcorgi(1|2|3|4)",
+        "value": "wolftaming:backpack/backpack-corgi",
+        "file": "petai:itemtypes/backpack.json"
+    },
+    {
+        "op": "add",
         "path": "/texturesByType/backpack-dog*",
         "value": {
             "backpack": {
@@ -155,6 +192,10 @@
                     "backpack-doghunting1": "wolftaming:entity/dog-hunting-black",
                     "backpack-doghunting2": "wolftaming:entity/dog-hunting-brown",
                     "backpack-doghuntingpup": "wolftaming:entity/dog-hunting-pup",
+                    "backpack-dogcorgi1": "wolftaming:entity/dog-corgi-1",
+                    "backpack-dogcorgi2": "wolftaming:entity/dog-corgi-2",
+                    "backpack-dogcorgi3": "wolftaming:entity/dog-corgi-3",
+                    "backpack-dogcorgi4": "wolftaming:entity/dog-corgi-4",
                     "backpack-dogwolf1": "game:entity/wolf/wolf1",
                     "backpack-dogwolf2": "game:entity/wolf/wolf2",
                     "backpack-dogwolf3": "game:entity/wolf/wolf3",
