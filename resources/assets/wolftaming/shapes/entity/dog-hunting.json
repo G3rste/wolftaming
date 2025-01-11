@@ -8,7 +8,6 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"skin": "entity/dog-hunting-black"
 	},
 	"elements": [
 		{
@@ -157,6 +156,38 @@
 										"up": { "texture": "#skin", "uv": [ 25.0, 44.0, 26.0, 46.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
 										"down": { "texture": "#skin", "uv": [ 26.0, 44.0, 27.0, 46.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] }
 									}
+								},
+								{
+									"name": "Helmet",
+									"from": [ 0.0, 5.0, 0.0 ],
+									"to": [ 4.5, 6.0, 5.5 ],
+									"uv": [ 0.0, 0.0 ],
+									"rotationOrigin": [ 0.0, 5.0, 0.0 ],
+									"faces": {
+									},
+									"attachmentpoints": [
+										{
+											"code": "HelmetAP",
+											"posX": "0.0","posY": "0.0","posZ": "0.0",
+											"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Collar",
+							"from": [ 1.0, -1.0, -1.0 ],
+							"to": [ 2.0, 7.0, 6.0 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 1.0, -1.0, -1.0 ],
+							"faces": {
+							},
+							"attachmentpoints": [
+								{
+									"code": "CollarAP",
+									"posX": "0.0","posY": "0.0","posZ": "0.0",
+									"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 								}
 							]
 						}
@@ -353,6 +384,38 @@
 								"up": { "texture": "#skin", "uv": [ 53.0, 20.0, 55.7225, 22.7225 ] },
 								"down": { "texture": "#skin", "uv": [ 55.75, 20.0, 58.4725, 22.7225 ] }
 							}
+						}
+					]
+				},
+				{
+					"name": "BackPack",
+					"from": [ 0.0, 0.0, -1.0 ],
+					"to": [ 8.0, 7.0, 8.0 ],
+					"uv": [ 0.0, 0.0 ],
+					"rotationOrigin": [ 0.0, 0.0, -1.0 ],
+					"faces": {
+					},
+					"attachmentpoints": [
+						{
+							"code": "BackPackAP",
+							"posX": "0.0","posY": "0.0","posZ": "0.0",
+							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
+						}
+					]
+				},
+				{
+					"name": "Armor",
+					"from": [ 0.0, 7.0, -1.0 ],
+					"to": [ 8.0, 9.0, 8.0 ],
+					"uv": [ 0.0, 0.0 ],
+					"rotationOrigin": [ 0.0, 7.0, -1.0 ],
+					"faces": {
+					},
+					"attachmentpoints": [
+						{
+							"code": "ArmorAP",
+							"posX": "0.0","posY": "0.0","posZ": "0.0",
+							"rotationX": "0.0","rotationY": "0.0","rotationZ": "0.0"
 						}
 					]
 				}
@@ -1393,6 +1456,56 @@
 		{
 			"name": "Sleep",
 			"code": "sleep",
+			"quantityframes": 30,
+			"onActivityStopped": "EaseOut",
+			"onAnimationEnd": "Repeat",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"Body": { "offsetX": 0.0, "offsetY": -7.127999776840206, "offsetZ": 0.0, "rotationX": -8.0, "rotationY": 11.0, "rotationZ": -8.0 },
+						"neck": { "rotationX": 3.0, "rotationY": 47.0, "rotationZ": 28.0 },
+						"head": { "offsetX": -0.08909999721050259, "offsetY": 0.0, "offsetZ": -0.2672999916315078, "rotationX": -6.0, "rotationY": 14.0, "rotationZ": -6.0 },
+						"jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -5.0 },
+						"abdomen": { "rotationX": -6.0, "rotationY": -14.0, "rotationZ": 3.0 },
+						"tail": { "rotationX": -19.0, "rotationY": -25.0, "rotationZ": -44.0 },
+						"tail end": { "rotationX": 0.0, "rotationY": -19.0, "rotationZ": 0.0 },
+						"left back leg": { "offsetX": 0.0, "offsetY": 0.8909999721050258, "offsetZ": 0.0, "rotationX": -44.0, "rotationY": 11.0, "rotationZ": 47.0 },
+						"left leg back end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -97.0 },
+						"right back leg": { "offsetX": 0.0, "offsetY": 0.8909999721050258, "offsetZ": 0.0, "rotationX": 28.0, "rotationY": -6.0, "rotationZ": 28.0 },
+						"right leg back end": { "offsetX": -0.8909999721050258, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -105.0 },
+						"left leg": { "offsetX": 0.0, "offsetY": 0.8909999721050258, "offsetZ": 0.0, "rotationX": 6.0, "rotationY": 17.0, "rotationZ": -50.0 },
+						"left leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -28.0 },
+						"right leg": { "rotationX": 8.0, "rotationY": 14.0, "rotationZ": -64.0 },
+						"right leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -17.0 }
+					}
+				},
+				{
+					"frame": 15,
+					"elements": {
+						"Body": { "offsetX": 0.08909999721050259, "offsetY": -7.127999776840206, "offsetZ": 0.0, "rotationX": -8.0, "rotationY": 11.0, "rotationZ": -9.0 },
+						"neck": { "rotationX": 3.0, "rotationY": 47.0, "rotationZ": 29.0 },
+						"head": { "offsetX": -0.08909999721050259, "offsetY": 0.0, "offsetZ": -0.2672999916315078, "rotationX": -6.0, "rotationY": 14.0, "rotationZ": -5.0 },
+						"jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -5.0 },
+						"abdomen": { "rotationX": -6.0, "rotationY": -14.0, "rotationZ": 4.0 },
+						"tail": { "rotationX": -19.0, "rotationY": -25.0, "rotationZ": -44.0 },
+						"tail end": { "rotationX": 0.0, "rotationY": -19.0, "rotationZ": 0.0 },
+						"left back leg": { "offsetX": 0.0, "offsetY": 0.8909999721050258, "offsetZ": 0.0, "rotationX": -44.0, "rotationY": 11.0, "rotationZ": 47.0 },
+						"left leg back end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -97.0 },
+						"right back leg": { "offsetX": 0.0, "offsetY": 0.8909999721050258, "offsetZ": 0.0, "rotationX": 28.0, "rotationY": -6.0, "rotationZ": 28.0 },
+						"right leg back end": { "offsetX": -0.8909999721050258, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -105.0 },
+						"left leg": { "offsetX": 0.0, "offsetY": 0.8909999721050258, "offsetZ": 0.0, "rotationX": 6.0, "rotationY": 17.0, "rotationZ": -48.0 },
+						"left leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -29.0 },
+						"right leg": { "rotationX": 8.0, "rotationY": 14.0, "rotationZ": -62.0 },
+						"right leg end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -18.0 }
+					}
+				}
+			]
+		},
+
+		{
+			"name": "Wounded-Idle",
+			"code": "wounded-idle",
 			"quantityframes": 30,
 			"onActivityStopped": "EaseOut",
 			"onAnimationEnd": "Repeat",

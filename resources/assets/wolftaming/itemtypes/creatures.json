@@ -23,8 +23,8 @@
     ],
     "shape": {
         "baseByType": {
-            "*-wolf-male": "game:entity/land/wolf-male",
-            "*-wolf-female": "game:entity/land/wolf-male",
+            "*-wolf-male": "entity/dog-wolf",
+            "*-wolf-female": "entity/dog-wolf",
             "*-hunting-male": "entity/dog-hunting",
             "*-hunting-female": "entity/dog-hunting",
             "*-shepherd-male": "entity/dog-shepherd",
@@ -40,8 +40,8 @@
     "textures": {
         "skin": {
             "baseByType": {
-                "*-wolf-male": "game:entity/wolf/wolf1",
-                "*-wolf-female": "game:entity/wolf/wolf1",
+                "*-wolf-male": "entity/wolf/wolf1",
+                "*-wolf-female": "entity/wolf/wolf1",
                 "*-hunting-male": "entity/dog-hunting-black",
                 "*-hunting-female": "entity/dog-hunting-brown",
                 "*-shepherd-male": "entity/dog-shepherd-1",

@@ -1,8 +1,8 @@
 [
     {
         "op": "replace",
-        "path": "/attributes/tradeProps/buying/list/21/code",
+        "path": "/buying/list/21/code",
         "value": "wolftaming:creature-dog-wolf-pup",
-        "file": "game:entities/humanoid/trader-agriculture.json"
+        "file": "game:config/tradelists/trader-agriculture.json"
     }
 ]

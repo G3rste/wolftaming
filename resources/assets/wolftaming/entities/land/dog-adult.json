@@ -1,6 +1,6 @@
 {
     "code": "dog",
-    "class": "EntityPet",
+    "class": "EntityAgent",
     "variantGroups": [
         {
             "code": "type",
@@ -48,9 +48,6 @@
             "*": 1
         },
         "shapeByType": {
-            "dog-wolf-*": {
-                "base": "game:entity/land/wolf-male"
-            },
             "*": {
                 "base": "wolftaming:entity/dog-{type}"
             }
@@ -87,31 +84,31 @@
                 ]
             },
             "dog-wolf-*": {
-                "base": "game:entity/wolf/wolf1",
+                "base": "entity/wolf/wolf1",
                 "alternates": [
                     {
-                        "base": "game:entity/wolf/wolf2"
+                        "base": "entity/wolf/wolf2"
                     },
                     {
-                        "base": "game:entity/wolf/wolf3"
+                        "base": "entity/wolf/wolf3"
                     },
                     {
-                        "base": "game:entity/wolf/wolf4"
+                        "base": "entity/wolf/wolf4"
                     },
                     {
-                        "base": "game:entity/wolf/wolf5"
+                        "base": "entity/wolf/wolf5"
                     },
                     {
-                        "base": "game:entity/wolf/wolf6"
+                        "base": "entity/wolf/wolf6"
                     },
                     {
-                        "base": "game:entity/wolf/wolf7"
+                        "base": "entity/wolf/wolf7"
                     },
                     {
-                        "base": "game:entity/wolf/wolf8"
+                        "base": "entity/wolf/wolf8"
                     },
                     {
-                        "base": "game:entity/wolf/wolf9"
+                        "base": "entity/wolf/wolf9"
                     }
                 ]
             }
@@ -257,8 +254,69 @@
                 }
             },
             {
+                "code": "selectionboxes",
+                "selectionBoxes": [
+                    "BackPackAP",
+                    "ArmorAP",
+                    "HelmetAP",
+                    "CollarAP"
+                ]
+            },
+            {
+                "code": "petinventory",
+                "wearableSlots": [
+                    {
+                        "code": "backpack-{type}",
+                        "forCategoryCodes": [
+                            "backpack-dog"
+                        ],
+                        "attachmentPointCode": "BackPackAP"
+                    },
+                    {
+                        "code": "armor-{type}",
+                        "forCategoryCodes": [
+                            "armor-dog"
+                        ],
+                        "attachmentPointCode": "ArmorAP"
+                    },
+                    {
+                        "code": "helmet-{type}",
+                        "forCategoryCodes": [
+                            "helmet-dog"
+                        ],
+                        "attachmentPointCode": "HelmetAP"
+                    },
+                    {
+                        "code": "collar-{type}",
+                        "forCategoryCodes": [
+                            "collar-dog"
+                        ],
+                        "attachmentPointCode": "CollarAP"
+                    }
+                ]
+            },
+            {
+                "code": "mortallywoundable",
+                "whenBelowHealth": 6
+            },
+            {
+                "code": "health",
+                "currenthealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-shepherd-*": 20,
+                    "dog-hunting-*": 20,
+                    "dog-corgi-*": 10
+                },
+                "maxhealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-shepherd-*": 20,
+                    "dog-hunting-*": 20,
+                    "dog-corgi-*": 10
+                }
+            },
+            {
                 "code": "ropetieable",
-                "minGeneration": 2
+                "minGeneration": 0
             }
         ],
         "animations": [
@@ -293,6 +351,13 @@
             {
                 "code": "sleep",
                 "animation": "sleep",
+                "easeInSpeed": 4,
+                "easeOutSpeed": 4,
+                "blendMode": "average"
+            },
+            {
+                "code": "wounded-idle",
+                "animation": "wounded-idle",
                 "easeInSpeed": 4,
                 "easeOutSpeed": 4,
                 "blendMode": "average"
@@ -432,21 +497,6 @@
                 "stepHeight": 1.1251
             },
             {
-                "code": "health",
-                "currenthealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20,
-                    "dog-corgi-*": 10
-                },
-                "maxhealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20,
-                    "dog-corgi-*": 10
-                }
-            },
-            {
                 "code": "deaddecay",
                 "hoursToDecay": 96,
                 "decayedBlock": "carcass-medium"
@@ -542,6 +592,67 @@
                         "accumType": "noaccum"
                     }
                 ]
+            },
+            {
+                "code": "selectionboxes",
+                "selectionBoxes": [
+                    "BackPackAP",
+                    "ArmorAP",
+                    "HelmetAP",
+                    "CollarAP"
+                ]
+            },
+            {
+                "code": "petinventory",
+                "wearableSlots": [
+                    {
+                        "code": "backpack-{type}",
+                        "forCategoryCodes": [
+                            "backpack-dog"
+                        ],
+                        "attachmentPointCode": "BackPackAP"
+                    },
+                    {
+                        "code": "armor-{type}",
+                        "forCategoryCodes": [
+                            "armor-dog"
+                        ],
+                        "attachmentPointCode": "ArmorAP"
+                    },
+                    {
+                        "code": "helmet-{type}",
+                        "forCategoryCodes": [
+                            "helmet-dog"
+                        ],
+                        "attachmentPointCode": "HelmetAP"
+                    },
+                    {
+                        "code": "collar-{type}",
+                        "forCategoryCodes": [
+                            "collar-dog"
+                        ],
+                        "attachmentPointCode": "CollarAP"
+                    }
+                ]
+            },
+            {
+                "code": "mortallywoundable",
+                "whenBelowHealth": 6
+            },
+            {
+                "code": "health",
+                "currenthealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-shepherd-*": 20,
+                    "dog-hunting-*": 20,
+                    "dog-corgi-*": 10
+                },
+                "maxhealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-shepherd-*": 20,
+                    "dog-hunting-*": 20,
+                    "dog-corgi-*": 10
+                }
             },
             {
                 "code": "taskai",
@@ -819,7 +930,7 @@
             },
             {
                 "code": "ropetieable",
-                "minGeneration": 2
+                "minGeneration": 0
             },
             {
                 "code": "pettableextended",

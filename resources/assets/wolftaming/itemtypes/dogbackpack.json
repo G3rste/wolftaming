@@ -1,44 +1,27 @@
 {
 	"code": "dogbackpack",
-	"class": "ItemPetAccessory",
 	"shape": {
 		"base": "backpack/dog-wolf"
 	},
 	"attributes": {
-		"wearableAttachment": true,
-		"cothingType": "BACK",
-		"validPets": [
-			"dog-wolf-male",
-			"dog-wolf-female",
-			"dog-hunting-male",
-			"dog-hunting-female",
-			"dog-shepherd-male",
-			"dog-shepherd-female"
-		],
-		"backpackslots": 5,
-		"shapes": {
-			"dog-wolf-male": {
-				"base": "wolftaming:backpack/dog-wolf"
-			},
-			"dog-wolf-female": {
-				"base": "wolftaming:backpack/dog-wolf"
-			},
-			"dog-shepherd-male": {
-				"base": "wolftaming:backpack/dog-wolf"
-			},
-			"dog-shepherd-female": {
-				"base": "wolftaming:backpack/dog-wolf"
-			},
-			"dog-hunting-male": {
-				"base": "wolftaming:backpack/dog-hunting"
-			},
-			"dog-hunting-female": {
-				"base": "wolftaming:backpack/dog-hunting"
+		"attachableToEntity": {
+			"categoryCode": "backpack-dog",
+			"attachedShapeBySlotCode": {
+				"backpack-hunting": {
+					"base": "wolftaming:backpack/dog-hunting"
+				},
+				"*": {
+					"base": "wolftaming:backpack/dog-wolf"
+				}
 			}
+		},
+		"backpack": {
+			"quantitySlots": 8
 		}
 	},
 	"maxstacksize": 1,
 	"heldTpIdleAnimation": "holdbothhandslarge",
+	"behaviors": [ { "name": "HeldBag" } ],
 	"creativeinventory": {
 		"general": [
 			"*"

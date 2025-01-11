@@ -1,7 +1,7 @@
 [
     {
         "op": "add",
-        "path": "/attributes/tradeProps/selling/list/-",
+        "path": "/selling/list/-",
         "value": {
             "code": "wolftaming:creature-dog-corgi-pup",
             "type": "item",
@@ -15,6 +15,6 @@
                 "var": 3
             }
         },
-        "file": "game:entities/humanoid/trader-luxuries.json"
+        "file": "game:config/tradelists/trader-luxuries.json"
     }
 ]

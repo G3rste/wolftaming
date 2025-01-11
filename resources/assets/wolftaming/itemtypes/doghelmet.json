@@ -1,6 +1,5 @@
 {
 	"code": "doghelmet",
-	"class": "ItemPetAccessory",
 	"shapeByType": {
 		"*-iron": {
 			"base": "armor/helmet/doghelmet-{type}-inventory"
@@ -10,41 +9,25 @@
 		}
 	},
 	"attributes": {
-		"shapes": {
-			"dog-wolf-male": {
-				"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
-			},
-			"dog-wolf-female": {
-				"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
-			},
-			"dog-shepherd-male": {
-				"base": "wolftaming:armor/helmet/dog-shepherd/doghelmet-{type}"
-			},
-			"dog-shepherd-female": {
-				"base": "wolftaming:armor/helmet/dog-shepherd/doghelmet-{type}"
-			},
-			"dog-hunting-male": {
-				"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
-			},
-			"dog-hunting-female": {
-				"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
+		"attachableToEntity": {
+			"categoryCode": "helmet-dog",
+			"attachedShapeBySlotCode": {
+				"helmet-wolf": {
+					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
+				},
+				"helmet-hunting": {
+					"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
+				},
+				"helmet-shepherd": {
+					"base": "wolftaming:armor/helmet/dog-shepherd/doghelmet-{type}"
+				}
 			}
 		},
 		"damageReductionByType": {
 			"*-basic": 0.3,
 			"*-tinbronze": 0.4,
 			"*-iron": 0.5
-		},
-		"wearableAttachment": true,
-		"cothingType": "HEAD",
-		"validPets": [
-			"dog-wolf-male",
-			"dog-wolf-female",
-			"dog-hunting-male",
-			"dog-hunting-female",
-			"dog-shepherd-male",
-			"dog-shepherd-female"
-		]
+		}
 	},
 	"maxstacksize": 1,
 	"heldTpIdleAnimation": "holdunderarm",

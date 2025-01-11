@@ -1,6 +1,6 @@
 {
     "code": "dog",
-    "class": "EntityPet",
+    "class": "EntityAgent",
     "variantGroups": [
         {
             "code": "type",
@@ -190,7 +190,7 @@
             },
             {
                 "code": "ropetieable",
-                "minGeneration": 2
+                "minGeneration": 0
             }
         ],
         "animations": [
@@ -597,7 +597,7 @@
             },
             {
                 "code": "ropetieable",
-                "minGeneration": 2
+                "minGeneration": 0
             },
             {
                 "code": "pettableextended",

@@ -1,68 +1,27 @@
 {
 	"code": "dogscarf",
-	"class": "ItemPetAccessory",
 	"shape": {
 		"base": "collar/dog-wolf/scarf"
 	},
 	"attributes": {
-		"wearableAttachment": true,
-		"cothingType": "NECK",
-		"validPets": [
-			"dog-wolf-male",
-			"dog-wolf-female",
-			"dog-hunting-male",
-			"dog-hunting-female",
-			"dog-shepherd-male",
-			"dog-shepherd-female",
-			"dog-corgi-male",
-			"dog-corgi-female",
-			"dog-wolf-pup",
-			"dog-shepherd-pup",
-			"dog-hunting-pup",
-			"dog-corgi-pup"
-		],
+		"attachableToEntity": {
+			"categoryCode": "collar-dog",
+			"attachedShapeBySlotCode": {
+				"collar-wolf": {
+					"base": "wolftaming:collar/dog-wolf/scarf"
+				},
+				"collar-hunting": {
+					"base": "wolftaming:collar/dog-hunting/scarf"
+				},
+				"collar-shepherd": {
+					"base": "wolftaming:collar/dog-wolf/scarf"
+				}
+			}
+		},
 		"handbook": {
 			"groupBy": [
 				"dogscarf-*"
 			]
-		},
-		"shapes": {
-			"dog-wolf-male": {
-				"base": "wolftaming:collar/dog-wolf/scarf"
-			},
-			"dog-wolf-female": {
-				"base": "wolftaming:collar/dog-wolf/scarf"
-			},
-			"dog-shepherd-male": {
-				"base": "wolftaming:collar/dog-wolf/scarf"
-			},
-			"dog-shepherd-female": {
-				"base": "wolftaming:collar/dog-wolf/scarf"
-			},
-			"dog-hunting-male": {
-				"base": "wolftaming:collar/dog-hunting/scarf"
-			},
-			"dog-hunting-female": {
-				"base": "wolftaming:collar/dog-hunting/scarf"
-			},
-			"dog-corgi-male": {
-				"base": "wolftaming:collar/pup/scarf"
-			},
-			"dog-corgi-female": {
-				"base": "wolftaming:collar/pup/scarf"
-			},
-			"dog-wolf-pup": {
-				"base": "wolftaming:collar/pup/scarf"
-			},
-			"dog-shepherd-pup": {
-				"base": "wolftaming:collar/pup/scarf"
-			},
-			"dog-hunting-pup": {
-				"base": "wolftaming:collar/pup/scarf"
-			},
-			"dog-corgi-pup": {
-				"base": "wolftaming:collar/pup/scarf"
-			}
 		}
 	},
 	"maxstacksize": 1,

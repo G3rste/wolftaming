@@ -1,13 +1,13 @@
 [
     {
         "op": "replace",
-        "path": "/attributes/tradeProps/selling/list/24/code",
+        "path": "/selling/list/24/code",
         "value": "wolftaming:creature-dog-wolf-pup",
-        "file": "game:entities/humanoid/trader-survivalgoods.json"
+        "file": "game:config/tradelists/trader-survivalgoods.json"
     },
     {
         "op": "addeach",
-        "path": "/attributes/tradeProps/selling/list/-",
+        "path": "/selling/list/-",
         "value": [
             {
                 "code": "wolftaming:creature-dog-hunting-pup",
@@ -36,6 +36,6 @@
                 }
             }
         ],
-        "file": "game:entities/humanoid/trader-survivalgoods.json"
+        "file": "game:config/tradelists/trader-survivalgoods.json"
     }
 ]

@@ -1542,6 +1542,56 @@
 		},
 
 		{
+			"name": "Wounded-Idle",
+			"code": "wounded-idle",
+			"quantityframes": 30,
+			"onActivityStopped": "EaseOut",
+			"onAnimationEnd": "Repeat",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"body": { "offsetX": 0.0, "offsetY": -3.5, "offsetZ": 0.0, "rotationX": -12.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"neck": { "rotationX": 3.0, "rotationY": 47.0, "rotationZ": 28.0 },
+						"head": { "offsetX": -0.1, "offsetY": 0.0, "offsetZ": -0.3, "rotationX": -6.0, "rotationY": 14.0, "rotationZ": -6.0 },
+						"jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -5.0 },
+						"abdomen": { "rotationX": -6.0, "rotationY": -14.0, "rotationZ": 3.0 },
+						"tail": { "offsetX": 0.5, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 6.0, "rotationY": 3.0, "rotationZ": -8.0 },
+						"tail end": { "rotationX": 11.0, "rotationY": -30.0, "rotationZ": -25.0 },
+						"L back leg": { "offsetX": 0.0, "offsetY": -0.3, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 17.0, "rotationZ": 6.0 },
+						"L back feet": { "offsetX": 0.3, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -91.0 },
+						"R back leg": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 11.0, "rotationY": -19.0, "rotationZ": 3.0 },
+						"R back feet": { "offsetX": 0.4, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -102.0 },
+						"L front leg": { "offsetX": 0.0, "offsetY": 0.5, "offsetZ": 0.0, "rotationX": 3.0, "rotationY": 11.0, "rotationZ": -55.0 },
+						"L front feet": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -25.0 },
+						"R front leg": { "offsetX": 0.0, "offsetY": 0.5, "offsetZ": 0.0, "rotationX": 8.0, "rotationY": 3.0, "rotationZ": -47.0 },
+						"R front feet": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -42.0 }
+					}
+				},
+				{
+					"frame": 15,
+					"elements": {
+						"body": { "offsetX": 0.1, "offsetY": -3.5, "offsetZ": 0.0, "rotationX": -12.0, "rotationY": 0.0, "rotationZ": -1.0 },
+						"neck": { "rotationX": 3.0, "rotationY": 47.0, "rotationZ": 29.0 },
+						"head": { "offsetX": -0.1, "offsetY": 0.0, "offsetZ": -0.3, "rotationX": -6.0, "rotationY": 14.0, "rotationZ": -5.0 },
+						"jaw": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -5.0 },
+						"R front leg": { "offsetX": 0.0, "offsetY": 0.5, "offsetZ": 0.0, "rotationX": 8.0, "rotationY": 3.0, "rotationZ": -46.0 },
+						"R front feet": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -42.0 },
+						"L front leg": { "offsetX": 0.0, "offsetY": 0.5, "offsetZ": 0.0, "rotationX": 3.0, "rotationY": 11.0, "rotationZ": -54.0 },
+						"L front feet": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -25.0 },
+						"abdomen": { "rotationX": -6.0, "rotationY": -14.0, "rotationZ": 4.0 },
+						"L back leg": { "offsetX": 0.0, "offsetY": -0.3, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 17.0, "rotationZ": 6.0 },
+						"L back feet": { "offsetX": 0.3, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -91.0 },
+						"R back leg": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 11.0, "rotationY": -19.0, "rotationZ": 3.0 },
+						"R back feet": { "offsetX": 0.4, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -102.0 },
+						"tail": { "offsetX": 0.5, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 6.0, "rotationY": 3.0, "rotationZ": -8.0 },
+						"tail end": { "rotationX": 11.0, "rotationY": -30.0, "rotationZ": -25.0 }
+					}
+				}
+			]
+		},
+
+		{
 			"name": "Eat",
 			"code": "eat",
 			"quantityframes": 50,
