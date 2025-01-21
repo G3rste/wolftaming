@@ -330,7 +330,7 @@
             },
             {
                 "code": "die",
-                "animation": "death",
+                "animation": "die",
                 "animationSpeed": 1.25,
                 "weight": 10,
                 "blendMode": "average",
@@ -340,6 +340,13 @@
                     ]
                 }
             },
+			{
+				"code": "dead",
+				"animation": "dead",
+				"weight": 10,
+				"easeInSpeed": 3,
+				"blendMode": "average"
+			},
             {
                 "code": "idle",
                 "animation": "idle",

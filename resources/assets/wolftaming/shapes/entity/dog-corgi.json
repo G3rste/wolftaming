@@ -1307,6 +1307,34 @@
 		},
 
 		{
+			"name": "Dead",
+			"code": "dead",
+			"quantityframes": 2,
+			"onActivityStopped": "Stop",
+			"onAnimationEnd": "Hold",
+			"keyframes": [
+				{
+					"frame": 0,
+					"elements": {
+						"body": { "offsetX": -4.0, "offsetY": -2.0, "offsetZ": -2.0, "rotationX": -11.0, "rotationY": -14.0, "rotationZ": 5.0 },
+						"neck": { "offsetX": 0.0, "offsetY": -0.5, "offsetZ": 0.0, "rotationX": 25.0, "rotationY": 3.0, "rotationZ": 28.0 },
+						"head": { "offsetX": 0.0, "offsetY": 0.4, "offsetZ": 0.0, "rotationX": -25.0, "rotationY": 14.0, "rotationZ": -22.0 },
+						"R ear": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 50.0 },
+						"L ear": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 53.0 },
+						"R front leg": { "offsetX": 0.0, "offsetY": 1.5, "offsetZ": 0.0, "rotationX": -8.0, "rotationY": -17.0, "rotationZ": 64.0 },
+						"L front leg": { "offsetX": 0.0, "offsetY": 1.4, "offsetZ": 0.0, "rotationX": -28.0, "rotationY": -3.0, "rotationZ": 72.0 },
+						"abdomen": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -6.0 },
+						"L back leg": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 42.0 },
+						"L back feet": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 6.0 },
+						"R back leg": { "offsetX": 0.0, "offsetY": 0.0, "offsetZ": 0.0, "rotationX": -50.0, "rotationY": 25.0, "rotationZ": 39.0 },
+						"R back feet": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": 0.0 },
+						"tail end": { "rotationX": 0.0, "rotationY": 0.0, "rotationZ": -11.0 }
+					}
+				}
+			]
+		},
+
+		{
 			"name": "Hurt",
 			"code": "hurt",
 			"quantityframes": 30,
