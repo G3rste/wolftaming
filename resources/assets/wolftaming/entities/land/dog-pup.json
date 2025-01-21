@@ -34,6 +34,9 @@
     },
     "eyeHeight": 0.4,
     "drops": [],
+    "attributes": {
+        "minGenerationToAllowHealing": 0
+    },
     "client": {
         "renderer": "Shape",
         "sizeByType": {

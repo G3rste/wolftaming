@@ -36,6 +36,7 @@
     "eyeHeight": 0.9,
     "drops": [],
     "attributes": {
+        "minGenerationToAllowHealing": 0,
         "IsShepherdByType": {
             "@dog-corgi-.*|dog-shepherd-.*": true,
             "*": false
