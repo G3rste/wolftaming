@@ -15,6 +15,9 @@
 				},
 				"collar-shepherd": {
 					"base": "wolftaming:collar/dog-wolf/scarf"
+				},
+				"collar-corgi": {
+					"base": "wolftaming:collar/dog-corgi/scarf"
 				}
 			}
 		},

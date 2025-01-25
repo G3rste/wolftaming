@@ -256,45 +256,61 @@
             },
             {
                 "code": "selectionboxes",
-                "selectionBoxes": [
-                    "BackPackAP",
-                    "ArmorAP",
-                    "HelmetAP",
-                    "CollarAP"
-                ]
+                "selectionBoxesByType": {
+                    "dog-corgi-*": [
+                        "CollarAP"
+                    ],
+                    "*": [
+                        "BackPackAP",
+                        "ArmorAP",
+                        "HelmetAP",
+                        "CollarAP"
+                    ]
+                }
             },
             {
                 "code": "petinventory",
-                "wearableSlots": [
-                    {
-                        "code": "backpack-{type}",
-                        "forCategoryCodes": [
-                            "backpack-dog"
-                        ],
-                        "attachmentPointCode": "BackPackAP"
-                    },
-                    {
-                        "code": "armor-{type}",
-                        "forCategoryCodes": [
-                            "armor-dog"
-                        ],
-                        "attachmentPointCode": "ArmorAP"
-                    },
-                    {
-                        "code": "helmet-{type}",
-                        "forCategoryCodes": [
-                            "helmet-dog"
-                        ],
-                        "attachmentPointCode": "HelmetAP"
-                    },
-                    {
-                        "code": "collar-{type}",
-                        "forCategoryCodes": [
-                            "collar-dog"
-                        ],
-                        "attachmentPointCode": "CollarAP"
-                    }
-                ]
+                "wearableSlotsByType": {
+                    "dog-corgi-*": [
+                        {
+                            "code": "collar-{type}",
+                            "forCategoryCodes": [
+                                "collar-dog"
+                            ],
+                            "attachmentPointCode": "CollarAP"
+                        }
+                    ],
+                    "*": [
+                        {
+                            "code": "backpack-{type}",
+                            "forCategoryCodes": [
+                                "backpack-dog"
+                            ],
+                            "attachmentPointCode": "BackPackAP"
+                        },
+                        {
+                            "code": "armor-{type}",
+                            "forCategoryCodes": [
+                                "armor-dog"
+                            ],
+                            "attachmentPointCode": "ArmorAP"
+                        },
+                        {
+                            "code": "helmet-{type}",
+                            "forCategoryCodes": [
+                                "helmet-dog"
+                            ],
+                            "attachmentPointCode": "HelmetAP"
+                        },
+                        {
+                            "code": "collar-{type}",
+                            "forCategoryCodes": [
+                                "collar-dog"
+                            ],
+                            "attachmentPointCode": "CollarAP"
+                        }
+                    ]
+                }
             },
             {
                 "code": "mortallywoundable",
@@ -340,13 +356,13 @@
                     ]
                 }
             },
-			{
-				"code": "dead",
-				"animation": "dead",
-				"weight": 10,
-				"easeInSpeed": 3,
-				"blendMode": "average"
-			},
+            {
+                "code": "dead",
+                "animation": "dead",
+                "weight": 10,
+                "easeInSpeed": 3,
+                "blendMode": "average"
+            },
             {
                 "code": "idle",
                 "animation": "idle",
@@ -603,45 +619,61 @@
             },
             {
                 "code": "selectionboxes",
-                "selectionBoxes": [
-                    "BackPackAP",
-                    "ArmorAP",
-                    "HelmetAP",
-                    "CollarAP"
-                ]
+                "selectionBoxesByType": {
+                    "dog-corgi-*": [
+                        "CollarAP"
+                    ],
+                    "*": [
+                        "BackPackAP",
+                        "ArmorAP",
+                        "HelmetAP",
+                        "CollarAP"
+                    ]
+                }
             },
             {
                 "code": "petinventory",
-                "wearableSlots": [
-                    {
-                        "code": "backpack-{type}",
-                        "forCategoryCodes": [
-                            "backpack-dog"
-                        ],
-                        "attachmentPointCode": "BackPackAP"
-                    },
-                    {
-                        "code": "armor-{type}",
-                        "forCategoryCodes": [
-                            "armor-dog"
-                        ],
-                        "attachmentPointCode": "ArmorAP"
-                    },
-                    {
-                        "code": "helmet-{type}",
-                        "forCategoryCodes": [
-                            "helmet-dog"
-                        ],
-                        "attachmentPointCode": "HelmetAP"
-                    },
-                    {
-                        "code": "collar-{type}",
-                        "forCategoryCodes": [
-                            "collar-dog"
-                        ],
-                        "attachmentPointCode": "CollarAP"
-                    }
-                ]
+                "wearableSlotsByType": {
+                    "dog-corgi-*": [
+                        {
+                            "code": "collar-{type}",
+                            "forCategoryCodes": [
+                                "collar-dog"
+                            ],
+                            "attachmentPointCode": "CollarAP"
+                        }
+                    ],
+                    "*": [
+                        {
+                            "code": "backpack-{type}",
+                            "forCategoryCodes": [
+                                "backpack-dog"
+                            ],
+                            "attachmentPointCode": "BackPackAP"
+                        },
+                        {
+                            "code": "armor-{type}",
+                            "forCategoryCodes": [
+                                "armor-dog"
+                            ],
+                            "attachmentPointCode": "ArmorAP"
+                        },
+                        {
+                            "code": "helmet-{type}",
+                            "forCategoryCodes": [
+                                "helmet-dog"
+                            ],
+                            "attachmentPointCode": "HelmetAP"
+                        },
+                        {
+                            "code": "collar-{type}",
+                            "forCategoryCodes": [
+                                "collar-dog"
+                            ],
+                            "attachmentPointCode": "CollarAP"
+                        }
+                    ]
+                }
             },
             {
                 "code": "mortallywoundable",
