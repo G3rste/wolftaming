@@ -1,7 +1,7 @@
 [
     {
         "op": "addeach",
-        "path": "/server/behaviors/12/aitasks/0/entityCodes/-",
+        "path": "/server/behaviors/13/aitasks/0/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -12,7 +12,7 @@
     },
     {
         "op": "addeach",
-        "path": "/server/behaviors/12/aitasks/1/entityCodes/-",
+        "path": "/server/behaviors/13/aitasks/1/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -23,7 +23,7 @@
     },
     {
         "op": "addeach",
-        "path": "/server/behaviors/12/aitasks/2/entityCodes/-",
+        "path": "/server/behaviors/13/aitasks/2/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -34,7 +34,7 @@
     },
     {
         "op": "add",
-        "path": "/server/behaviors/12/aitasks/-",
+        "path": "/server/behaviors/13/aitasks/-",
         "value": {
             "code": "stayclosetoshepherd",
             "priority": 1.4,
