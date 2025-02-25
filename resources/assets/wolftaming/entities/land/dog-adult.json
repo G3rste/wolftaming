@@ -314,6 +314,7 @@
             },
             {
                 "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
                 "whenBelowHealth": 6
             },
             {
@@ -677,6 +678,7 @@
             },
             {
                 "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
                 "whenBelowHealth": 6
             },
             {
@@ -696,6 +698,7 @@
             },
             {
                 "code": "taskai",
+				"aiCreatureType": "LandCreature",
                 "aitasks": [
                     {
                         "code": "petmeleeattack",
