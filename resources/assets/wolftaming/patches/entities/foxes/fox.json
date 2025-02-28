@@ -1,7 +1,7 @@
 [
     {
         "op": "addeach",
-        "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
+        "path": "/server/behaviors/12/aitasks/3/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -12,6 +12,6 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/land/fox-pup.json"
+        "file": "game:entities/land/fox.json"
     }
 ]
