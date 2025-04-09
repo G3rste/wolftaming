@@ -704,6 +704,8 @@
                         "code": "petmeleeattack",
                         "entityCodes": [
                             "drifter-*",
+                            "shiver-*",
+                            "bowtorn-*",
                             "wolf-male",
                             "wolf-female",
                             "hyena-*",
@@ -737,6 +739,8 @@
                         "code": "petseekentity",
                         "entityCodes": [
                             "drifter-*",
+                            "shiver-*",
+                            "bowtorn-*",
                             "wolf-male",
                             "wolf-female",
                             "hyena-*",
