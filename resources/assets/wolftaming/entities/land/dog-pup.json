@@ -554,8 +554,8 @@
                     {
                         "code": "useinventory",
                         "animation": "eat",
-                        "animationSpeed": 0.75,
-                        "priority": 1.4,
+                        "animationSpeed": 2.3,
+                        "priority": 2.3,
                         "priorityForCancel": 1.7,
                         "eatItemCategories": [
                             "Protein"
@@ -568,8 +568,8 @@
                             "petai:petcookie-meat-perfect"
                         ],
                         "useTime": 1.5,
-                        "mincooldownHours": 1,
-                        "maxcooldownHours": 1.5
+                        "mincooldownHours": 0.1,
+                        "maxcooldownHours": 0.2
                     },
                     {
                         "code": "idle",
