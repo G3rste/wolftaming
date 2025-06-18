@@ -554,9 +554,9 @@
                     {
                         "code": "useinventory",
                         "animation": "eat",
-                        "animationSpeed": 2.3,
+                        "animationSpeed": 0.75,
                         "priority": 2.3,
-                        "priorityForCancel": 1.7,
+                        "priorityForCancel": 2.4,
                         "eatItemCategories": [
                             "Protein"
                         ],
