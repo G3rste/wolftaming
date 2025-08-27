@@ -1,6 +1,13 @@
 {
     "code": "dog",
     "class": "EntityAgent",
+    "tags": [
+        "animal",
+        "huntable",
+        "predator",
+        "ferocious",
+        "habitat-land"
+    ],
     "variantGroups": [
         {
             "code": "type",
@@ -45,17 +52,17 @@
         },
         "shape": {
             "baseByType": {
-                "dog-wolf-pup": "game:entity/land/wolf-pup",
+                "dog-wolf-pup": "game:entity/animal/mammal/wolf/eurasian-baby",
                 "dog-corgi-pup": "entity/dog-corgi",
                 "*": "entity/dog-{type}-{age}"
             }
         },
         "textureByType": {
             "dog-wolf-pup": {
-                "base": "game:entity/wolf/wolf-pup1",
+                "base": "game:entity/animal/mammal/wolf/eurasian-baby1",
                 "alternates": [
                     {
-                        "base": "game:entity/wolf/wolf-pup2"
+                        "base": "game:entity/animal/mammal/wolf/eurasian-baby2"
                     }
                 ]
             },
@@ -389,7 +396,7 @@
             },
             {
                 "code": "taskai",
-				"aiCreatureType": "LandCreature",
+                "aiCreatureType": "LandCreature",
                 "aitasks": [
                     {
                         "code": "simplecommand",

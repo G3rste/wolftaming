@@ -8,7 +8,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/pig-wild-piglet.json"
+        "file": "game:entities/animal/mammal/hooved/pig-baby.json"
     },
     {
         "op": "add",
@@ -22,6 +22,6 @@
             "animation": "Run",
             "animationSpeed": 5
         },
-        "file": "game:entities/land/pig-wild-piglet.json"
+        "file": "game:entities/animal/mammal/hooved/pig-baby.json"
     }
 ]

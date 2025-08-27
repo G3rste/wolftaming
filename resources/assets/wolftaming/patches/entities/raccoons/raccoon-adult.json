@@ -12,7 +12,7 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/land/hyena-male.json"
+        "file": "game:entities/animal/mammal/raccoon-adult.json"
     },
     {
         "op": "addeach",
@@ -27,11 +27,11 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/land/hyena-male.json"
+        "file": "game:entities/animal/mammal/raccoon-adult.json"
     },
     {
         "op": "addeach",
-        "path": "/server/behaviors/10/aitasks/3/entityCodes/-",
+        "path": "/server/behaviors/10/aitasks/2/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
@@ -42,6 +42,6 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/land/hyena-male.json"
+        "file": "game:entities/animal/mammal/raccoon-adult.json"
     }
 ]

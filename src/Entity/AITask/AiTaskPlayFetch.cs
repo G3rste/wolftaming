@@ -13,8 +13,13 @@ namespace Wolftaming
         public float moveSpeed = 0.03f;
 
         bool stuck = false;
-        public AiTaskPlayFetch(EntityAgent entity) : base(entity)
-        { }
+        public AiTaskPlayFetch(EntityAgent entity, JsonObject taskConfig, JsonObject aiConfig) : base(entity, taskConfig, aiConfig)
+        {
+            if (taskConfig["movespeed"] != null)
+            {
+                moveSpeed = taskConfig["movespeed"].AsFloat(0.03f);
+            }
+        }
 
         public override bool ShouldExecute()
         {
@@ -24,16 +29,6 @@ namespace Wolftaming
                 dogToy = null;
             }
             return dogToy != null;
-        }
-
-        public override void LoadConfig(JsonObject taskConfig, JsonObject aiConfig)
-        {
-            base.LoadConfig(taskConfig, aiConfig);
-
-            if (taskConfig["movespeed"] != null)
-            {
-                moveSpeed = taskConfig["movespeed"].AsFloat(0.03f);
-            }
         }
         public override void StartExecute()
         {

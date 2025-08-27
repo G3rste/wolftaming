@@ -8,7 +8,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/pig-wild-female.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     },
     {
         "op": "addeach",
@@ -19,7 +19,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/pig-wild-female.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     },
     {
         "op": "addeach",
@@ -30,7 +30,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/pig-wild-female.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     },
     {
         "op": "add",
@@ -44,6 +44,6 @@
             "animation": "Run",
             "animationSpeed": 5
         },
-        "file": "game:entities/land/pig-wild-female.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     }
 ]

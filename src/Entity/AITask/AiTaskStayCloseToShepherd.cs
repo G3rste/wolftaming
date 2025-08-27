@@ -1,5 +1,6 @@
 using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
+using Vintagestory.API.Datastructures;
 using Vintagestory.GameContent;
 
 namespace Wolftaming
@@ -8,7 +9,7 @@ namespace Wolftaming
     {
         public Entity shepherd;
         private long lastCheck = 0;
-        public AiTaskStayCloseToShepherd(EntityAgent entity) : base(entity)
+        public AiTaskStayCloseToShepherd(EntityAgent entity, JsonObject taskConfig, JsonObject aiConfig) : base(entity, taskConfig, aiConfig)
         {
         }
 

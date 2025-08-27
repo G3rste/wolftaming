@@ -8,13 +8,10 @@
             "dog-hunting-male",
             "dog-hunting-female",
             "dog-shepherd-male",
-            "dog-shepherd-female"
+            "dog-shepherd-female",
+            "dog-corgi-male",
+            "dog-corgi-female"
         ],
-        "file": "lichen:entities/land/deer-fawn.json",
-        "dependsOn": [
-            {
-                "modid": "lichen"
-            }
-        ]
+        "file": "game:entities/animal/mammal/raccoon-baby.json"
     }
 ]

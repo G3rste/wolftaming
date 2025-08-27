@@ -1,6 +1,14 @@
 {
     "code": "dog",
     "class": "EntityAgent",
+    "tags": [
+        "animal",
+        "huntable",
+        "adult",
+        "predator",
+        "ferocious",
+        "habitat-land"
+    ],
     "variantGroups": [
         {
             "code": "type",
@@ -698,7 +706,7 @@
             },
             {
                 "code": "taskai",
-				"aiCreatureType": "LandCreature",
+                "aiCreatureType": "LandCreature",
                 "aitasks": [
                     {
                         "code": "petmeleeattack",

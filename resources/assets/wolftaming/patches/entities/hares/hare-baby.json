@@ -12,6 +12,6 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/land/hare-baby.json"
+        "file": "game:entities/animal/mammal/hare-baby.json"
     }
 ]

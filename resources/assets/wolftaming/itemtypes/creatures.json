@@ -34,7 +34,7 @@
             "*-shepherd-pup": "entity/dog-shepherd-pup",
             "*-corgi-pup": "entity/dog-corgi",
             "*-hunting-pup": "entity/dog-hunting-pup",
-            "*-wolf-pup": "game:entity/land/wolf-pup"
+            "*-wolf-pup": "game:entity/animal/mammal/wolf/eurasian-baby"
         }
     },
     "textures": {
@@ -51,7 +51,7 @@
                 "*-shepherd-pup": "entity/dog-shepherd-pup",
                 "*-corgi-pup": "entity/dog-corgi-3",
                 "*-hunting-pup": "entity/dog-hunting-pup",
-                "*-pup": "game:entity/wolf/wolf-pup1"
+                "*-pup": "game:entity/animal/mammal/wolf/eurasian-baby1"
             }
         }
     },

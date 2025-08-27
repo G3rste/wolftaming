@@ -8,7 +8,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/sheep-bighorn-female.json"
+        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
     },
     {
         "op": "addeach",
@@ -19,7 +19,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/sheep-bighorn-female.json"
+        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
     },
     {
         "op": "addeach",
@@ -30,7 +30,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/sheep-bighorn-female.json"
+        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
     },
     {
         "op": "add",
@@ -44,6 +44,31 @@
             "animation": "Run",
             "animationSpeed": 4
         },
-        "file": "game:entities/land/sheep-bighorn-female.json"
+        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
+        ],
+        "file": "game:entities/entities/animal/mammal/hooved/sheep-baby.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/10/aitasks/-",
+        "value": {
+            "code": "stayclosetoshepherd",
+            "priority": 1.4,
+            "movespeed": 0.025,
+            "maxDistance": 7,
+            "searchRange": 10,
+            "animation": "Run",
+            "animationSpeed": 4
+        },
+        "file": "game:entities/entities/animal/mammal/hooved/sheep-baby.json"
     }
 ]

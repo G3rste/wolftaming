@@ -8,7 +8,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat.json"
     },
     {
         "op": "addeach",
@@ -19,7 +19,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat.json"
     },
     {
         "op": "addeach",
@@ -30,7 +30,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat.json"
     },
     {
         "op": "add",
@@ -49,6 +49,6 @@
             "animation": "Run",
             "animationSpeed": 2
         },
-        "file": "game:entities/land/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat.json"
     }
 ]

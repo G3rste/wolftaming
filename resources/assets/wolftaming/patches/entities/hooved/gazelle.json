@@ -12,6 +12,6 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/land/gazelle.json"
+        "file": "game:entities/animal/mammal/hooved/gazelle.json"
     }
 ]

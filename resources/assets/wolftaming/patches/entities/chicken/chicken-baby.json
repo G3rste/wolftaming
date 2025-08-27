@@ -8,7 +8,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/land/chicken-baby.json"
+        "file": "game:entities/animal/bird/chicken-baby.json"
     },
     {
         "op": "add",
@@ -21,6 +21,6 @@
             "searchRange": 10,
             "animation": "Run"
         },
-        "file": "game:entities/land/chicken-baby.json"
+        "file": "game:entities/animal/bird/chicken-baby.json"
     }
 ]
