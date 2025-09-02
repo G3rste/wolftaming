@@ -8,7 +8,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     },
     {
         "op": "addeach",
@@ -19,7 +19,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     },
     {
         "op": "addeach",
@@ -30,7 +30,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     },
     {
         "op": "add",
@@ -38,13 +38,13 @@
         "value": {
             "code": "stayclosetoshepherd",
             "priority": 1.4,
-            "movespeed": 0.035,
+            "movespeed": 0.03,
             "maxDistance": 7,
             "searchRange": 10,
             "animation": "Run",
-            "animationSpeed": 4
+            "animationSpeed": 5
         },
-        "file": "game:entities/entities/animal/mammal/hooved/sheep-adult.json"
+        "file": "game:entities/animal/mammal/hooved/pig-adult.json"
     },
     {
         "op": "addeach",
@@ -55,7 +55,7 @@
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/entities/animal/mammal/hooved/sheep-baby.json"
+        "file": "game:entities/animal/mammal/hooved/pig-baby.json"
     },
     {
         "op": "add",
@@ -63,12 +63,12 @@
         "value": {
             "code": "stayclosetoshepherd",
             "priority": 1.4,
-            "movespeed": 0.025,
+            "movespeed": 0.015,
             "maxDistance": 7,
             "searchRange": 10,
             "animation": "Run",
-            "animationSpeed": 4
+            "animationSpeed": 5
         },
-        "file": "game:entities/entities/animal/mammal/hooved/sheep-baby.json"
+        "file": "game:entities/animal/mammal/hooved/pig-baby.json"
     }
 ]

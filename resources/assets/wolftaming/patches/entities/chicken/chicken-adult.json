@@ -1,27 +1,26 @@
 [
     {
         "op": "addeach",
-        "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
+        "path": "/server/behaviors/11/aitasks/0/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/animal/mammal/hooved/pig-baby.json"
+        "file": "game:entities/animal/bird/chicken-adult.json"
     },
     {
         "op": "add",
-        "path": "/server/behaviors/10/aitasks/-",
+        "path": "/server/behaviors/11/aitasks/-",
         "value": {
             "code": "stayclosetoshepherd",
             "priority": 1.4,
             "movespeed": 0.015,
             "maxDistance": 7,
             "searchRange": 10,
-            "animation": "Run",
-            "animationSpeed": 5
+            "animation": "Run"
         },
-        "file": "game:entities/animal/mammal/hooved/pig-baby.json"
+        "file": "game:entities/animal/bird/chicken-adult.json"
     }
 ]

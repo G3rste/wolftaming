@@ -1,6 +1,51 @@
 [
     {
         "op": "addeach",
+        "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female",
+            "dog-corgi-male",
+            "dog-corgi-female"
+        ],
+        "file": "game:entities/animal/mammal/hooved/deer-adult.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female",
+            "dog-corgi-male",
+            "dog-corgi-female"
+        ],
+        "file": "game:entities/animal/mammal/hooved/deer-adult.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/10/aitasks/2/entityCodes/-",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female",
+            "dog-corgi-male",
+            "dog-corgi-female"
+        ],
+        "file": "game:entities/animal/mammal/hooved/deer-adult.json"
+    },
+    {
+        "op": "addeach",
         "path": "/server/behaviors/11/aitasks/0/entityCodes/-",
         "value": [
             "dog-wolf-male",
@@ -12,36 +57,6 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/animal/mammal/hooved/deer.json"
-    },
-    {
-        "op": "addeach",
-        "path": "/server/behaviors/11/aitasks/1/entityCodes/-",
-        "value": [
-            "dog-wolf-male",
-            "dog-wolf-female",
-            "dog-hunting-male",
-            "dog-hunting-female",
-            "dog-shepherd-male",
-            "dog-shepherd-female",
-            "dog-corgi-male",
-            "dog-corgi-female"
-        ],
-        "file": "game:entities/animal/mammal/hooved/deer.json"
-    },
-    {
-        "op": "addeach",
-        "path": "/server/behaviors/11/aitasks/2/entityCodes/-",
-        "value": [
-            "dog-wolf-male",
-            "dog-wolf-female",
-            "dog-hunting-male",
-            "dog-hunting-female",
-            "dog-shepherd-male",
-            "dog-shepherd-female",
-            "dog-corgi-male",
-            "dog-corgi-female"
-        ],
-        "file": "game:entities/animal/mammal/hooved/deer.json"
+        "file": "game:entities/animal/mammal/hooved/deer-baby.json"
     }
 ]

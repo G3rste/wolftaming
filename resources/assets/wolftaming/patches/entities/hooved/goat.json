@@ -1,40 +1,40 @@
 [
     {
         "op": "addeach",
-        "path": "/server/behaviors/13/aitasks/0/entityCodes/-",
+        "path": "/server/behaviors/12/aitasks/0/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/animal/mammal/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat-adult.json"
     },
     {
         "op": "addeach",
-        "path": "/server/behaviors/13/aitasks/1/entityCodes/-",
+        "path": "/server/behaviors/12/aitasks/1/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/animal/mammal/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat-adult.json"
     },
     {
         "op": "addeach",
-        "path": "/server/behaviors/13/aitasks/2/entityCodes/-",
+        "path": "/server/behaviors/12/aitasks/2/entityCodes/-",
         "value": [
             "dog-wolf-male",
             "dog-wolf-female",
             "dog-hunting-male",
             "dog-hunting-female"
         ],
-        "file": "game:entities/animal/mammal/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat-adult.json"
     },
     {
         "op": "add",
-        "path": "/server/behaviors/13/aitasks/-",
+        "path": "/server/behaviors/12/aitasks/-",
         "value": {
             "code": "stayclosetoshepherd",
             "priority": 1.4,
@@ -49,6 +49,36 @@
             "animation": "Run",
             "animationSpeed": 2
         },
-        "file": "game:entities/animal/mammal/hooved/goat.json"
+        "file": "game:entities/animal/mammal/hooved/goat-adult.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/11/aitasks/0/entityCodes/-",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female"
+        ],
+        "file": "game:entities/animal/mammal/hooved/goat-baby.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/11/aitasks/-",
+        "value": {
+            "code": "stayclosetoshepherd",
+            "priority": 1.4,
+            "movespeedByType": {
+                "goat-muskox-*-adult": 0.065,
+                "goat-takingold-*-adult": 0.065,
+                "*-baby": 0.04,
+                "*": 0.06
+            },
+            "maxDistance": 7,
+            "searchRange": 10,
+            "animation": "Run",
+            "animationSpeed": 2
+        },
+        "file": "game:entities/animal/mammal/hooved/goat-baby.json"
     }
 ]

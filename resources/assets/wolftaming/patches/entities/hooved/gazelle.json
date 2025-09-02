@@ -12,6 +12,21 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/animal/mammal/hooved/gazelle.json"
+        "file": "game:entities/animal/mammal/hooved/gazelle-adult.json"
+    },
+    {
+        "op": "addeach",
+        "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
+        "value": [
+            "dog-wolf-male",
+            "dog-wolf-female",
+            "dog-hunting-male",
+            "dog-hunting-female",
+            "dog-shepherd-male",
+            "dog-shepherd-female",
+            "dog-corgi-male",
+            "dog-corgi-female"
+        ],
+        "file": "game:entities/animal/mammal/hooved/gazelle-baby.json"
     }
 ]
