@@ -7,11 +7,14 @@
 		"attachableToEntity": {
 			"categoryCode": "backpack-dog",
 			"attachedShapeBySlotCode": {
+				"backpack-wolf": {
+					"base": "wolftaming:backpack/dog-wolf"
+				},
 				"backpack-hunting": {
 					"base": "wolftaming:backpack/dog-hunting"
 				},
-				"*": {
-					"base": "wolftaming:backpack/dog-wolf"
+				"backpack-shepherd": {
+					"base": "wolftaming:backpack/dog-shepherd"
 				}
 			}
 		},

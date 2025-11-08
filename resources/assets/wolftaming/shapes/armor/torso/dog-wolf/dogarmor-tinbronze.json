@@ -1,180 +1,296 @@
 {
 	"editor": {
-		"allAngles": false,
-		"entityTextureMode": false
+		"backDropShape": "K:/VSModding/dog-wolf-updated_2",
+		"collapsedPaths": "Root/Origin/Rear/Midsection/Chest/Neck/Head/L Ear,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Fur Cheeks,Root/Origin/Rear/Abdomen/Thorax/Neck/Head/Nose/Nose_noAnim/TeethUpper,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EyeR,Root/root,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EarR,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EyeL,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/CheekR1,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EarL,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/CheekL1,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Fur Cheeks/fur cheek L1,Root/Body,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Fur Cheeks/Fur cheek R1,Root/Origin,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/Jaw,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/Nose_noAnim,Root/Chicken,Root/Seraph,Root/Origin/Rear/Midsection/Chest/Neck/Head/R Ear",
+		"allAngles": true,
+		"entityTextureMode": true
 	},
 	"textureWidth": 16,
 	"textureHeight": 16,
 	"textureSizes": {
 	},
 	"textures": {
-		"metal": "game:block/metal/ingot/tinbronze",
-		"leather": "game:block/leather/plain"
+		"pelt": "game:item/resource/hide/pelt",
+		"tinbronze": "game:item/resource/plate/tinbronze"
 	},
 	"elements": [
 		{
-			"name": "Back",
-			"stepParentName": "Body",
-			"from": [ -0.25, 8.0, -0.25 ],
-			"to": [ 9.25, 9.25, 8.25 ],
-			"rotationOrigin": [ 0.0, 8.0, 0.0 ],
+			"name": "Armour",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"uv": [ 999.0, 999.0 ],
 			"faces": {
-				"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] },
-				"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.5, 1.0 ] },
-				"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] },
-				"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.5, 1.0 ] },
-				"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 8.5 ] },
-				"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 8.5 ] }
 			},
 			"children": [
 				{
-					"name": "BackR",
-					"from": [ 0.01, -2.0, 0.0 ],
-					"to": [ 9.51, 0.0, 1.0 ],
-					"rotationOrigin": [ 0.0, 0.0, 0.0 ],
-					"rotationX": -5.0,
+					"name": "TinBronzeArmour_RShoulder",
+					"stepParentName": "R Shoulder",
+					"from": [ 2.01, 3.18, 1.5 ],
+					"to": [ 2.01, 3.18, 1.5 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 2.0095, 3.28, 1.5 ],
 					"faces": {
-						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] },
-						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] }
-					}
+					},
+					"children": [
+						{
+							"name": "Metal_R",
+							"from": [ -2.2, -1.4, -1.8 ],
+							"to": [ 2.2, 1.9, 0.2 ],
+							"uv": [ 9.0, 8.0 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "rotation": 180, "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Leather_R",
+							"from": [ -2.1, -1.8, -1.6 ],
+							"to": [ 2.1, 2.3, 0.3 ],
+							"uv": [ 4.0, 3.0 ],
+							"faces": {
+								"north": { "texture": "#pelt", "snapUv": false },
+								"east": { "texture": "#pelt", "snapUv": false },
+								"south": { "texture": "#pelt", "snapUv": false },
+								"west": { "texture": "#pelt", "snapUv": false },
+								"up": { "texture": "#pelt", "rotation": 180, "snapUv": false },
+								"down": { "texture": "#pelt", "snapUv": false }
+							}
+						}
+					]
 				},
 				{
-					"name": "BackL",
-					"from": [ 0.01, -2.0, 7.5 ],
-					"to": [ 9.51, 0.0, 8.5 ],
-					"rotationOrigin": [ 0.0, 0.0, 8.5 ],
-					"rotationX": 5.0,
+					"name": "TinBronzeArmour_LShoulder",
+					"stepParentName": "L Shoulder",
+					"from": [ 1.51, 3.28, -4.2 ],
+					"to": [ 1.51, 3.28, -4.2 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 1.5095, 3.2783, -4.2 ],
 					"faces": {
-						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] },
-						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] }
-					}
+					},
+					"children": [
+						{
+							"name": "Metal_L",
+							"from": [ -1.7182, -1.4297, 4.4565 ],
+							"to": [ 2.6818, 1.8703, 6.4565 ],
+							"uv": [ 9.0, 8.0 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "rotation": 180, "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Leather_L",
+							"from": [ -1.6, -1.8, 4.4 ],
+							"to": [ 2.6, 2.3, 6.3 ],
+							"uv": [ 4.0, 3.0 ],
+							"faces": {
+								"north": { "texture": "#pelt", "snapUv": false },
+								"east": { "texture": "#pelt", "snapUv": false },
+								"south": { "texture": "#pelt", "snapUv": false },
+								"west": { "texture": "#pelt", "snapUv": false },
+								"up": { "texture": "#pelt", "rotation": 180, "snapUv": false },
+								"down": { "texture": "#pelt", "snapUv": false }
+							}
+						}
+					]
 				},
 				{
-					"name": "BackBelt",
-					"from": [ 5.0, -8.25, 0.05 ],
-					"to": [ 6.0, 0.75, 8.45 ],
-					"rotationOrigin": [ 5.0, -8.0, 0.0 ],
+					"name": "TinBronzeArmour_Chest",
+					"stepParentName": "Chest",
+					"from": [ 5.2, 7.2, 1.1 ],
+					"to": [ 5.2, 7.2, 1.1 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 5.2, 7.2, 1.1 ],
 					"faces": {
-						"north": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 9.0 ] },
-						"east": { "texture": "#leather", "uv": [ 0.0, 0.0, 8.0, 9.0 ] },
-						"south": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 9.0 ] },
-						"west": { "texture": "#leather", "uv": [ 0.0, 0.0, 8.0, 9.0 ] },
-						"up": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 8.0 ] },
-						"down": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 8.0 ] }
-					}
+					},
+					"children": [
+						{
+							"name": "Chest_Top",
+							"from": [ -3.2, 0.0, -0.6 ],
+							"to": [ 1.8, 2.0, 4.9 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 0.2, 0.0 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Top2",
+							"from": [ -2.2, 1.2, -0.1 ],
+							"to": [ 1.8, 2.2, 4.4 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 0.0, 2.1, 1.5 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Sides",
+							"from": [ -1.2, -0.3, -1.65 ],
+							"to": [ 1.8, 1.7, 5.85 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -0.2, -0.3, -0.65 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Leather",
+							"from": [ -0.2, -7.3, -1.45 ],
+							"to": [ 0.8, 0.7, 5.65 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 2.8, -0.3, -0.25 ],
+							"faces": {
+								"north": { "texture": "#pelt", "snapUv": false },
+								"east": { "texture": "#pelt", "snapUv": false },
+								"south": { "texture": "#pelt", "snapUv": false },
+								"west": { "texture": "#pelt", "snapUv": false },
+								"up": { "texture": "#pelt", "snapUv": false },
+								"down": { "texture": "#pelt", "snapUv": false }
+							}
+						}
+					]
 				},
 				{
-					"name": "BackBelt9",
-					"from": [ 5.0, -5.0, 0.06 ],
-					"to": [ 6.0, 1.5, 8.44 ],
-					"rotationOrigin": [ 5.0, -5.0, 0.0 ],
-					"rotationZ": 45.0,
+					"name": "TinBronzeArmour_Midsection",
+					"stepParentName": "Midsection",
+					"from": [ 4.15, 6.5, 0.7 ],
+					"to": [ 4.15, 6.5, 0.7 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 4.2, 6.5, 6.6 ],
 					"faces": {
-						"north": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 6.5 ] },
-						"east": { "texture": "#leather", "uv": [ 0.0, 0.0, 8.0, 6.5 ] },
-						"south": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 6.5 ] },
-						"west": { "texture": "#leather", "uv": [ 0.0, 0.0, 8.0, 6.5 ] },
-						"up": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 8.0 ] },
-						"down": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 8.0 ] }
-					}
+					},
+					"children": [
+						{
+							"name": "Midsection_Top",
+							"from": [ -3.2, 0.85, -0.9 ],
+							"to": [ 1.8, 1.85, 5.1 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 0.2, 0.0 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Midsection_Top2",
+							"from": [ -3.2, 1.1, 0.7 ],
+							"to": [ 1.8, 2.1, 3.5 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 1.8, 1.6 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Midsection_Sides",
+							"from": [ -3.2, 0.5, -1.25 ],
+							"to": [ 1.8, 1.5, 5.45 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -2.2, -0.3, -0.25 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Midsection_Leather",
+							"from": [ -1.2, -6.6, -0.95 ],
+							"to": [ -0.2, 1.4, 5.25 ],
+							"uv": [ 2.0, 0.0 ],
+							"rotationOrigin": [ -2.2, -0.3, -0.25 ],
+							"faces": {
+								"north": { "texture": "#pelt", "snapUv": false },
+								"east": { "texture": "#pelt", "snapUv": false },
+								"south": { "texture": "#pelt", "snapUv": false },
+								"west": { "texture": "#pelt", "snapUv": false },
+								"up": { "texture": "#pelt", "snapUv": false },
+								"down": { "texture": "#pelt", "snapUv": false }
+							}
+						}
+					]
 				},
 				{
-					"name": "SpineBack",
-					"from": [ 0.5, 1.0, 2.25 ],
-					"to": [ 9.0, 1.51, 6.25 ],
-					"rotationOrigin": [ 1.0, 1.0, 2.0 ],
+					"name": "TinBronzeArmour_Midsection2",
+					"stepParentName": "Rear",
+					"from": [ 3.85, 5.73, 0.5 ],
+					"to": [ 3.85, 5.73, 0.5 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 3.8531, 5.7304, 5.34 ],
 					"faces": {
-						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.5, 0.5 ] },
-						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
-						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.5, 0.5 ] },
-						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 4.0, 0.5 ] },
-						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.5, 4.0 ] },
-						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 8.5, 4.0 ] }
-					}
-				}
-			]
-		},
-		{
-			"name": "Abdomen",
-			"stepParentName": "abdomen",
-			"from": [ -0.25, 6.0, -0.25 ],
-			"to": [ 13.25, 7.25, 6.25 ],
-			"rotationOrigin": [ 13.25, 6.0, -0.25 ],
-			"faces": {
-				"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 13.5, 1.0 ] },
-				"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 6.5, 1.0 ] },
-				"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 13.5, 1.0 ] },
-				"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 6.5, 1.0 ] },
-				"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 13.5, 6.5 ] },
-				"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 13.5, 6.5 ] }
-			},
-			"children": [
-				{
-					"name": "AbdomenR",
-					"from": [ 4.0, -1.0, 5.5 ],
-					"to": [ 13.5, 1.0, 6.5 ],
-					"rotationOrigin": [ 13.5, -1.0, 6.5 ],
-					"rotationY": 5.0,
-					"faces": {
-						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] },
-						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] }
-					}
-				},
-				{
-					"name": "AbdomenL",
-					"from": [ 4.0, -1.0, 0.0 ],
-					"to": [ 13.5, 1.0, 1.0 ],
-					"rotationOrigin": [ 13.5, -1.0, 0.0 ],
-					"rotationY": -5.0,
-					"faces": {
-						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 2.0 ] },
-						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
-						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] },
-						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 9.5, 1.0 ] }
-					}
-				},
-				{
-					"name": "AbdomenBelt",
-					"from": [ 6.25, -6.25, 0.0 ],
-					"to": [ 7.25, -0.25, 6.5 ],
-					"rotationOrigin": [ 6.25, -6.0, 0.25 ],
-					"faces": {
-						"north": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 6.0 ] },
-						"east": { "texture": "#leather", "uv": [ 0.0, 0.0, 6.5, 6.0 ] },
-						"south": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 6.0 ] },
-						"west": { "texture": "#leather", "uv": [ 0.0, 0.0, 6.5, 6.0 ] },
-						"up": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 6.5 ] },
-						"down": { "texture": "#leather", "uv": [ 0.0, 0.0, 1.0, 6.5 ] }
-					}
-				},
-				{
-					"name": "SpineAbdomen",
-					"from": [ 0.5, 1.0, 1.75 ],
-					"to": [ 13.0, 1.5, 4.75 ],
-					"rotationOrigin": [ 0.0, 1.0, 1.0 ],
-					"faces": {
-						"north": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.5, 0.5 ] },
-						"east": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
-						"south": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.5, 0.5 ] },
-						"west": { "texture": "#metal", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
-						"up": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.5, 3.0 ] },
-						"down": { "texture": "#metal", "uv": [ 0.0, 0.0, 12.5, 3.0 ] }
-					}
+					},
+					"children": [
+						{
+							"name": "Midsection_Top",
+							"from": [ -3.2, 0.85, -0.4 ],
+							"to": [ 1.8, 1.85, 4.6 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 0.2, 0.0 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						},
+						{
+							"name": "Midsection_Sides",
+							"from": [ -3.2, 0.5, -1.25 ],
+							"to": [ 1.8, 1.5, 5.45 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -2.2, -0.3, -0.25 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "snapUv": false },
+								"east": { "texture": "#tinbronze", "snapUv": false },
+								"south": { "texture": "#tinbronze", "snapUv": false },
+								"west": { "texture": "#tinbronze", "snapUv": false },
+								"up": { "texture": "#tinbronze", "snapUv": false },
+								"down": { "texture": "#tinbronze", "snapUv": false }
+							}
+						}
+					]
 				}
 			]
 		}
-	]}
+	],
+	"animations": [
+	]
+}

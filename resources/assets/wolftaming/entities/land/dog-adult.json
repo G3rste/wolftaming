@@ -94,32 +94,7 @@
             },
             "dog-wolf-*": {
                 "base": "entity/wolf/wolf1",
-                "alternates": [
-                    {
-                        "base": "entity/wolf/wolf2"
-                    },
-                    {
-                        "base": "entity/wolf/wolf3"
-                    },
-                    {
-                        "base": "entity/wolf/wolf4"
-                    },
-                    {
-                        "base": "entity/wolf/wolf5"
-                    },
-                    {
-                        "base": "entity/wolf/wolf6"
-                    },
-                    {
-                        "base": "entity/wolf/wolf7"
-                    },
-                    {
-                        "base": "entity/wolf/wolf8"
-                    },
-                    {
-                        "base": "entity/wolf/wolf9"
-                    }
-                ]
+                "alternates": []
             }
         },
         "behaviors": [

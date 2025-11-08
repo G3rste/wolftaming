@@ -8,10 +8,10 @@
 					"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
 				},
 				"armor-hunting": {
-					"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
+					"base": "wolftaming:armor/torso/dog-hunting/dogarmor-{type}"
 				},
 				"armor-shepherd": {
-					"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
+					"base": "wolftaming:armor/torso/dog-shepherd/dogarmor-{type}"
 				}
 			}
 		},

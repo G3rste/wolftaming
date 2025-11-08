@@ -1,0 +1,144 @@
+{
+	"editor": {
+		"backDropShape": "K:/VSModding/dog-wolf-updated_2",
+		"collapsedPaths": "Root/Origin/Rear/Midsection/Chest/Neck/Head/L Ear,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Fur Cheeks,Root/Origin/Rear/Abdomen/Thorax/Neck/Head/Nose/Nose_noAnim/TeethUpper,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EyeR,Root/root,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EarR,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EyeL,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/CheekR1,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/EarL,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/CheekL1,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Fur Cheeks/fur cheek L1,Root/Body,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Fur Cheeks/Fur cheek R1,Root/Origin,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/Jaw,Root/Origin/Pelvis/Abdomen/Thorax/Neck/Head/Nose/Nose_noAnim,Root/Chicken,Root/Seraph,Root/Origin/Rear/Midsection/Chest/Neck/Head/R Ear",
+		"allAngles": true,
+		"entityTextureMode": true
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"pelt": "game:item/resource/hide/pelt",
+		"tinbronze": "game:item/resource/plate/copper"
+	},
+	"elements": [
+		{
+			"name": "Armour",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"uv": [ 999.0, 999.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "CopperArmour_Chest",
+					"stepParentName": "Chest",
+					"from": [ 5.3, 7.0, 1.2 ],
+					"to": [ 5.3, 7.0, 1.2 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 5.3, 7.0, 1.2 ],
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "Chest_Top",
+							"from": [ -3.2, 0.0, -0.6 ],
+							"to": [ 1.8, 2.0, 4.9 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 0.2, 0.0 ],
+							"faces": {
+								"north": { "texture": "#copper", "snapUv": false },
+								"east": { "texture": "#copper", "snapUv": false },
+								"south": { "texture": "#copper", "snapUv": false },
+								"west": { "texture": "#copper", "snapUv": false },
+								"up": { "texture": "#copper", "snapUv": false },
+								"down": { "texture": "#copper", "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Top2",
+							"from": [ -2.2, 1.2, -0.1 ],
+							"to": [ 1.8, 2.2, 4.4 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 0.0, 2.1, 1.5 ],
+							"faces": {
+								"north": { "texture": "#copper", "snapUv": false },
+								"east": { "texture": "#copper", "snapUv": false },
+								"south": { "texture": "#copper", "snapUv": false },
+								"west": { "texture": "#copper", "snapUv": false },
+								"up": { "texture": "#copper", "snapUv": false },
+								"down": { "texture": "#copper", "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Sides",
+							"from": [ -1.2, -0.3, -1.65 ],
+							"to": [ 1.8, 1.7, 5.85 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -0.2, -0.3, -0.65 ],
+							"faces": {
+								"north": { "texture": "#copper", "snapUv": false },
+								"east": { "texture": "#copper", "snapUv": false },
+								"south": { "texture": "#copper", "snapUv": false },
+								"west": { "texture": "#copper", "snapUv": false },
+								"up": { "texture": "#copper", "snapUv": false },
+								"down": { "texture": "#copper", "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Leather",
+							"from": [ -0.2, -7.3, -1.45 ],
+							"to": [ 0.8, 0.7, 5.65 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 2.8, -0.3, -0.25 ],
+							"faces": {
+								"north": { "texture": "#pelt", "snapUv": false },
+								"east": { "texture": "#pelt", "snapUv": false },
+								"south": { "texture": "#pelt", "snapUv": false },
+								"west": { "texture": "#pelt", "snapUv": false },
+								"up": { "texture": "#pelt", "snapUv": false },
+								"down": { "texture": "#pelt", "snapUv": false }
+							}
+						}
+					]
+				},
+				{
+					"name": "CopperArmour_Midsection",
+					"stepParentName": "Midsection",
+					"from": [ 4.3, 6.0, 0.75 ],
+					"to": [ 4.3, 6.0, 0.75 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 4.3, 6.0, 0.8 ],
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "Midsection_Top",
+							"from": [ -3.2, 0.85, -0.9 ],
+							"to": [ 1.8, 1.85, 5.1 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 0.2, 0.0 ],
+							"faces": {
+								"north": { "texture": "#copper", "snapUv": false },
+								"east": { "texture": "#copper", "snapUv": false },
+								"south": { "texture": "#copper", "snapUv": false },
+								"west": { "texture": "#copper", "snapUv": false },
+								"up": { "texture": "#copper", "snapUv": false },
+								"down": { "texture": "#copper", "snapUv": false }
+							}
+						},
+						{
+							"name": "Midsection_Sides",
+							"from": [ -3.2, 0.5, -1.25 ],
+							"to": [ 1.8, 1.5, 5.45 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -2.2, -0.3, -0.25 ],
+							"faces": {
+								"north": { "texture": "#copper", "snapUv": false },
+								"east": { "texture": "#copper", "snapUv": false },
+								"south": { "texture": "#copper", "snapUv": false },
+								"west": { "texture": "#copper", "snapUv": false },
+								"up": { "texture": "#copper", "snapUv": false },
+								"down": { "texture": "#copper", "snapUv": false }
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"animations": [
+	]
+}
