@@ -10,7 +10,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"leather": "game:item/bag/backpack/leather"
+		"leather": "game:block/leather/plain"
 	},
 	"elements": [
 		{
