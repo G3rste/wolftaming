@@ -11,7 +11,7 @@
 	},
 	"textures": {
 		"pelt": "game:item/resource/hide/pelt",
-		"tinbronze": "game:item/resource/plate/tinbronze"
+		"tinbronze": "game:block/metal/ingot/tinbronze"
 	},
 	"elements": [
 		{

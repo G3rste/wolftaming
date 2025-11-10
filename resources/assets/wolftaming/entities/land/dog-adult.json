@@ -16,7 +16,8 @@
                 "wolf",
                 "hunting",
                 "shepherd",
-                "corgi"
+                "corgi",
+                "peach"
             ]
         },
         {
@@ -57,6 +58,9 @@
             "*": 1
         },
         "shapeByType": {
+            "dog-peach-*": {
+                "base": "wolftaming:entity/dog-wolf"
+            },
             "*": {
                 "base": "wolftaming:entity/dog-{type}"
             }
@@ -93,7 +97,39 @@
                 ]
             },
             "dog-wolf-*": {
-                "base": "entity/wolf/wolf1",
+                "base": "game:entity/animal/mammal/wolf/eurasian-adult1",
+                "alternates": [
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult2"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult3"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult4"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult5"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult6"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult7"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult8"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult9"
+                    },
+                    {
+                        "base": "game:entity/animal/mammal/wolf/eurasian-adult10"
+                    }
+                ]
+            },
+            "dog-peach-*": {
+                "base": "entity/dog-peach",
                 "alternates": []
             }
         },
@@ -304,15 +340,13 @@
                 "code": "health",
                 "currenthealthByType": {
                     "dog-wolf-*": 25,
-                    "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20,
-                    "dog-corgi-*": 10
+                    "dog-corgi-*": 10,
+                    "*": 20
                 },
                 "maxhealthByType": {
                     "dog-wolf-*": 25,
-                    "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20,
-                    "dog-corgi-*": 10
+                    "dog-corgi-*": 10,
+                    "*": 20
                 }
             },
             {
@@ -732,20 +766,18 @@
                         "isCommandable": true,
                         "priority": 2.9,
                         "movespeedByType": {
-                            "dog-wolf-*": 0.045,
-                            "dog-shepherd-*": 0.045,
                             "dog-hunting-*": 0.07,
-                            "dog-corgi-*": 0.035
+                            "dog-corgi-*": 0.035,
+                            "*": 0.045
                         },
                         "seekingRange": 30,
                         "animation": "Run",
                         "leapAtTarget": true,
                         "leapAnimation": null,
                         "animationSpeedByType": {
-                            "dog-wolf-*": 2.2,
-                            "dog-shepherd-*": 2.2,
                             "dog-hunting-*": 3.4,
-                            "dog-corgi-*": 2.2
+                            "dog-corgi-*": 2.2,
+                            "*": 2.2
                         },
                         "leapChance": 0.01
                     },
@@ -805,8 +837,16 @@
                         "code": "playfetch",
                         "priority": 2.2,
                         "priorityForCancel": 2.1,
-                        "movespeed": 0.045,
-                        "animationSpeed": 2.2,
+                        "movespeedByType": {
+                            "dog-hunting-*": 0.07,
+                            "dog-corgi-*": 0.035,
+                            "*": 0.045
+                        },
+                        "animationSpeedByType": {
+                            "dog-hunting-*": 3.4,
+                            "dog-corgi-*": 2.2,
+                            "*": 2.2
+                        },
                         "animation": "Run"
                     },
                     {

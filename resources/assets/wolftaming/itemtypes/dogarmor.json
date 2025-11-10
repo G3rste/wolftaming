@@ -8,15 +8,19 @@
 					"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
 				},
 				"armor-hunting": {
-					"base": "wolftaming:armor/torso/dog-hunting/dogarmor-{type}"
+					"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
 				},
 				"armor-shepherd": {
-					"base": "wolftaming:armor/torso/dog-shepherd/dogarmor-{type}"
+					"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
+				},
+				"armor-peach": {
+					"base": "wolftaming:armor/torso/dog-wolf/dogarmor-{type}"
 				}
 			}
 		},
 		"damageReductionByType": {
 			"*-basic": 0.4,
+			"*-copper": 0.4,
 			"*-tinbronze": 0.5,
 			"*-iron": 0.75
 		}
@@ -28,6 +32,7 @@
 			"code": "type",
 			"states": [
 				"basic",
+				"copper",
 				"tinbronze",
 				"iron"
 			]

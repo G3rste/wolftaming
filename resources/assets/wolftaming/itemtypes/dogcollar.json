@@ -11,9 +11,12 @@
 					"base": "wolftaming:collar/dog-wolf/collar"
 				},
 				"collar-hunting": {
-					"base": "wolftaming:collar/dog-hunting/collar"
+					"base": "wolftaming:collar/dog-wolf/collar"
 				},
 				"collar-shepherd": {
+					"base": "wolftaming:collar/dog-wolf/collar"
+				},
+				"collar-peach": {
 					"base": "wolftaming:collar/dog-wolf/collar"
 				},
 				"collar-corgi": {

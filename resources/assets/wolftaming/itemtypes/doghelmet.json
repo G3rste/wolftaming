@@ -16,15 +16,19 @@
 					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
 				},
 				"helmet-hunting": {
-					"base": "wolftaming:armor/helmet/dog-hunting/doghelmet-{type}"
+					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
 				},
 				"helmet-shepherd": {
-					"base": "wolftaming:armor/helmet/dog-shepherd/doghelmet-{type}"
+					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
+				},
+				"helmet-peach": {
+					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
 				}
 			}
 		},
 		"damageReductionByType": {
 			"*-basic": 0.3,
+			"*-copper": 0.3,
 			"*-tinbronze": 0.4,
 			"*-iron": 0.5
 		}
@@ -36,6 +40,7 @@
 			"code": "type",
 			"states": [
 				"basic",
+				"copper",
 				"tinbronze",
 				"iron"
 			]

@@ -11,10 +11,13 @@
 					"base": "wolftaming:backpack/dog-wolf"
 				},
 				"backpack-hunting": {
-					"base": "wolftaming:backpack/dog-hunting"
+					"base": "wolftaming:backpack/dog-wolf"
 				},
 				"backpack-shepherd": {
-					"base": "wolftaming:backpack/dog-shepherd"
+					"base": "wolftaming:backpack/dog-wolf"
+				},
+				"backpack-peach": {
+					"base": "wolftaming:backpack/dog-wolf"
 				}
 			}
 		},

@@ -7,9 +7,6 @@
 	"textureWidth": 72,
 	"textureHeight": 72,
 	"textureSizes": {
-		"skin": [72,72],
-		"wolf88": [72,72],
-		"wolf5": [72,72]
 	},
 	"textures": {
 		"skin": "E:/Workspace/vintage_story_mods/wolftaming/resources/assets/wolftaming/textures/entity/wolf/wolf9"

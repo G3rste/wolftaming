@@ -10,7 +10,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"tinbronze": "game:item/resource/plate/tinbronze"
+		"tinbronze": "game:block/metal/ingot/tinbronze"
 	},
 	"elements": [
 		{
