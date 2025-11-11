@@ -395,6 +395,7 @@
                 "animation": "sleep",
                 "easeInSpeed": 4,
                 "easeOutSpeed": 4,
+				"weight": 5,
                 "blendMode": "average"
             },
             {
@@ -402,15 +403,28 @@
                 "animation": "wounded-idle",
                 "easeInSpeed": 4,
                 "easeOutSpeed": 4,
+				"weight": 5,
                 "blendMode": "average"
             },
+			{ 
+				"code": "eat",
+				"animation": "Eat",
+				"blendMode": "average"
+			},
             {
                 "code": "sit",
                 "animation": "sit",
                 "easeInSpeed": 4,
                 "easeOutSpeed": 4,
                 "blendMode": "average"
-            }
+            },
+			{
+				"code": "attack-withwindup",
+				"animation": "attack-withwindup",
+				"animationSpeed": 1,
+				"blendMode": "average",
+				"weight": 100
+			}
         ]
     },
     "server": {
@@ -702,15 +716,13 @@
                 "code": "health",
                 "currenthealthByType": {
                     "dog-wolf-*": 25,
-                    "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20,
-                    "dog-corgi-*": 10
+                    "dog-corgi-*": 10,
+                    "*": 20
                 },
                 "maxhealthByType": {
                     "dog-wolf-*": 25,
-                    "dog-shepherd-*": 20,
-                    "dog-hunting-*": 20,
-                    "dog-corgi-*": 10
+                    "dog-corgi-*": 10,
+                    "*": 20
                 }
             },
             {
@@ -731,25 +743,89 @@
                         "isCommandable": true,
                         "priority": 3,
                         "damageByType": {
-                            "dog-wolf-*": 5,
-                            "dog-shepherd-*": 8,
-                            "dog-hunting-*": 5,
-                            "dog-corgi-*": 3
+                            "dog-shepherd-*": 10,
+                            "dog-corgi-*": 4,
+                            "*": 8
                         },
                         "damageTierByType": {
-                            "dog-wolf-*": 2,
                             "dog-shepherd-*": 3,
-                            "dog-hunting-*": 2,
-                            "dog-corgi-*": 1
+                            "dog-corgi-*": 1,
+                            "*": 2
                         },
                         "damageType": "SlashingAttack",
                         "slot": 1,
-                        "mincooldown": 1500,
+                        "mincooldown": 800,
                         "maxcooldown": 1500,
                         "attackDurationMs": 800,
                         "damagePlayerAtMs": 500,
                         "animation": "Attack",
-                        "animationSpeed": 2.5,
+                        "animationSpeed": 1.5,
+                        "sound": "game:creature/wolf/attack"
+                    },
+                    {
+                        "code": "petmeleeattack",
+                        "entityCodes": [
+                            "drifter-*",
+                            "shiver-*",
+                            "bowtorn-*",
+                            "wolf-male",
+                            "wolf-female",
+                            "hyena-*",
+                            "squirrel-*"
+                        ],
+                        "isCommandable": true,
+                        "priority": 3,
+                        "damageByType": {
+                            "dog-shepherd-*": 10,
+                            "dog-corgi-*": 4,
+                            "*": 8
+                        },
+                        "damageTierByType": {
+                            "dog-shepherd-*": 3,
+                            "dog-corgi-*": 1,
+                            "*": 2
+                        },
+                        "damageType": "SlashingAttack",
+                        "slot": 1,
+                        "mincooldown": 800,
+                        "maxcooldown": 1500,
+                        "attackDurationMs": 800,
+                        "damagePlayerAtMs": 500,
+                        "animation": "Attack-Low",
+                        "animationSpeed": 1.5,
+                        "sound": "game:creature/wolf/attack"
+                    },
+                    {
+                        "code": "petmeleeattack",
+                        "entityCodes": [
+                            "drifter-*",
+                            "shiver-*",
+                            "bowtorn-*",
+                            "wolf-male",
+                            "wolf-female",
+                            "hyena-*",
+                            "squirrel-*"
+                        ],
+                        "isCommandable": true,
+                        "priority": 3.1,
+                        "damageByType": {
+                            "dog-shepherd-*": 10,
+                            "dog-corgi-*": 4,
+                            "*": 8
+                        },
+                        "damageTierByType": {
+                            "dog-shepherd-*": 3,
+                            "dog-corgi-*": 1,
+                            "*": 2
+                        },
+                        "damageType": "SlashingAttack",
+                        "slot": 1,
+                        "mincooldown": 800,
+                        "maxcooldown": 1500,
+                        "attackDurationMs": 1200,
+                        "damagePlayerAtMs": 900,
+                        "animation": "attack-withwindup",
+                        "animationSpeed": 1.5,
                         "sound": "game:creature/wolf/attack"
                     },
                     {
@@ -775,9 +851,9 @@
                         "leapAtTarget": true,
                         "leapAnimation": null,
                         "animationSpeedByType": {
-                            "dog-hunting-*": 3.4,
+                            "dog-hunting-*": 3.1,
                             "dog-corgi-*": 2.2,
-                            "*": 2.2
+                            "*": 2
                         },
                         "leapChance": 0.01
                     },
@@ -813,14 +889,32 @@
                     },
                     {
                         "code": "followmaster",
-                        "priority": 2,
-                        "priorityForCancel": 1.9,
+                        "priority": 2.1,
                         "command": "followmaster",
-                        "movespeed": 0.045,
-                        "animationSpeed": 2.2,
-                        "maxDistance": 8,
+                        "movespeedByType": {
+                            "dog-hunting-*": 0.07,
+                            "dog-corgi-*": 0.035,
+                            "*": 0.045
+                        },
+                        "animationSpeedByType": {
+                            "dog-hunting-*": 3.1,
+                            "dog-corgi-*": 2.2,
+                            "*": 2
+                        },
+                        "maxDistance": 15,
                         "searchRange": 40,
                         "animation": "Run",
+                        "allowTeleport": true
+                    },
+                    {
+                        "code": "followmaster",
+                        "priority": 2,
+                        "command": "followmaster",
+                        "movespeed": 0.02,
+                        "animationSpeed": 2,
+                        "maxDistance": 8,
+                        "searchRange": 20,
+                        "animation": "Trot",
                         "allowTeleport": true
                     },
                     {
@@ -835,19 +929,18 @@
                     },
                     {
                         "code": "playfetch",
-                        "priority": 2.2,
-                        "priorityForCancel": 2.1,
+                        "priority": 2.5,
                         "movespeedByType": {
-                            "dog-hunting-*": 0.07,
+                            "dog-hunting-*": 0.06,
                             "dog-corgi-*": 0.035,
-                            "*": 0.045
+                            "*": 0.04
                         },
                         "animationSpeedByType": {
-                            "dog-hunting-*": 3.4,
+                            "dog-hunting-*": 3.1,
                             "dog-corgi-*": 2.2,
-                            "*": 2.2
+                            "*": 2
                         },
-                        "animation": "Run"
+                        "animation": "Canter"
                     },
                     {
                         "code": "seeknest",
