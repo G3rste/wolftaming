@@ -17,7 +17,10 @@
                 "dog-shepherd-pup",
                 "dog-corgi-male",
                 "dog-corgi-female",
-                "dog-corgi-pup"
+                "dog-corgi-pup",
+                "dog-peach-male",
+                "dog-peach-female",
+                "dog-peach-pup"
             ]
         }
     ],
@@ -27,25 +30,30 @@
             "*-wolf-female": "entity/dog-wolf",
             "*-hunting-male": "entity/dog-hunting",
             "*-hunting-female": "entity/dog-hunting",
-            "*-shepherd-male": "entity/dog-shepherd",
-            "*-shepherd-female": "entity/dog-shepherd",
+            "*-shepherd-male": "entity/dog-wolf",
+            "*-shepherd-female": "entity/dog-wolf",
+            "*-peach-male": "entity/dog-wolf",
+            "*-peach-female": "entity/dog-wolf",
             "*-corgi-male": "entity/dog-corgi",
             "*-corgi-female": "entity/dog-corgi",
             "*-shepherd-pup": "entity/dog-shepherd-pup",
             "*-corgi-pup": "entity/dog-corgi",
             "*-hunting-pup": "entity/dog-hunting-pup",
-            "*-wolf-pup": "game:entity/animal/mammal/wolf/eurasian-baby"
+            "*-wolf-pup": "game:entity/animal/mammal/wolf/eurasian-baby",
+            "*-peach-pup": "game:entity/animal/mammal/wolf/eurasian-baby"
         }
     },
     "textures": {
         "skin": {
             "baseByType": {
-                "*-wolf-male": "entity/wolf/wolf1",
-                "*-wolf-female": "entity/wolf/wolf1",
+                "*-wolf-male": "game:entity/animal/mammal/wolf/eurasian-adult1",
+                "*-wolf-female": "game:entity/animal/mammal/wolf/eurasian-adult2",
                 "*-hunting-male": "entity/dog-hunting-black",
                 "*-hunting-female": "entity/dog-hunting-brown",
                 "*-shepherd-male": "entity/dog-shepherd-1",
                 "*-shepherd-female": "entity/dog-shepherd-2",
+                "*-peach-male": "entity/dog-peach",
+                "*-peach-female": "entity/dog-peach",
                 "*-corgi-male": "entity/dog-corgi-1",
                 "*-corgi-female": "entity/dog-corgi-2",
                 "*-shepherd-pup": "entity/dog-shepherd-pup",
@@ -55,15 +63,29 @@
             }
         }
     },
+    "attributes": {
+        "handbook": {
+            "exclude": true
+        }
+    },
     "creativeinventory": {
         "general": [
-            "*"
+            "*-wolf-*",
+            "*-hunting-*",
+            "*-shepherd-*",
+            "*-corgi-*"
         ],
         "items": [
-            "*"
+            "*-wolf-*",
+            "*-hunting-*",
+            "*-shepherd-*",
+            "*-corgi-*"
         ],
         "creatures": [
-            "*"
+            "*-wolf-*",
+            "*-hunting-*",
+            "*-shepherd-*",
+            "*-corgi-*"
         ]
     },
     "materialDensity": 600,
