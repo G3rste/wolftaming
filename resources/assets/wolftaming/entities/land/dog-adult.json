@@ -47,7 +47,7 @@
     "attributes": {
         "minGenerationToAllowHealing": 0,
         "IsShepherdByType": {
-            "@dog-corgi-.*|dog-shepherd-.*": true,
+            "@(dog-corgi-.*)|(dog-shepherd-.*)": true,
             "*": false
         }
     },
@@ -55,14 +55,14 @@
         "renderer": "Shape",
         "sizeByType": {
             "dog-corgi-*": 1.2,
+            "dog-shepherd-*": 0.9,
+            "dog-hunting-*": 0.8,
             "*": 1
         },
-        "shapeByType": {
-            "dog-peach-*": {
-                "base": "wolftaming:entity/dog-wolf"
-            },
-            "*": {
-                "base": "wolftaming:entity/dog-{type}"
+        "shape": {
+            "baseByType": {
+                "@(dog-peach-.*)|(dog-shepherd-.*)": "wolftaming:entity/dog-wolf",
+                "*": "wolftaming:entity/dog-{type}"
             }
         },
         "textureByType": {
@@ -395,7 +395,7 @@
                 "animation": "sleep",
                 "easeInSpeed": 4,
                 "easeOutSpeed": 4,
-				"weight": 5,
+                "weight": 5,
                 "blendMode": "average"
             },
             {
@@ -403,14 +403,14 @@
                 "animation": "wounded-idle",
                 "easeInSpeed": 4,
                 "easeOutSpeed": 4,
-				"weight": 5,
+                "weight": 5,
                 "blendMode": "average"
             },
-			{ 
-				"code": "eat",
-				"animation": "Eat",
-				"blendMode": "average"
-			},
+            {
+                "code": "eat",
+                "animation": "Eat",
+                "blendMode": "average"
+            },
             {
                 "code": "sit",
                 "animation": "sit",
@@ -418,13 +418,13 @@
                 "easeOutSpeed": 4,
                 "blendMode": "average"
             },
-			{
-				"code": "attack-withwindup",
-				"animation": "attack-withwindup",
-				"animationSpeed": 1,
-				"blendMode": "average",
-				"weight": 100
-			}
+            {
+                "code": "attack-withwindup",
+                "animation": "attack-withwindup",
+                "animationSpeed": 1,
+                "blendMode": "average",
+                "weight": 100
+            }
         ]
     },
     "server": {
