@@ -19,7 +19,7 @@
 					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
 				},
 				"helmet-shepherd": {
-					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
+					"base": "wolftaming:armor/helmet/dog-shepherd/doghelmet-{type}"
 				},
 				"helmet-peach": {
 					"base": "wolftaming:armor/helmet/dog-wolf/doghelmet-{type}"
