@@ -19,10 +19,9 @@
 			}
 		},
 		"damageReductionByType": {
-			"*-basic": 0.4,
-			"*-copper": 0.4,
 			"*-tinbronze": 0.5,
-			"*-iron": 0.75
+			"*-iron": 0.75,
+			"*": 0.4
 		}
 	},
 	"maxstacksize": 1,
@@ -39,7 +38,7 @@
 		}
 	],
 	"shape": {
-		"base": "armor/torso/dogarmor-{type}-inventory"
+		"base": "armor/torso/inventory/dogarmor-{type}"
 	},
 	"creativeinventory": {
 		"general": [
@@ -54,26 +53,44 @@
 	},
 	"guiTransform": {
 		"translation": {
-			"x": 4,
-			"y": -0.2,
+			"x": -11,
+			"y": 16,
 			"z": 0
 		},
 		"rotation": {
-			"x": 10,
-			"y": 10,
-			"z": 130
-		},
-		"origin": {
-			"x": 0.1,
-			"y": -0.2,
+			"x": 68,
+			"y": 0,
 			"z": 0
 		},
-		"scale": 1.5
+		"origin": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale": 3.21
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -0.1,
+			"y": -0.1,
+			"z": -0.1
+		},
+		"rotation": {
+			"x": -167,
+			"y": -10,
+			"z": -100
+		},
+		"origin": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"scale": 1
 	},
 	"groundTransform": {
 		"translation": {
 			"x": 0,
-			"y": 0.45,
+			"y": 0,
 			"z": 0
 		},
 		"rotation": {
@@ -86,42 +103,6 @@
 			"y": 0,
 			"z": 0
 		},
-		"scale": 3.5
-	},
-	"fpHandTransform": {
-		"translation": {
-			"x": 1,
-			"y": 0.5,
-			"z": 0
-		},
-		"rotation": {
-			"x": -26,
-			"y": -84,
-			"z": -49
-		},
-		"origin": {
-			"x": 0,
-			"y": 0,
-			"z": 0
-		},
-		"scale": 2.11
-	},
-	"tpHandTransform": {
-		"translation": {
-			"x": 0,
-			"y": -0.1,
-			"z": 0.3
-		},
-		"rotation": {
-			"x": 15,
-			"y": -162,
-			"z": -8
-		},
-		"origin": {
-			"x": 0,
-			"y": 0,
-			"z": 0
-		},
-		"scale": 0.61
+		"scale": 5
 	}
 }

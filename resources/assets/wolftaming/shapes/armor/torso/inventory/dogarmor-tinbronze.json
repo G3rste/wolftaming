@@ -1,0 +1,82 @@
+{
+	"editor": {
+		"allAngles": true,
+		"entityTextureMode": true
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"pelt": "game:item/resource/hide/pelt",
+		"tinbronze": "game:block/metal/ingot/tinbronze"
+	},
+	"elements": [
+		{
+			"name": "Armour",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"uv": [ 999.0, 999.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "TinBronzeArmour_Chest",
+					"stepParentName": "Chest",
+					"from": [ 3.2, 0.2, 1.1 ],
+					"to": [ 3.2, 0.2, 1.1 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 3.2, 0.2, 1.1 ],
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "Chest_Top",
+							"from": [ -3.2, 0.0, -0.6 ],
+							"to": [ 1.8, 2.0, 4.9 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 0.2, 0.0 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "uv": [ 0.0, 5.5, 5.0, 2.0 ], "snapUv": false },
+								"east": { "texture": "#tinbronze", "uv": [ 5.0, 5.5, 5.5, 2.0 ], "snapUv": false },
+								"south": { "texture": "#tinbronze", "uv": [ 10.5, 5.5, 5.0, 2.0 ], "snapUv": false },
+								"west": { "texture": "#tinbronze", "uv": [ 15.5, 5.5, 5.5, 2.0 ], "snapUv": false },
+								"up": { "texture": "#tinbronze", "uv": [ 0.0, 0.0, 5.0, 5.5 ], "snapUv": false },
+								"down": { "texture": "#tinbronze", "uv": [ 5.0, 0.0, 5.0, 5.5 ], "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Top2",
+							"from": [ -2.2, 1.2, -0.1 ],
+							"to": [ 1.8, 2.2, 4.4 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 0.0, 2.1, 1.5 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "uv": [ 0.0, 4.5, 4.0, 1.0 ], "snapUv": false },
+								"east": { "texture": "#tinbronze", "uv": [ 4.0, 4.5, 4.5, 1.0 ], "snapUv": false },
+								"south": { "texture": "#tinbronze", "uv": [ 8.5, 4.5, 4.0, 1.0 ], "snapUv": false },
+								"west": { "texture": "#tinbronze", "uv": [ 12.5, 4.5, 4.5, 1.0 ], "snapUv": false },
+								"up": { "texture": "#tinbronze", "uv": [ 0.0, 0.0, 4.0, 4.5 ], "snapUv": false },
+								"down": { "texture": "#tinbronze", "uv": [ 4.0, 0.0, 4.0, 4.5 ], "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Sides",
+							"from": [ -1.2, -0.3, -1.65 ],
+							"to": [ 1.8, 1.7, 5.85 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -0.2, -0.3, -0.65 ],
+							"faces": {
+								"north": { "texture": "#tinbronze", "uv": [ 0.0, 7.5, 3.0, 2.0 ], "snapUv": false },
+								"east": { "texture": "#tinbronze", "uv": [ 3.0, 7.5, 7.5, 2.0 ], "snapUv": false },
+								"south": { "texture": "#tinbronze", "uv": [ 10.5, 7.5, 3.0, 2.0 ], "snapUv": false },
+								"west": { "texture": "#tinbronze", "uv": [ 13.5, 7.5, 7.5, 2.0 ], "snapUv": false },
+								"up": { "texture": "#tinbronze", "uv": [ 0.0, 0.0, 3.0, 7.5 ], "snapUv": false },
+								"down": { "texture": "#tinbronze", "uv": [ 3.0, 0.0, 3.0, 7.5 ], "snapUv": false }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

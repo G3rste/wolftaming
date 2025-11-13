@@ -1,0 +1,82 @@
+{
+	"editor": {
+		"allAngles": true,
+		"entityTextureMode": true
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"pelt": "game:item/resource/hide/pelt",
+		"copper": "game:item/resource/plate/copper"
+	},
+	"elements": [
+		{
+			"name": "Armour",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 0.0, 0.0, 0.0 ],
+			"uv": [ 999.0, 999.0 ],
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "CopperArmour_Chest",
+					"stepParentName": "Chest",
+					"from": [ 3.3, 0.0, 1.2 ],
+					"to": [ 3.3, 0.0, 1.2 ],
+					"uv": [ 999.0, 999.0 ],
+					"rotationOrigin": [ 3.3, 0.0, 1.2 ],
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "Chest_Top",
+							"from": [ -3.2, 0.0, -0.6 ],
+							"to": [ 1.8, 2.0, 4.9 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -1.0, 0.2, 0.0 ],
+							"faces": {
+								"north": { "texture": "#copper", "uv": [ 0.0, 0.0, 5.0, 2.0 ], "snapUv": false },
+								"east": { "texture": "#copper", "uv": [ 0.0, 0.0, 5.5, 2.0 ], "snapUv": false },
+								"south": { "texture": "#copper", "uv": [ 0.0, 0.0, 5.0, 2.0 ], "snapUv": false },
+								"west": { "texture": "#copper", "uv": [ 0.0, 0.0, 5.5, 2.0 ], "snapUv": false },
+								"up": { "texture": "#copper", "uv": [ 0.0, 0.0, 5.0, 5.5 ], "snapUv": false },
+								"down": { "texture": "#copper", "uv": [ 0.0, 0.0, 5.0, 5.5 ], "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Top2",
+							"from": [ -2.2, 1.2, -0.1 ],
+							"to": [ 1.8, 2.2, 4.4 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ 0.0, 2.1, 1.5 ],
+							"faces": {
+								"north": { "texture": "#copper", "uv": [ 0.0, 0.0, 4.0, 1.0 ], "snapUv": false },
+								"east": { "texture": "#copper", "uv": [ 0.0, 0.0, 4.5, 1.0 ], "snapUv": false },
+								"south": { "texture": "#copper", "uv": [ 0.0, 0.0, 4.0, 1.0 ], "snapUv": false },
+								"west": { "texture": "#copper", "uv": [ 0.0, 0.0, 4.5, 1.0 ], "snapUv": false },
+								"up": { "texture": "#copper", "uv": [ 0.0, 0.0, 4.0, 4.5 ], "snapUv": false },
+								"down": { "texture": "#copper", "uv": [ 0.0, 0.0, 4.0, 4.5 ], "snapUv": false }
+							}
+						},
+						{
+							"name": "Chest_Sides",
+							"from": [ -1.2, -0.3, -1.65 ],
+							"to": [ 1.8, 1.7, 5.85 ],
+							"uv": [ 0.0, 0.0 ],
+							"rotationOrigin": [ -0.2, -0.3, -0.65 ],
+							"faces": {
+								"north": { "texture": "#copper", "uv": [ 0.0, 0.0, 3.0, 2.0 ], "snapUv": false },
+								"east": { "texture": "#copper", "uv": [ 0.0, 0.0, 7.5, 2.0 ], "snapUv": false },
+								"south": { "texture": "#copper", "uv": [ 0.0, 0.0, 3.0, 2.0 ], "snapUv": false },
+								"west": { "texture": "#copper", "uv": [ 0.0, 0.0, 7.5, 2.0 ], "snapUv": false },
+								"up": { "texture": "#copper", "uv": [ 0.0, 0.0, 3.0, 7.5 ], "snapUv": false },
+								"down": { "texture": "#copper", "uv": [ 0.0, 0.0, 3.0, 7.5 ], "snapUv": false }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}
