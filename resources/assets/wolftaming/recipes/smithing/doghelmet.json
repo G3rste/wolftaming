@@ -5,7 +5,8 @@
         "name": "metal",
         "allowedVariants": [
             "iron",
-            "tinbronze"
+            "tinbronze",
+            "copper"
         ]
     },
     "pattern": [

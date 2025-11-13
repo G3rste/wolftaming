@@ -1,13 +1,18 @@
 {
-    "ingredientPattern": "S",
+    "ingredientPattern": "_F_,FPF",
     "ingredients": {
-        "S": {
-            "type": "block",
-            "code": "game:bonyremains-cowskull-*"
+        "P": {
+            "type": "item",
+            "code": "game:hide-pelt-small"
+        },
+        "F": {
+            "type": "item",
+            "code": "game:flaxfibers",
+            "quantity": 3
         }
     },
-    "width": 1,
-    "height": 1,
+    "width": 3,
+    "height": 2,
     "output": {
         "type": "item",
         "code": "doghelmet-basic",
