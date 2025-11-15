@@ -139,6 +139,19 @@
                 "showtagonlywhentargeted": true
             },
             {
+                "code": "health",
+                "currenthealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                },
+                "maxhealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                }
+            },
+            {
                 "code": "receivecommand",
                 "availableCommands": [
                     {
@@ -337,19 +350,6 @@
                 "whenBelowHealth": 6
             },
             {
-                "code": "health",
-                "currenthealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                },
-                "maxhealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                }
-            },
-            {
                 "code": "ropetieable",
                 "minGeneration": 0
             }
@@ -432,6 +432,19 @@
             {
                 "code": "nametag",
                 "showtagonlywhentargeted": true
+            },
+            {
+                "code": "health",
+                "currenthealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                },
+                "maxhealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                }
             },
             {
                 "code": "tameable",
@@ -711,19 +724,6 @@
                 "code": "mortallywoundable",
                 "healingRequiredForRescue": 1,
                 "whenBelowHealth": 6
-            },
-            {
-                "code": "health",
-                "currenthealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                },
-                "maxhealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                }
             },
             {
                 "code": "taskai",

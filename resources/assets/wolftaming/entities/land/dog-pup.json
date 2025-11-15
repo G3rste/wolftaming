@@ -93,6 +93,11 @@
                 "showtagonlywhentargeted": true
             },
             {
+                "code": "health",
+                "currenthealth": 5,
+                "maxhealth": 5
+            },
+            {
                 "code": "receivecommand",
                 "availableCommands": [
                     {
@@ -256,6 +261,11 @@
                 "showtagonlywhentargeted": true
             },
             {
+                "code": "health",
+                "currenthealth": 5,
+                "maxhealth": 5
+            },
+            {
                 "code": "receivecommand",
                 "availableCommands": [
                     {
@@ -353,11 +363,6 @@
             {
                 "code": "controlledphysics",
                 "stepHeight": 1.1251
-            },
-            {
-                "code": "health",
-                "currenthealth": 5,
-                "maxhealth": 5
             },
             {
                 "code": "deaddecay",
