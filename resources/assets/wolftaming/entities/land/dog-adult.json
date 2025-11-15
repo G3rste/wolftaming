@@ -139,6 +139,11 @@
                 "showtagonlywhentargeted": true
             },
             {
+                "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
+                "whenBelowHealth": 6
+            },
+            {
                 "code": "health",
                 "currenthealthByType": {
                     "dog-wolf-*": 25,
@@ -345,11 +350,6 @@
                 }
             },
             {
-                "code": "mortallywoundable",
-                "healingRequiredForRescue": 1,
-                "whenBelowHealth": 6
-            },
-            {
                 "code": "ropetieable",
                 "minGeneration": 0
             }
@@ -364,7 +364,7 @@
             },
             {
                 "code": "die",
-                "animation": "die",
+                "animation": "death",
                 "animationSpeed": 1.25,
                 "weight": 10,
                 "blendMode": "average",
@@ -376,7 +376,7 @@
             },
             {
                 "code": "dead",
-                "animation": "dead",
+                "animation": "death",
                 "weight": 10,
                 "easeInSpeed": 3,
                 "blendMode": "average"
@@ -432,6 +432,11 @@
             {
                 "code": "nametag",
                 "showtagonlywhentargeted": true
+            },
+            {
+                "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
+                "whenBelowHealth": 6
             },
             {
                 "code": "health",
@@ -721,11 +726,6 @@
                 }
             },
             {
-                "code": "mortallywoundable",
-                "healingRequiredForRescue": 1,
-                "whenBelowHealth": 6
-            },
-            {
                 "code": "taskai",
                 "aiCreatureType": "LandCreature",
                 "aitasks": [
@@ -928,7 +928,8 @@
                         "movespeed": 0.006,
                         "maxDistance": 4,
                         "searchRange": 40,
-                        "animation": "Walk"
+                        "animation": "Walk",
+						"animationSpeed": 1.25
                     },
                     {
                         "code": "playfetch",
@@ -959,7 +960,8 @@
                             }
                         ],
                         "movespeed": 0.006,
-                        "animation": "Walk"
+                        "animation": "Walk",
+						"animationSpeed": 1.25
                     },
                     {
                         "code": "idle",
@@ -991,8 +993,7 @@
                         "code": "getoutofwater",
                         "priority": 1.4,
                         "movespeed": 0.015,
-                        "animation": "Walk",
-                        "animationSpeed": 2.2
+                        "animation": "Swim"
                     },
                     {
                         "code": "idle",
@@ -1040,7 +1041,7 @@
                         "animation": "Walk",
                         "animationSpeedByType": {
                             "*-corgi-*": 2,
-                            "*": 1
+                            "*": 1.25
                         },
                         "preferredLightLevel": 20
                     },
