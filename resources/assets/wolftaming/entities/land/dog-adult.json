@@ -139,24 +139,6 @@
                 "showtagonlywhentargeted": true
             },
             {
-                "code": "mortallywoundable",
-                "healingRequiredForRescue": 1,
-                "whenBelowHealth": 6
-            },
-            {
-                "code": "health",
-                "currenthealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                },
-                "maxhealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                }
-            },
-            {
                 "code": "receivecommand",
                 "availableCommands": [
                     {
@@ -350,6 +332,24 @@
                 }
             },
             {
+                "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
+                "whenBelowHealth": 6
+            },
+            {
+                "code": "health",
+                "currenthealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                },
+                "maxhealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                }
+            },
+            {
                 "code": "ropetieable",
                 "minGeneration": 0
             }
@@ -432,24 +432,6 @@
             {
                 "code": "nametag",
                 "showtagonlywhentargeted": true
-            },
-            {
-                "code": "mortallywoundable",
-                "healingRequiredForRescue": 1,
-                "whenBelowHealth": 6
-            },
-            {
-                "code": "health",
-                "currenthealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                },
-                "maxhealthByType": {
-                    "dog-wolf-*": 25,
-                    "dog-corgi-*": 10,
-                    "*": 20
-                }
             },
             {
                 "code": "tameable",
@@ -726,6 +708,24 @@
                 }
             },
             {
+                "code": "mortallywoundable",
+                "healingRequiredForRescue": 1,
+                "whenBelowHealth": 6
+            },
+            {
+                "code": "health",
+                "currenthealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                },
+                "maxhealthByType": {
+                    "dog-wolf-*": 25,
+                    "dog-corgi-*": 10,
+                    "*": 20
+                }
+            },
+            {
                 "code": "taskai",
                 "aiCreatureType": "LandCreature",
                 "aitasks": [
@@ -994,19 +994,6 @@
                         "priority": 1.4,
                         "movespeed": 0.015,
                         "animation": "Swim"
-                    },
-                    {
-                        "code": "idle",
-                        "priority": 1.15,
-                        "priorityForCancel": 1.35,
-                        "minduration": 5000,
-                        "maxduration": 5000,
-                        "mincooldown": 20000,
-                        "maxcooldown": 60000,
-                        "animation": "Stretch",
-                        "animationSpeed": 1,
-                        "soundRange": 110,
-                        "whenInEmotionState": "aggressiveondamage"
                     },
                     {
                         "code": "idle",
