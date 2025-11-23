@@ -1,8 +1,0 @@
-[
-    {
-        "op": "replace",
-        "path": "/buying/list/13/code",
-        "value": "wolftaming:creature-dog-wolf-pup",
-        "file": "game:config/tradelists/trader-treasurehunter.json"
-    }
-]

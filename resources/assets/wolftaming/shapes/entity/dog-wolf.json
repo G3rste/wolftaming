@@ -9,7 +9,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"skin": "E:/Workspace/vintage_story_mods/wolftaming/resources/assets/wolftaming/textures/entity/wolf/wolf9"
+		"skin": "entity/dog-shepherd-1"
 	},
 	"elements": [
 		{

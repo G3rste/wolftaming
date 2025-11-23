@@ -8,7 +8,7 @@
 	"textureSizes": {
 	},
 	"textures": {
-		"skin": "E:/Workspace/vintage_story_mods/wolftaming/resources/assets/wolftaming/textures/entity/dog-corgi-4"
+		"skin": "entity/dog-corgi-1"
 	},
 	"elements": [
 		{

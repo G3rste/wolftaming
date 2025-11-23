@@ -15,14 +15,6 @@
 		"tinbronze": "game:item/resource/plate/tinbronze"
 	},
 	"elements": [
-		{
-			"name": "Armour",
-			"from": [ 0.0, 0.0, 0.0 ],
-			"to": [ 0.0, 0.0, 0.0 ],
-			"uv": [ 999.0, 999.0 ],
-			"faces": {
-			},
-			"children": [
 				{
 					"name": "Arm_R",
 					"stepParentName": "R ArmLow",
@@ -1229,8 +1221,6 @@
 						}
 					]
 				}
-			]
-		}
 	],
 	"animations": [
 	]

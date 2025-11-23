@@ -1,14 +1,21 @@
 [
     {
-        "op": "replace",
-        "path": "/selling/list/24/code",
-        "value": "wolftaming:creature-dog-wolf-pup",
-        "file": "game:config/tradelists/trader-survivalgoods.json"
-    },
-    {
         "op": "addeach",
         "path": "/selling/list/-",
         "value": [
+            {
+                "code": "wolftaming:creature-dog-wolf-pup",
+                "type": "item",
+                "stacksize": 1,
+                "stock": {
+                    "avg": 2,
+                    "var": 1
+                },
+                "price": {
+                    "avg": 6,
+                    "var": 2
+                }
+            },
             {
                 "code": "wolftaming:creature-dog-hunting-pup",
                 "type": "item",

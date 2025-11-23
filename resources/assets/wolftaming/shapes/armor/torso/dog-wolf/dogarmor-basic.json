@@ -15,14 +15,6 @@
 		"rope": "game:item/resource/rope"
 	},
 	"elements": [
-		{
-			"name": "LeatherArmor",
-			"from": [ 5.7, 7.3, 5.4 ],
-			"to": [ 5.7, 7.3, 5.4 ],
-			"rotationOrigin": [ 5.7, 7.3, 5.4 ],
-			"faces": {
-			},
-			"children": [
 				{
 					"name": "LeatherArmour_Chest",
 					"stepParentName": "Chest",
@@ -687,8 +679,6 @@
 						}
 					]
 				}
-			]
-		}
 	],
 	"animations": [
 	]
