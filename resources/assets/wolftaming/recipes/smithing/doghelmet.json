@@ -30,6 +30,7 @@
         ]
     ],
     "name": "Dog Helmet",
+    "code": "doghelmet-{metal}",
     "output": {
         "type": "item",
         "code": "doghelmet-{metal}"
