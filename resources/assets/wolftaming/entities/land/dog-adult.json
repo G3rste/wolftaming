@@ -761,7 +761,7 @@
                         "damagePlayerAtMs": 500,
                         "animation": "Attack",
                         "animationSpeed": 1.5,
-                        "sound": "game:creature/wolf/attack"
+                        "sound": "game:creature/wolf/attack*"
                     },
                     {
                         "code": "petmeleeattack",
@@ -795,7 +795,7 @@
                         "damagePlayerAtMs": 500,
                         "animation": "Attack-Low",
                         "animationSpeed": 1.5,
-                        "sound": "game:creature/wolf/attack"
+                        "sound": "game:creature/wolf/attack*"
                     },
                     {
                         "code": "petmeleeattack",
@@ -829,7 +829,7 @@
                         "damagePlayerAtMs": 900,
                         "animation": "attack-withwindup",
                         "animationSpeed": 1.5,
-                        "sound": "game:creature/wolf/attack"
+                        "sound": "game:creature/wolf/attack*"
                     },
                     {
                         "code": "petseekentity",
