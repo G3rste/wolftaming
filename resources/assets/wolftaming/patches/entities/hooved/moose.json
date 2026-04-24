@@ -12,7 +12,7 @@
             "dog-corgi-male",
             "dog-corgi-female"
         ],
-        "file": "game:entities/animal/mammal/hooved/moose.json"
+        "file": "game:entities/animal/mammal/hooved/moose-adult.json"
     },
     {
         "op": "addeach",
