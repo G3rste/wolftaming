@@ -66,7 +66,7 @@
 				}
 			]
 		},
-        "file": "game:shapes/entity/land/wolf-pup.json"
+        "file": "game:shapes/entity/animal/mammal/wolf/eurasian-baby.json"
     },
     {
         "op": "add",
