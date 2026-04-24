@@ -1,5 +1,6 @@
 [
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/11/aitasks/0/entityCodes/-",
         "value": [
@@ -11,6 +12,7 @@
         "file": "game:entities/animal/bird/chicken-adult.json"
     },
     {
+        "side": "server",
         "op": "add",
         "path": "/server/behaviors/11/aitasks/-",
         "value": {

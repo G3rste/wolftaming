@@ -1,5 +1,6 @@
 [
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
         "value": [

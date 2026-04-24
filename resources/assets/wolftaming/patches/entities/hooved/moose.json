@@ -1,5 +1,6 @@
 [
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
         "value": [
@@ -15,6 +16,7 @@
         "file": "game:entities/animal/mammal/hooved/moose-adult.json"
     },
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
         "value": [
@@ -30,6 +32,7 @@
         "file": "game:entities/animal/mammal/hooved/moose-adult.json"
     },
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/2/entityCodes/-",
         "value": [
@@ -45,6 +48,7 @@
         "file": "game:entities/animal/mammal/hooved/moose-adult.json"
     },
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/11/aitasks/0/entityCodes/-",
         "value": [
