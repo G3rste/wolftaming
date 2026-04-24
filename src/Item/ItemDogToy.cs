@@ -80,11 +80,11 @@ namespace Wolftaming
             double rndpitch = byEntity.WatchedAttributes.GetDouble("aimingRandPitch", 1) * acc * 0.75;
             double rndyaw = byEntity.WatchedAttributes.GetDouble("aimingRandYaw", 1) * acc * 0.75;
 
-            Vec3d pos = byEntity.ServerPos.XYZ.Add(0, byEntity.LocalEyePos.Y - 0.2, 0);
+            Vec3d pos = byEntity.Pos.XYZ.Add(0, byEntity.LocalEyePos.Y - 0.2, 0);
 
-            Vec3d aheadPos = pos.AheadCopy(1, byEntity.ServerPos.Pitch + rndpitch, byEntity.ServerPos.Yaw + rndyaw);
+            Vec3d aheadPos = pos.AheadCopy(1, byEntity.Pos.Pitch + rndpitch, byEntity.Pos.Yaw + rndyaw);
             Vec3d velocity = (aheadPos - pos) * 0.65;
-            Vec3d spawnPos = byEntity.ServerPos.BehindCopy(0.21).XYZ.Add(byEntity.LocalEyePos.X, byEntity.LocalEyePos.Y - 0.2, byEntity.LocalEyePos.Z);
+            Vec3d spawnPos = byEntity.Pos.BehindCopy(0.21).XYZ.Add(byEntity.LocalEyePos.X, byEntity.LocalEyePos.Y - 0.2, byEntity.LocalEyePos.Z);
 
             byEntity.StartAnimation("throw");
             notifyDogs(byEntity.World.SpawnItemEntity(new ItemStack(this), spawnPos, velocity) as EntityItem);
@@ -96,7 +96,7 @@ namespace Wolftaming
 
         private void notifyDogs(EntityItem dogToy)
         {
-            var dogs = dogToy?.World?.GetEntitiesAround(dogToy.ServerPos.XYZ, 20f, 5f);
+            var dogs = dogToy?.World?.GetEntitiesAround(dogToy.Pos.XYZ, 20f, 5f);
             if (dogs == null) { return; }
             foreach (var dog in dogs)
             {

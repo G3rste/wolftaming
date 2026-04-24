@@ -24,7 +24,7 @@ namespace Wolftaming
         public override bool ShouldExecute()
         {
             if (dogToy == null || !dogToy.Alive || dogToy.ShouldDespawn) return false;
-            if (entity.ServerPos.SquareDistanceTo(dogToy.ServerPos) > 30 * 30)
+            if (entity.Pos.SquareDistanceTo(dogToy.Pos) > 30 * 30)
             {
                 dogToy = null;
             }
@@ -35,7 +35,7 @@ namespace Wolftaming
             base.StartExecute();
 
             float size = dogToy.CollisionBox.XSize;
-            pathTraverser.WalkTowards(dogToy.ServerPos.XYZ, moveSpeed, size + 0.2f, OnGoalReached, OnStuck);
+            pathTraverser.WalkTowards(dogToy.Pos.XYZ, moveSpeed, size + 0.2f, OnGoalReached, OnStuck);
 
             stuck = false;
         }
@@ -59,15 +59,15 @@ namespace Wolftaming
                 return false;
             }
 
-            double x = dogToy.ServerPos.X;
-            double y = dogToy.ServerPos.Y;
-            double z = dogToy.ServerPos.Z;
+            double x = dogToy.Pos.X;
+            double y = dogToy.Pos.Y;
+            double z = dogToy.Pos.Z;
 
             pathTraverser.CurrentTarget.X = x;
             pathTraverser.CurrentTarget.Y = y;
             pathTraverser.CurrentTarget.Z = z;
 
-            if (entity.ServerPos.SquareDistanceTo(x, y, z) < 2)
+            if (entity.Pos.SquareDistanceTo(x, y, z) < 2)
             {
                 var slot = new DummySlot(dogToy.Itemstack);
                 if (slot.TryPutInto(entity.World, entity.LeftHandItemSlot) > 0)
@@ -93,19 +93,19 @@ namespace Wolftaming
         {
             if (owner == null || !owner.Alive || owner.ShouldDespawn)
             {
-                owner = entity.World.GetNearestEntity(entity.ServerPos.XYZ, 50, 10, entity => entity is EntityPlayer);
+                owner = entity.World.GetNearestEntity(entity.Pos.XYZ, 50, 10, entity => entity is EntityPlayer);
                 if (owner == null) return false;
             }
 
-            double x = owner.ServerPos.X;
-            double y = owner.ServerPos.Y;
-            double z = owner.ServerPos.Z;
+            double x = owner.Pos.X;
+            double y = owner.Pos.Y;
+            double z = owner.Pos.Z;
 
             pathTraverser.CurrentTarget.X = x;
             pathTraverser.CurrentTarget.Y = y;
             pathTraverser.CurrentTarget.Z = z;
 
-            if (entity.ServerPos.SquareDistanceTo(x, y, z) < 2)
+            if (entity.Pos.SquareDistanceTo(x, y, z) < 2)
             {
                 pathTraverser.Stop();
                 owner = null;
