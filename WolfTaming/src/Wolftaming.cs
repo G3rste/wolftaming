@@ -5,7 +5,7 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Server;
 using Vintagestory.GameContent;
 
-namespace Wolftaming
+namespace WolfTaming
 {
     public class Wolftaming : ModSystem
     {
@@ -21,10 +21,10 @@ namespace Wolftaming
 
         public override void StartServerSide(ICoreServerAPI api)
         {
-            api.Event.PlayerCreate += player => giveSecretDoggo(api, player);
+            api.Event.PlayerCreate += player => GiveSecretDoggo(api, player);
         }
 
-        private void giveSecretDoggo(ICoreServerAPI api, IServerPlayer player)
+        private void GiveSecretDoggo(ICoreServerAPI api, IServerPlayer player)
         {
             // Peachwolf updated the models -> Peachwolf gets his very own peach wolf
             if (player.PlayerUID == "eJNd6SdFvvE028GvnRfJM2Yp")

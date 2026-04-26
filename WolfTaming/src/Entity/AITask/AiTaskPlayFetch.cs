@@ -2,13 +2,13 @@ using Vintagestory.API.Common;
 using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 
-namespace Wolftaming
+namespace WolfTaming
 {
     public class AiTaskPlayFetch : AiTaskBase
     {
-        public EntityItem dogToy { get; set; }
+        public EntityItem DogToy { get; set; }
 
-        private Entity owner { get; set; }
+        private Entity Owner { get; set; }
 
         public float moveSpeed = 0.03f;
 
@@ -23,45 +23,45 @@ namespace Wolftaming
 
         public override bool ShouldExecute()
         {
-            if (dogToy == null || !dogToy.Alive || dogToy.ShouldDespawn) return false;
-            if (entity.Pos.SquareDistanceTo(dogToy.Pos) > 30 * 30)
+            if (DogToy == null || !DogToy.Alive || DogToy.ShouldDespawn) return false;
+            if (entity.Pos.SquareDistanceTo(DogToy.Pos) > 30 * 30)
             {
-                dogToy = null;
+                DogToy = null;
             }
-            return dogToy != null;
+            return DogToy != null;
         }
         public override void StartExecute()
         {
             base.StartExecute();
 
-            float size = dogToy.CollisionBox.XSize;
-            pathTraverser.WalkTowards(dogToy.Pos.XYZ, moveSpeed, size + 0.2f, OnGoalReached, OnStuck);
+            float size = DogToy.CollisionBox.XSize;
+            pathTraverser.WalkTowards(DogToy.Pos.XYZ, moveSpeed, size + 0.2f, OnGoalReached, OnStuck);
 
             stuck = false;
         }
 
         public override bool ContinueExecute(float dt)
         {
-            if (dogToy != null)
+            if (DogToy != null)
             {
-                return getToy();
+                return GetToy();
             }
             else
             {
-                return bringToy();
+                return BringToy();
             }
         }
-        private bool getToy()
+        private bool GetToy()
         {
-            if (dogToy == null || !dogToy.Alive || stuck)
+            if (DogToy == null || !DogToy.Alive || stuck)
             {
                 pathTraverser.Stop();
                 return false;
             }
 
-            double x = dogToy.Pos.X;
-            double y = dogToy.Pos.Y;
-            double z = dogToy.Pos.Z;
+            double x = DogToy.Pos.X;
+            double y = DogToy.Pos.Y;
+            double z = DogToy.Pos.Z;
 
             pathTraverser.CurrentTarget.X = x;
             pathTraverser.CurrentTarget.Y = y;
@@ -69,37 +69,37 @@ namespace Wolftaming
 
             if (entity.Pos.SquareDistanceTo(x, y, z) < 2)
             {
-                var slot = new DummySlot(dogToy.Itemstack);
+                var slot = new DummySlot(DogToy.Itemstack);
                 if (slot.TryPutInto(entity.World, entity.LeftHandItemSlot) > 0)
                 {
-                    dogToy.Die(EnumDespawnReason.PickedUp);
+                    DogToy.Die(EnumDespawnReason.PickedUp);
                 }
-                dogToy = null;
-                increaseObedience();
+                DogToy = null;
+                IncreaseObedience();
                 return true;
             }
 
             return pathTraverser.Active;
         }
 
-        private void increaseObedience()
+        private void IncreaseObedience()
         {
             var domesticationStatus = entity.WatchedAttributes.GetOrAddTreeAttribute("domesticationstatus");
             domesticationStatus.SetFloat("obedience", domesticationStatus.GetFloat("obedience") + 0.03f);
             entity.WatchedAttributes.MarkPathDirty("domesticationstatus");
         }
 
-        private bool bringToy()
+        private bool BringToy()
         {
-            if (owner == null || !owner.Alive || owner.ShouldDespawn)
+            if (Owner == null || !Owner.Alive || Owner.ShouldDespawn)
             {
-                owner = entity.World.GetNearestEntity(entity.Pos.XYZ, 50, 10, entity => entity is EntityPlayer);
-                if (owner == null) return false;
+                Owner = entity.World.GetNearestEntity(entity.Pos.XYZ, 50, 10, entity => entity is EntityPlayer);
+                if (Owner == null) return false;
             }
 
-            double x = owner.Pos.X;
-            double y = owner.Pos.Y;
-            double z = owner.Pos.Z;
+            double x = Owner.Pos.X;
+            double y = Owner.Pos.Y;
+            double z = Owner.Pos.Z;
 
             pathTraverser.CurrentTarget.X = x;
             pathTraverser.CurrentTarget.Y = y;
@@ -108,11 +108,11 @@ namespace Wolftaming
             if (entity.Pos.SquareDistanceTo(x, y, z) < 2)
             {
                 pathTraverser.Stop();
-                owner = null;
+                Owner = null;
                 return false;
             }
 
-            return owner.Alive && !stuck && pathTraverser.Active;
+            return Owner.Alive && !stuck && pathTraverser.Active;
         }
         private void OnStuck()
         {

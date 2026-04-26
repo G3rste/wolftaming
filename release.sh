@@ -1,7 +1,7 @@
 #!/bin/bash
-version=$(grep -o '"version":\s*"\([0-9]\.*\)*"' resources/modinfo.json | grep -o '\([0-9]\.*\)*')
-petai=$(grep -o '"petai":\s*"\([0-9]\.*\)*"' resources/modinfo.json | grep -o '\([0-9]\.*\)*' | sed -r 's/[0-9]*$/_/')
-releasefile='bin/wolftaming_v'$version'_petai_v'$petai'.zip'
-dotnet build -c release
-mv bin/wolftaming.zip $releasefile
+dotnet run --project ./CakeBuild/CakeBuild.csproj -- "$@" --skipDownloadLang false
+releasefile=$(find Releases -name "*.zip")
+echo $releasefile
+version=$(echo $releasefile | grep -o '[0-9].*[0-9]')
+echo $version
 gh release create --generate-notes 'v'$version $releasefile 

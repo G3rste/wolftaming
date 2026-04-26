@@ -4,7 +4,7 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
 
-namespace Wolftaming
+namespace WolfTaming
 {
     public class ItemDogToy : Item
     {
@@ -24,20 +24,6 @@ namespace Wolftaming
 
         public override bool OnHeldInteractStep(float secondsUsed, ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel)
         {
-            if (byEntity.World is IClientWorldAccessor)
-            {
-                ModelTransform tf = new ModelTransform();
-                tf.EnsureDefaultValues();
-
-                float offset = GameMath.Clamp(secondsUsed * 4f, 0, 2f);
-
-                //tf.Translation.Set(-offset/4, 0, offset/3);
-                tf.Translation.Set(-offset / 3, 0, offset / 3);
-                tf.Rotation.Set(0, -offset * 15, 0);
-
-                byEntity.Controls.UsingHeldItemTransformBefore = tf;
-            }
-
             return true;
         }
 
@@ -70,7 +56,7 @@ namespace Wolftaming
             slot.MarkDirty();
 
             IPlayer byPlayer = null;
-            if (byEntity is EntityPlayer) byPlayer = byEntity.World.PlayerByUid(((EntityPlayer)byEntity).PlayerUID);
+            if (byEntity is EntityPlayer player) byPlayer = byEntity.World.PlayerByUid(player.PlayerUID);
             byEntity.World.PlaySoundAt(new AssetLocation("sounds/player/throw"), byEntity, byPlayer, false, 8);
 
             EntityProperties type = byEntity.World.GetEntityType(new AssetLocation("wolftaming:dogtoy"));
@@ -87,21 +73,21 @@ namespace Wolftaming
             Vec3d spawnPos = byEntity.Pos.BehindCopy(0.21).XYZ.Add(byEntity.LocalEyePos.X, byEntity.LocalEyePos.Y - 0.2, byEntity.LocalEyePos.Z);
 
             byEntity.StartAnimation("throw");
-            notifyDogs(byEntity.World.SpawnItemEntity(new ItemStack(this), spawnPos, velocity) as EntityItem);
+            NotifyDogs(byEntity.World.SpawnItemEntity(new ItemStack(this), spawnPos, velocity) as EntityItem);
 
             if (byEntity is EntityPlayer) RefillSlotIfEmpty(slot, byEntity, (itemstack) => itemstack.Collectible is ItemDogToy);
 
             byPlayer.Entity.World.PlaySoundAt(new AssetLocation("sounds/player/strike"), byPlayer.Entity, byPlayer, 0.9f + (float)api.World.Rand.NextDouble() * 0.2f, 16, 0.5f);
         }
 
-        private void notifyDogs(EntityItem dogToy)
+        private void NotifyDogs(EntityItem dogToy)
         {
             var dogs = dogToy?.World?.GetEntitiesAround(dogToy.Pos.XYZ, 20f, 5f);
             if (dogs == null) { return; }
             foreach (var dog in dogs)
             {
                 var task = dog?.GetBehavior<EntityBehaviorTaskAI>()?.TaskManager?.GetTask<AiTaskPlayFetch>();
-                if (task != null) { task.dogToy = dogToy; }
+                if (task != null) { task.DogToy = dogToy; }
             }
         }
 

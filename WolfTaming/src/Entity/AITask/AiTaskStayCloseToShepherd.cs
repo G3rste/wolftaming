@@ -3,7 +3,7 @@ using Vintagestory.API.Common.Entities;
 using Vintagestory.API.Datastructures;
 using Vintagestory.GameContent;
 
-namespace Wolftaming
+namespace WolfTaming
 {
     public class AiTaskStayCloseToShepherd : AiTaskStayCloseToEntity
     {
