@@ -1,5 +1,6 @@
 [
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/9/aitasks/0/entityCodes/-",
         "value": [
@@ -15,6 +16,7 @@
         "file": "game:entities/animal/mammal/hooved/gazelle-adult.json"
     },
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
         "value": [

@@ -48,6 +48,7 @@
         ]
     ],
     "name": "Dog Armor",
+    "code": "dogarmor-{metal}",
     "output": {
         "type": "item",
         "code": "dogarmor-{metal}"

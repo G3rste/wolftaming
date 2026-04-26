@@ -1,5 +1,6 @@
 [
     {
+        "side": "server",
         "op": "add",
         "path": "/server/behaviors/-",
         "value": {
@@ -31,6 +32,7 @@
         "file": "game:entities/animal/mammal/wolf-baby.json"
     },
     {
+        "side": "server",
         "op": "add",
         "path": "/server/behaviors/-",
         "value": {
@@ -57,6 +59,7 @@
         "file": "game:entities/animal/mammal/wolf-baby.json"
     },
     {
+        "side": "server",
         "op": "add",
         "path": "/client/behaviors/-",
         "value": {
@@ -87,6 +90,7 @@
         "file": "game:entities/animal/mammal/wolf-baby.json"
     },
     {
+        "side": "server",
         "op": "add",
         "path": "/client/behaviors/-",
         "value": {
@@ -113,6 +117,7 @@
         "file": "game:entities/animal/mammal/wolf-baby.json"
     },
     {
+        "side": "server",
         "op": "add",
         "path": "/server/behaviors/10/aitasks/-",
         "value": {

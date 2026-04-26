@@ -1,5 +1,6 @@
 [
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
         "value": [
@@ -11,6 +12,7 @@
         "file": "game:entities/animal/mammal/hooved/sheep-adult.json"
     },
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/1/entityCodes/-",
         "value": [
@@ -22,6 +24,7 @@
         "file": "game:entities/animal/mammal/hooved/sheep-adult.json"
     },
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/2/entityCodes/-",
         "value": [
@@ -33,6 +36,7 @@
         "file": "game:entities/animal/mammal/hooved/sheep-adult.json"
     },
     {
+        "side": "server",
         "op": "add",
         "path": "/server/behaviors/10/aitasks/-",
         "value": {
@@ -47,6 +51,7 @@
         "file": "game:entities/animal/mammal/hooved/sheep-adult.json"
     },
     {
+        "side": "server",
         "op": "addeach",
         "path": "/server/behaviors/10/aitasks/0/entityCodes/-",
         "value": [
@@ -58,6 +63,7 @@
         "file": "game:entities/animal/mammal/hooved/sheep-baby.json"
     },
     {
+        "side": "server",
         "op": "add",
         "path": "/server/behaviors/10/aitasks/-",
         "value": {

@@ -18,7 +18,7 @@ namespace Wolftaming
             if (lastCheck + 20000 < entity.Api.World.ElapsedMilliseconds && entity.WatchedAttributes.GetInt("generation", 0) > 0)
             {
                 lastCheck = entity.World.ElapsedMilliseconds;
-                var candidate = entity.World.GetNearestEntity(entity.ServerPos.XYZ, range, 2, e => e?.Properties?.Attributes?["IsShepherd"].AsBool() == true);
+                var candidate = entity.World.GetNearestEntity(entity.Pos.XYZ, range, 2, e => e?.Properties?.Attributes?["IsShepherd"].AsBool() == true);
 
                 if (candidate != null)
                 {
@@ -27,11 +27,11 @@ namespace Wolftaming
             }
             if (targetEntity != null)
             {
-                double x = targetEntity.ServerPos.X;
-                double y = targetEntity.ServerPos.Y;
-                double z = targetEntity.ServerPos.Z;
+                double x = targetEntity.Pos.X;
+                double y = targetEntity.Pos.Y;
+                double z = targetEntity.Pos.Z;
 
-                double dist = entity.ServerPos.SquareDistanceTo(x, y, z);
+                double dist = entity.Pos.SquareDistanceTo(x, y, z);
 
                 if (dist > maxDistance * maxDistance * 4)
                 {
