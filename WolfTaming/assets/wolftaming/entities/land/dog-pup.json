@@ -398,7 +398,7 @@
                     "wolftaming:dog-{type}-male",
                     "wolftaming:dog-{type}-female"
                 ],
-                "code": "raisable"
+                "code": "grow"
             },
             {
                 "code": "taskai",
